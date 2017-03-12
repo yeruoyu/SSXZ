@@ -1,0 +1,1711 @@
+[ 2016-10-27T08:52:34+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.267281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.267761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030889s ]
+
+[ 2016-10-27T08:52:35+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.294678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.295433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003764s ]
+
+[ 2016-10-27T08:52:42+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007230s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.174837s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.052224s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.002184s ]
+
+[ 2016-10-27T08:52:43+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004965s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000692s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.306782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.307234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009978s ]
+
+[ 2016-10-27T08:52:45+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.069581s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.065666s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.033946s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.000807s ]
+
+[ 2016-10-27T08:52:50+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002982s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.046527s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.049990s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001340s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 243 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.840721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.841486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012368s ]
+
+[ 2016-10-27T08:55:03+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036432s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.035276s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000610s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 245 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.555142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.555554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003282s ]
+
+[ 2016-10-27T08:55:46+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003097s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.037820s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036103s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 245 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.551277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.551732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004374s ]
+
+[ 2016-10-27T08:58:18+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003657s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.038882s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.045283s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.644926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.645498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006610s ]
+
+[ 2016-10-27T09:00:02+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003476s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.042124s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036544s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001046s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.724890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.725302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003787s ]
+
+[ 2016-10-27T09:00:12+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003382s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.051621s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.002249s ]
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 147 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 154 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.044322s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='A-LEVEL',`school_detail`='<p><span style=\"line-height:1.5;font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; </span><strong><span style=\"font-size:14px;\">北京爱迪国际学校</span></strong><span style=\"font-size:14px;\">( National Institute of Technology \r\n)，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 \r\n澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校，为中国境内的中、外籍学生系统地提供 \r\n双语幼儿园、双语小学、双语初中、全英文澳大利亚高中(WACE)、大学</span><a href=\"http://www.shen1shen.com/News/detail-id264.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">预科</span></strong></a><span style=\"font-size:14px;\">、大学文凭、本科及</span><a href=\"http://www.shen1shen.com/News/detail/id/73\" target=\"_blank\"><strong><span style=\"font-size:14px;\">雅思</span></strong></a><span style=\"font-size:14px;\">英语课程。同时，北京爱迪(国际)学校也是澳大利亚西澳州政府教育署课程委员会正式授权的国际大学录取考试 \r\nTEE( Tertiary Entrance Examination )中国唯一考试中心。学生参加 TEE \r\n考试可直接报考或申请澳大利亚的悉尼大学、墨尔本大学，英国的牛津大学、剑桥大学，美国的 斯坦福大学，麻省理工学院，新西兰的奥克兰理工大学以及 加拿大的 多伦多大学 \r\n等 近千 所世界名校。目前，学校已输送 2000 多名学生前往澳大利亚、加拿大、英国、美国、新西兰等世界各国深造， 90% 以上获得了学士或学士以上学位， \r\n70% 以上移居了海外， 被誉为“中澳两国教育合作的成功典范”。</span></span> </p><p><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20150416/20150416142530_12731.jpg\" alt=\"\"/><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;font-size:14px;\">北京爱迪国际学校</span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p><br/></p><p><span style=\"font-size:14px;\">　　办学优势：</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　NIT \r\n利用自身国际化的办学优势，与多所海外院校保持着良好的长期合作关系，为中国学生开辟了留学海外的绿色通道。几年来，已输送5000余名学生到美国、澳大利亚、英国、加拿大、新西兰等国家深造。NIT提供免费的出国留学信息咨询服务，为符合条件的学生免费办理签证，并在南澳阿德雷得市(中国学生签证审批地)设立了专门机构，为在海外求学的NIT学子提供全方位服务。 \r\nNIT拥有软硬件设备先进的学习中心，采用先进的电脑教学系统，为每位学生设立免费的个人宽带网络专区。通过它，学生可直接进入NIT电子网校学习，查找学习资料和进行科研作业等，并配有专职指导教师悉心指导。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　长期以来，北京爱迪(国际)学校一直与多所海外知名院校保持着良好的合作关系，共同致力于为中国境内的中外籍学生系统地提供更多、更好地享受国际优质教育的机会。学校校园里 \r\n聚集着来自等世界其它国家的优秀学者，学术氛围非常浓厚。 \r\n爱迪教育集团是在澳大利亚政府注册的国际知名教育机构，教学投资经验丰富，在国际教育界中享有盛誉。　</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;NIT拥有最新的专业化教程与世界一流的师资。NIT所有的教材和案例，都是根据国际的教育现状和中国学生的学习特点，选择性地直接从海外引进的原版英文教材。而且，为保证学生所学到的知识、所接受的教育始终处于世界领先水平，NIT紧跟社会进步和知识更新的步伐，每年都更新教材。NIT的授课教师来自澳洲及英、美等国，由海外院校直接委派，具有丰富的国际教学和研究经验及国际认可的教师任职资格。所有课程都用全英文讲授，NIT将根据学生的英文水平提供各种层次的雅思培训，克服语言障碍。学校还通过开展英语角、英语沙龙、英语朗诵、定期观看英语原版电影等各种学术活动，给学生创造全英文的学习、生活环境。 \r\nNIT \r\n借鉴国际知名高校的管理模式，实行董事会领导下的校长负责制。并设立由世界著名专家、学者和实业家组成的学术咨询委员会，监控教学管理和教学质量，以保证每个学生在 \r\nNIT享有平等的受教育权利。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size:14px;\">&nbsp;&quot;一切为了学生、为了学生一切、为了一切学生&quot;，是北京爱迪(国际)学校的校训。学校的教学模式强调以学生为本，课程的设置和选择注重学生技能的培养和兴趣爱好的开发，通过教师的讲授、小组讨论和演讲等灵活多样的学习方式，增强学生的自信心、主动性和独立的分析思考能力，帮助学生适应海外的生活、巩固他们掌握知识的能力。学校经常邀请欧美澳驻华大使馆官员、跨国公司高管、海外名校学生给学生做讲座，并定期组织学生去跨国企业参观/实习。</span></span> </p><p><br/></p><p style=\"text-align:center;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20141028/20141028132738_20496.jpg\" alt=\"\"/> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; 如欲了解更多国际高中及海外留学等相关资讯，可用微信扫描上方二维码，关注莘莘网微信公众平台！</span> </p><p><br/></p><p><span style=\"font-size:14px;\">关于莘莘网：</span> </p><p><span style=\"font-size:14px;\">莘莘网（</span><a href=\"http://www.shen1shen.com\" target=\"_blank\"><span style=\"font-size:14px;\">http://www.shen1shen.com</span></a><span style=\"font-size:14px;\">）是由上海瑞奇达实业有限公司旗\r\n下创办的国际教育在线资讯互动平台。莘莘网以满足全国有留学需求的学生和家\r\n长为宗旨，网站每日发布各类权威</span><strong><span style=\"font-size:14px;\">国际学校排名</span></strong><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-all.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">国际学校</span></strong><span style=\"font-size:14px;\">课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">学校新闻</span></a><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">招生信息</span></a><span style=\"font-size:14px;\">、择校信息。热门课程包含：</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">A-LEVEL</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">IB课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-3.html\" target=\"_blank\"><span style=\"font-size:14px;\">AP课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-4.html\" target=\"_blank\"><span style=\"font-size:14px;\">BC课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-5.html\" target=\"_blank\"><span style=\"font-size:14px;\">IGCSE课程</span></a><span style=\"font-size:14px;\">等。热门专业包含：商科、艺术及设计类、理\r\n工科、医科等。留学方向为美国、英国、加拿大、澳洲、新西兰及其他欧洲、亚\r\n洲国家。网站已逐渐成为当代学生合家长获取</span><strong><span style=\"font-size:14px;\">国际高中排名</span></strong><span style=\"font-size:14px;\"> 信息、了解校园动态的最佳途径之一。</span><br/></p>',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.011397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004681s ]
+
+[ 2016-10-27T09:00:13+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000737s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001486s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.233562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005524s ]
+
+[ 2016-10-27T09:00:14+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.052340s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038539s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.003801s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001274s ]
+
+[ 2016-10-27T09:01:42+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002821s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039597s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039809s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000609s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001030s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.580596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.581011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004264s ]
+
+[ 2016-10-27T09:01:51+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003248s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.037260s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001012s ]
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 147 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 154 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038585s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,A-LEVEL',`school_detail`='<p><span style=\"line-height:1.5;font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; </span><strong><span style=\"font-size:14px;\">北京爱迪国际学校</span></strong><span style=\"font-size:14px;\">( National Institute of Technology \r\n)，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 \r\n澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校，为中国境内的中、外籍学生系统地提供 \r\n双语幼儿园、双语小学、双语初中、全英文澳大利亚高中(WACE)、大学</span><a href=\"http://www.shen1shen.com/News/detail-id264.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">预科</span></strong></a><span style=\"font-size:14px;\">、大学文凭、本科及</span><a href=\"http://www.shen1shen.com/News/detail/id/73\" target=\"_blank\"><strong><span style=\"font-size:14px;\">雅思</span></strong></a><span style=\"font-size:14px;\">英语课程。同时，北京爱迪(国际)学校也是澳大利亚西澳州政府教育署课程委员会正式授权的国际大学录取考试 \r\nTEE( Tertiary Entrance Examination )中国唯一考试中心。学生参加 TEE \r\n考试可直接报考或申请澳大利亚的悉尼大学、墨尔本大学，英国的牛津大学、剑桥大学，美国的 斯坦福大学，麻省理工学院，新西兰的奥克兰理工大学以及 加拿大的 多伦多大学 \r\n等 近千 所世界名校。目前，学校已输送 2000 多名学生前往澳大利亚、加拿大、英国、美国、新西兰等世界各国深造， 90% 以上获得了学士或学士以上学位， \r\n70% 以上移居了海外， 被誉为“中澳两国教育合作的成功典范”。</span></span> </p><p><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20150416/20150416142530_12731.jpg\" alt=\"\"/><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;font-size:14px;\">北京爱迪国际学校</span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p><br/></p><p><span style=\"font-size:14px;\">　　办学优势：</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　NIT \r\n利用自身国际化的办学优势，与多所海外院校保持着良好的长期合作关系，为中国学生开辟了留学海外的绿色通道。几年来，已输送5000余名学生到美国、澳大利亚、英国、加拿大、新西兰等国家深造。NIT提供免费的出国留学信息咨询服务，为符合条件的学生免费办理签证，并在南澳阿德雷得市(中国学生签证审批地)设立了专门机构，为在海外求学的NIT学子提供全方位服务。 \r\nNIT拥有软硬件设备先进的学习中心，采用先进的电脑教学系统，为每位学生设立免费的个人宽带网络专区。通过它，学生可直接进入NIT电子网校学习，查找学习资料和进行科研作业等，并配有专职指导教师悉心指导。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　长期以来，北京爱迪(国际)学校一直与多所海外知名院校保持着良好的合作关系，共同致力于为中国境内的中外籍学生系统地提供更多、更好地享受国际优质教育的机会。学校校园里 \r\n聚集着来自等世界其它国家的优秀学者，学术氛围非常浓厚。 \r\n爱迪教育集团是在澳大利亚政府注册的国际知名教育机构，教学投资经验丰富，在国际教育界中享有盛誉。　</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;NIT拥有最新的专业化教程与世界一流的师资。NIT所有的教材和案例，都是根据国际的教育现状和中国学生的学习特点，选择性地直接从海外引进的原版英文教材。而且，为保证学生所学到的知识、所接受的教育始终处于世界领先水平，NIT紧跟社会进步和知识更新的步伐，每年都更新教材。NIT的授课教师来自澳洲及英、美等国，由海外院校直接委派，具有丰富的国际教学和研究经验及国际认可的教师任职资格。所有课程都用全英文讲授，NIT将根据学生的英文水平提供各种层次的雅思培训，克服语言障碍。学校还通过开展英语角、英语沙龙、英语朗诵、定期观看英语原版电影等各种学术活动，给学生创造全英文的学习、生活环境。 \r\nNIT \r\n借鉴国际知名高校的管理模式，实行董事会领导下的校长负责制。并设立由世界著名专家、学者和实业家组成的学术咨询委员会，监控教学管理和教学质量，以保证每个学生在 \r\nNIT享有平等的受教育权利。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size:14px;\">&nbsp;&quot;一切为了学生、为了学生一切、为了一切学生&quot;，是北京爱迪(国际)学校的校训。学校的教学模式强调以学生为本，课程的设置和选择注重学生技能的培养和兴趣爱好的开发，通过教师的讲授、小组讨论和演讲等灵活多样的学习方式，增强学生的自信心、主动性和独立的分析思考能力，帮助学生适应海外的生活、巩固他们掌握知识的能力。学校经常邀请欧美澳驻华大使馆官员、跨国公司高管、海外名校学生给学生做讲座，并定期组织学生去跨国企业参观/实习。</span></span> </p><p><br/></p><p style=\"text-align:center;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20141028/20141028132738_20496.jpg\" alt=\"\"/> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; 如欲了解更多国际高中及海外留学等相关资讯，可用微信扫描上方二维码，关注莘莘网微信公众平台！</span> </p><p><br/></p><p><span style=\"font-size:14px;\">关于莘莘网：</span> </p><p><span style=\"font-size:14px;\">莘莘网（</span><a href=\"http://www.shen1shen.com\" target=\"_blank\"><span style=\"font-size:14px;\">http://www.shen1shen.com</span></a><span style=\"font-size:14px;\">）是由上海瑞奇达实业有限公司旗\r\n下创办的国际教育在线资讯互动平台。莘莘网以满足全国有留学需求的学生和家\r\n长为宗旨，网站每日发布各类权威</span><strong><span style=\"font-size:14px;\">国际学校排名</span></strong><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-all.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">国际学校</span></strong><span style=\"font-size:14px;\">课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">学校新闻</span></a><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">招生信息</span></a><span style=\"font-size:14px;\">、择校信息。热门课程包含：</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">A-LEVEL</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">IB课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-3.html\" target=\"_blank\"><span style=\"font-size:14px;\">AP课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-4.html\" target=\"_blank\"><span style=\"font-size:14px;\">BC课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-5.html\" target=\"_blank\"><span style=\"font-size:14px;\">IGCSE课程</span></a><span style=\"font-size:14px;\">等。热门专业包含：商科、艺术及设计类、理\r\n工科、医科等。留学方向为美国、英国、加拿大、澳洲、新西兰及其他欧洲、亚\r\n洲国家。网站已逐渐成为当代学生合家长获取</span><strong><span style=\"font-size:14px;\">国际高中排名</span></strong><span style=\"font-size:14px;\"> 信息、了解校园动态的最佳途径之一。</span><br/></p>',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.018108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004306s ]
+
+[ 2016-10-27T09:01:53+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000696s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.231091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.231584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009953s ]
+
+[ 2016-10-27T09:01:54+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004691s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.055951s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.029326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002368s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001285s ]
+
+[ 2016-10-27T13:42:04+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001531s ]
+
+[ 2016-10-27T13:42:06+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001517s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003334s ]
+
+[ 2016-10-27T13:42:12+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006353s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.141499s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.010282s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.062305s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.003502s ]
+
+[ 2016-10-27T13:42:14+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.331153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.331917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006692s ]
+
+[ 2016-10-27T13:42:15+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.031362s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.032758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.093155s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.000910s ]
+
+[ 2016-10-27T13:42:18+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005004s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.068618s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.056546s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.002318s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : error parsing attribute name D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;schoolInfo.school_coursename&quot; &quot;BI&quot; /&gt;&lt;/tpl&gt; D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                                               ^ D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;schoolInfo.school_coursename&quot; &quot;BI&quot; /&gt;&lt;/tpl&gt; D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                                               ^ D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name=&quot;schoolInfo.school_coursename&quot; &quot;BI&quot; /&gt;&lt;/tpl&gt; D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+NOTIC: [2] simplexml_load_string():                                               ^ D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
+ERR: XML标签语法错误 : name="schoolInfo.school_coursename" "BI"
+
+[ 2016-10-27T13:43:05+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.048655s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.047454s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.002234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001798s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 264 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 264 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.026923s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.027643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019756s ]
+
+[ 2016-10-27T13:56:15+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.040596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041159s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.040998s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036480s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.002005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-10-27T13:57:08+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002623s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.040384s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036529s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001128s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.601026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.601431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.065918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.066875s ]
+
+[ 2016-10-27T13:58:01+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002735s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.038343s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036842s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000618s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001027s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.591117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.591533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005468s ]
+
+[ 2016-10-27T13:58:07+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002625s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.041556s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038270s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.002131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000622s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.589524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.589960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005817s ]
+
+[ 2016-10-27T13:59:02+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.035807s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.037754s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000627s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.580393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.580802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003531s ]
+
+[ 2016-10-27T13:59:07+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.325802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.334940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006927s ]
+
+[ 2016-10-27T13:59:08+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003480s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.041916s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.032932s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002570s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001136s ]
+
+[ 2016-10-27T13:59:11+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/1/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039521s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.040033s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000642s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001154s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.583195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.583638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005804s ]
+
+[ 2016-10-27T14:00:44+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/1/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003592s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036913s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038812s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000630s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001042s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.641835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.642248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009463s ]
+
+[ 2016-10-27T14:00:48+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.242132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006030s ]
+
+[ 2016-10-27T14:00:49+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002436s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.045204s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.050841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002904s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001101s ]
+
+[ 2016-10-27T14:00:51+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036884s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001545s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036950s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.591436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.592109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002653s ]
+
+[ 2016-10-27T14:01:35+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002591s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036064s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036354s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000627s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001058s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.660263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.660670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005890s ]
+
+[ 2016-10-27T14:02:17+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003067s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039141s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036321s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000622s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001039s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 253 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.633697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.634104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005615s ]
+
+[ 2016-10-27T14:04:27+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002768s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.035521s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.035858s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000662s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001083s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.699428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.699830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013497s ]
+
+[ 2016-10-27T14:05:11+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003122s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.035460s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.035029s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000634s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001060s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.657377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.657916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008354s ]
+
+[ 2016-10-27T14:05:14+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007581s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.045165s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001094s ]
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 147 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 154 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038397s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,A-LEVEL',`school_detail`='<p><span style=\"line-height:1.5;font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; </span><strong><span style=\"font-size:14px;\">北京爱迪国际学校</span></strong><span style=\"font-size:14px;\">( National Institute of Technology \r\n)，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 \r\n澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校，为中国境内的中、外籍学生系统地提供 \r\n双语幼儿园、双语小学、双语初中、全英文澳大利亚高中(WACE)、大学</span><a href=\"http://www.shen1shen.com/News/detail-id264.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">预科</span></strong></a><span style=\"font-size:14px;\">、大学文凭、本科及</span><a href=\"http://www.shen1shen.com/News/detail/id/73\" target=\"_blank\"><strong><span style=\"font-size:14px;\">雅思</span></strong></a><span style=\"font-size:14px;\">英语课程。同时，北京爱迪(国际)学校也是澳大利亚西澳州政府教育署课程委员会正式授权的国际大学录取考试 \r\nTEE( Tertiary Entrance Examination )中国唯一考试中心。学生参加 TEE \r\n考试可直接报考或申请澳大利亚的悉尼大学、墨尔本大学，英国的牛津大学、剑桥大学，美国的 斯坦福大学，麻省理工学院，新西兰的奥克兰理工大学以及 加拿大的 多伦多大学 \r\n等 近千 所世界名校。目前，学校已输送 2000 多名学生前往澳大利亚、加拿大、英国、美国、新西兰等世界各国深造， 90% 以上获得了学士或学士以上学位， \r\n70% 以上移居了海外， 被誉为“中澳两国教育合作的成功典范”。</span></span> </p><p><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20150416/20150416142530_12731.jpg\" alt=\"\"/><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;font-size:14px;\">北京爱迪国际学校</span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p><br/></p><p><span style=\"font-size:14px;\">　　办学优势：</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　NIT \r\n利用自身国际化的办学优势，与多所海外院校保持着良好的长期合作关系，为中国学生开辟了留学海外的绿色通道。几年来，已输送5000余名学生到美国、澳大利亚、英国、加拿大、新西兰等国家深造。NIT提供免费的出国留学信息咨询服务，为符合条件的学生免费办理签证，并在南澳阿德雷得市(中国学生签证审批地)设立了专门机构，为在海外求学的NIT学子提供全方位服务。 \r\nNIT拥有软硬件设备先进的学习中心，采用先进的电脑教学系统，为每位学生设立免费的个人宽带网络专区。通过它，学生可直接进入NIT电子网校学习，查找学习资料和进行科研作业等，并配有专职指导教师悉心指导。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　长期以来，北京爱迪(国际)学校一直与多所海外知名院校保持着良好的合作关系，共同致力于为中国境内的中外籍学生系统地提供更多、更好地享受国际优质教育的机会。学校校园里 \r\n聚集着来自等世界其它国家的优秀学者，学术氛围非常浓厚。 \r\n爱迪教育集团是在澳大利亚政府注册的国际知名教育机构，教学投资经验丰富，在国际教育界中享有盛誉。　</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;NIT拥有最新的专业化教程与世界一流的师资。NIT所有的教材和案例，都是根据国际的教育现状和中国学生的学习特点，选择性地直接从海外引进的原版英文教材。而且，为保证学生所学到的知识、所接受的教育始终处于世界领先水平，NIT紧跟社会进步和知识更新的步伐，每年都更新教材。NIT的授课教师来自澳洲及英、美等国，由海外院校直接委派，具有丰富的国际教学和研究经验及国际认可的教师任职资格。所有课程都用全英文讲授，NIT将根据学生的英文水平提供各种层次的雅思培训，克服语言障碍。学校还通过开展英语角、英语沙龙、英语朗诵、定期观看英语原版电影等各种学术活动，给学生创造全英文的学习、生活环境。 \r\nNIT \r\n借鉴国际知名高校的管理模式，实行董事会领导下的校长负责制。并设立由世界著名专家、学者和实业家组成的学术咨询委员会，监控教学管理和教学质量，以保证每个学生在 \r\nNIT享有平等的受教育权利。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size:14px;\">&nbsp;&quot;一切为了学生、为了学生一切、为了一切学生&quot;，是北京爱迪(国际)学校的校训。学校的教学模式强调以学生为本，课程的设置和选择注重学生技能的培养和兴趣爱好的开发，通过教师的讲授、小组讨论和演讲等灵活多样的学习方式，增强学生的自信心、主动性和独立的分析思考能力，帮助学生适应海外的生活、巩固他们掌握知识的能力。学校经常邀请欧美澳驻华大使馆官员、跨国公司高管、海外名校学生给学生做讲座，并定期组织学生去跨国企业参观/实习。</span></span> </p><p><br/></p><p style=\"text-align:center;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20141028/20141028132738_20496.jpg\" alt=\"\"/> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; 如欲了解更多国际高中及海外留学等相关资讯，可用微信扫描上方二维码，关注莘莘网微信公众平台！</span> </p><p><br/></p><p><span style=\"font-size:14px;\">关于莘莘网：</span> </p><p><span style=\"font-size:14px;\">莘莘网（</span><a href=\"http://www.shen1shen.com\" target=\"_blank\"><span style=\"font-size:14px;\">http://www.shen1shen.com</span></a><span style=\"font-size:14px;\">）是由上海瑞奇达实业有限公司旗\r\n下创办的国际教育在线资讯互动平台。莘莘网以满足全国有留学需求的学生和家\r\n长为宗旨，网站每日发布各类权威</span><strong><span style=\"font-size:14px;\">国际学校排名</span></strong><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-all.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">国际学校</span></strong><span style=\"font-size:14px;\">课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">学校新闻</span></a><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">招生信息</span></a><span style=\"font-size:14px;\">、择校信息。热门课程包含：</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">A-LEVEL</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">IB课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-3.html\" target=\"_blank\"><span style=\"font-size:14px;\">AP课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-4.html\" target=\"_blank\"><span style=\"font-size:14px;\">BC课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-5.html\" target=\"_blank\"><span style=\"font-size:14px;\">IGCSE课程</span></a><span style=\"font-size:14px;\">等。热门专业包含：商科、艺术及设计类、理\r\n工科、医科等。留学方向为美国、英国、加拿大、澳洲、新西兰及其他欧洲、亚\r\n洲国家。网站已逐渐成为当代学生合家长获取</span><strong><span style=\"font-size:14px;\">国际高中排名</span></strong><span style=\"font-size:14px;\"> 信息、了解校园动态的最佳途径之一。</span><br/></p>',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.015762s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003311s ]
+
+[ 2016-10-27T14:05:15+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.183511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006533s ]
+
+[ 2016-10-27T14:05:16+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004106s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.042957s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.029551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002518s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001094s ]
+
+[ 2016-10-27T14:05:19+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003662s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.045618s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.056492s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001966s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000667s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001123s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.596457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.596908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003420s ]
+
+[ 2016-10-27T14:05:25+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002693s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.042127s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.000968s ]
+NOTIC: [8] Undefined index: school_coursename2 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 126 行.
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 147 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 154 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.048319s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,',`school_detail`='<p><span style=\"line-height:1.5;font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; </span><strong><span style=\"font-size:14px;\">北京爱迪国际学校</span></strong><span style=\"font-size:14px;\">( National Institute of Technology \r\n)，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 \r\n澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校，为中国境内的中、外籍学生系统地提供 \r\n双语幼儿园、双语小学、双语初中、全英文澳大利亚高中(WACE)、大学</span><a href=\"http://www.shen1shen.com/News/detail-id264.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">预科</span></strong></a><span style=\"font-size:14px;\">、大学文凭、本科及</span><a href=\"http://www.shen1shen.com/News/detail/id/73\" target=\"_blank\"><strong><span style=\"font-size:14px;\">雅思</span></strong></a><span style=\"font-size:14px;\">英语课程。同时，北京爱迪(国际)学校也是澳大利亚西澳州政府教育署课程委员会正式授权的国际大学录取考试 \r\nTEE( Tertiary Entrance Examination )中国唯一考试中心。学生参加 TEE \r\n考试可直接报考或申请澳大利亚的悉尼大学、墨尔本大学，英国的牛津大学、剑桥大学，美国的 斯坦福大学，麻省理工学院，新西兰的奥克兰理工大学以及 加拿大的 多伦多大学 \r\n等 近千 所世界名校。目前，学校已输送 2000 多名学生前往澳大利亚、加拿大、英国、美国、新西兰等世界各国深造， 90% 以上获得了学士或学士以上学位， \r\n70% 以上移居了海外， 被誉为“中澳两国教育合作的成功典范”。</span></span> </p><p><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20150416/20150416142530_12731.jpg\" alt=\"\"/><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;font-size:14px;\">北京爱迪国际学校</span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p><br/></p><p><span style=\"font-size:14px;\">　　办学优势：</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　NIT \r\n利用自身国际化的办学优势，与多所海外院校保持着良好的长期合作关系，为中国学生开辟了留学海外的绿色通道。几年来，已输送5000余名学生到美国、澳大利亚、英国、加拿大、新西兰等国家深造。NIT提供免费的出国留学信息咨询服务，为符合条件的学生免费办理签证，并在南澳阿德雷得市(中国学生签证审批地)设立了专门机构，为在海外求学的NIT学子提供全方位服务。 \r\nNIT拥有软硬件设备先进的学习中心，采用先进的电脑教学系统，为每位学生设立免费的个人宽带网络专区。通过它，学生可直接进入NIT电子网校学习，查找学习资料和进行科研作业等，并配有专职指导教师悉心指导。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　长期以来，北京爱迪(国际)学校一直与多所海外知名院校保持着良好的合作关系，共同致力于为中国境内的中外籍学生系统地提供更多、更好地享受国际优质教育的机会。学校校园里 \r\n聚集着来自等世界其它国家的优秀学者，学术氛围非常浓厚。 \r\n爱迪教育集团是在澳大利亚政府注册的国际知名教育机构，教学投资经验丰富，在国际教育界中享有盛誉。　</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;NIT拥有最新的专业化教程与世界一流的师资。NIT所有的教材和案例，都是根据国际的教育现状和中国学生的学习特点，选择性地直接从海外引进的原版英文教材。而且，为保证学生所学到的知识、所接受的教育始终处于世界领先水平，NIT紧跟社会进步和知识更新的步伐，每年都更新教材。NIT的授课教师来自澳洲及英、美等国，由海外院校直接委派，具有丰富的国际教学和研究经验及国际认可的教师任职资格。所有课程都用全英文讲授，NIT将根据学生的英文水平提供各种层次的雅思培训，克服语言障碍。学校还通过开展英语角、英语沙龙、英语朗诵、定期观看英语原版电影等各种学术活动，给学生创造全英文的学习、生活环境。 \r\nNIT \r\n借鉴国际知名高校的管理模式，实行董事会领导下的校长负责制。并设立由世界著名专家、学者和实业家组成的学术咨询委员会，监控教学管理和教学质量，以保证每个学生在 \r\nNIT享有平等的受教育权利。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size:14px;\">&nbsp;&quot;一切为了学生、为了学生一切、为了一切学生&quot;，是北京爱迪(国际)学校的校训。学校的教学模式强调以学生为本，课程的设置和选择注重学生技能的培养和兴趣爱好的开发，通过教师的讲授、小组讨论和演讲等灵活多样的学习方式，增强学生的自信心、主动性和独立的分析思考能力，帮助学生适应海外的生活、巩固他们掌握知识的能力。学校经常邀请欧美澳驻华大使馆官员、跨国公司高管、海外名校学生给学生做讲座，并定期组织学生去跨国企业参观/实习。</span></span> </p><p><br/></p><p style=\"text-align:center;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20141028/20141028132738_20496.jpg\" alt=\"\"/> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; 如欲了解更多国际高中及海外留学等相关资讯，可用微信扫描上方二维码，关注莘莘网微信公众平台！</span> </p><p><br/></p><p><span style=\"font-size:14px;\">关于莘莘网：</span> </p><p><span style=\"font-size:14px;\">莘莘网（</span><a href=\"http://www.shen1shen.com\" target=\"_blank\"><span style=\"font-size:14px;\">http://www.shen1shen.com</span></a><span style=\"font-size:14px;\">）是由上海瑞奇达实业有限公司旗\r\n下创办的国际教育在线资讯互动平台。莘莘网以满足全国有留学需求的学生和家\r\n长为宗旨，网站每日发布各类权威</span><strong><span style=\"font-size:14px;\">国际学校排名</span></strong><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-all.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">国际学校</span></strong><span style=\"font-size:14px;\">课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">学校新闻</span></a><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">招生信息</span></a><span style=\"font-size:14px;\">、择校信息。热门课程包含：</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">A-LEVEL</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">IB课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-3.html\" target=\"_blank\"><span style=\"font-size:14px;\">AP课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-4.html\" target=\"_blank\"><span style=\"font-size:14px;\">BC课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-5.html\" target=\"_blank\"><span style=\"font-size:14px;\">IGCSE课程</span></a><span style=\"font-size:14px;\">等。热门专业包含：商科、艺术及设计类、理\r\n工科、医科等。留学方向为美国、英国、加拿大、澳洲、新西兰及其他欧洲、亚\r\n洲国家。网站已逐渐成为当代学生合家长获取</span><strong><span style=\"font-size:14px;\">国际高中排名</span></strong><span style=\"font-size:14px;\"> 信息、了解校园动态的最佳途径之一。</span><br/></p>',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.013737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016486s ]
+
+[ 2016-10-27T14:05:27+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000808s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005998s ]
+
+[ 2016-10-27T14:05:27+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.040147s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.027669s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002563s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001035s ]
+
+[ 2016-10-27T14:05:37+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003578s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.038842s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039013s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000627s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001053s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.589417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.589941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004669s ]
+
+[ 2016-10-27T14:16:02+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003051s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039073s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036787s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000859s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001556s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.648373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.648818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004266s ]
+
+[ 2016-10-27T14:16:13+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.042075s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001088s ]
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 156 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 163 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038585s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,A-LEVEL,IGCSE,BC,VCE,AP,SAT,ACT,美高',`school_detail`='<p><span style=\"line-height:1.5;font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; </span><strong><span style=\"font-size:14px;\">北京爱迪国际学校</span></strong><span style=\"font-size:14px;\">( National Institute of Technology \r\n)，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 \r\n澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校，为中国境内的中、外籍学生系统地提供 \r\n双语幼儿园、双语小学、双语初中、全英文澳大利亚高中(WACE)、大学</span><a href=\"http://www.shen1shen.com/News/detail-id264.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">预科</span></strong></a><span style=\"font-size:14px;\">、大学文凭、本科及</span><a href=\"http://www.shen1shen.com/News/detail/id/73\" target=\"_blank\"><strong><span style=\"font-size:14px;\">雅思</span></strong></a><span style=\"font-size:14px;\">英语课程。同时，北京爱迪(国际)学校也是澳大利亚西澳州政府教育署课程委员会正式授权的国际大学录取考试 \r\nTEE( Tertiary Entrance Examination )中国唯一考试中心。学生参加 TEE \r\n考试可直接报考或申请澳大利亚的悉尼大学、墨尔本大学，英国的牛津大学、剑桥大学，美国的 斯坦福大学，麻省理工学院，新西兰的奥克兰理工大学以及 加拿大的 多伦多大学 \r\n等 近千 所世界名校。目前，学校已输送 2000 多名学生前往澳大利亚、加拿大、英国、美国、新西兰等世界各国深造， 90% 以上获得了学士或学士以上学位， \r\n70% 以上移居了海外， 被誉为“中澳两国教育合作的成功典范”。</span></span> </p><p><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20150416/20150416142530_12731.jpg\" alt=\"\"/><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;font-size:14px;\">北京爱迪国际学校</span> </p><p style=\"text-align:center;\"><span style=\"line-height:1.5;\"><br/></span> </p><p><br/></p><p><span style=\"font-size:14px;\">　　办学优势：</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　NIT \r\n利用自身国际化的办学优势，与多所海外院校保持着良好的长期合作关系，为中国学生开辟了留学海外的绿色通道。几年来，已输送5000余名学生到美国、澳大利亚、英国、加拿大、新西兰等国家深造。NIT提供免费的出国留学信息咨询服务，为符合条件的学生免费办理签证，并在南澳阿德雷得市(中国学生签证审批地)设立了专门机构，为在海外求学的NIT学子提供全方位服务。 \r\nNIT拥有软硬件设备先进的学习中心，采用先进的电脑教学系统，为每位学生设立免费的个人宽带网络专区。通过它，学生可直接进入NIT电子网校学习，查找学习资料和进行科研作业等，并配有专职指导教师悉心指导。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">　　长期以来，北京爱迪(国际)学校一直与多所海外知名院校保持着良好的合作关系，共同致力于为中国境内的中外籍学生系统地提供更多、更好地享受国际优质教育的机会。学校校园里 \r\n聚集着来自等世界其它国家的优秀学者，学术氛围非常浓厚。 \r\n爱迪教育集团是在澳大利亚政府注册的国际知名教育机构，教学投资经验丰富，在国际教育界中享有盛誉。　</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;NIT拥有最新的专业化教程与世界一流的师资。NIT所有的教材和案例，都是根据国际的教育现状和中国学生的学习特点，选择性地直接从海外引进的原版英文教材。而且，为保证学生所学到的知识、所接受的教育始终处于世界领先水平，NIT紧跟社会进步和知识更新的步伐，每年都更新教材。NIT的授课教师来自澳洲及英、美等国，由海外院校直接委派，具有丰富的国际教学和研究经验及国际认可的教师任职资格。所有课程都用全英文讲授，NIT将根据学生的英文水平提供各种层次的雅思培训，克服语言障碍。学校还通过开展英语角、英语沙龙、英语朗诵、定期观看英语原版电影等各种学术活动，给学生创造全英文的学习、生活环境。 \r\nNIT \r\n借鉴国际知名高校的管理模式，实行董事会领导下的校长负责制。并设立由世界著名专家、学者和实业家组成的学术咨询委员会，监控教学管理和教学质量，以保证每个学生在 \r\nNIT享有平等的受教育权利。</span> </p><p><span style=\"font-size:14px;\"><br/></span> </p><p><span style=\"font-size:14px;\"><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size:14px;\">&nbsp;&quot;一切为了学生、为了学生一切、为了一切学生&quot;，是北京爱迪(国际)学校的校训。学校的教学模式强调以学生为本，课程的设置和选择注重学生技能的培养和兴趣爱好的开发，通过教师的讲授、小组讨论和演讲等灵活多样的学习方式，增强学生的自信心、主动性和独立的分析思考能力，帮助学生适应海外的生活、巩固他们掌握知识的能力。学校经常邀请欧美澳驻华大使馆官员、跨国公司高管、海外名校学生给学生做讲座，并定期组织学生去跨国企业参观/实习。</span></span> </p><p><br/></p><p style=\"text-align:center;\"><img src=\"/application/Public/Js/editor/v/k/upload/image/20141028/20141028132738_20496.jpg\" alt=\"\"/> </p><p><span style=\"font-size:14px;\">&nbsp; &nbsp; &nbsp; 如欲了解更多国际高中及海外留学等相关资讯，可用微信扫描上方二维码，关注莘莘网微信公众平台！</span> </p><p><br/></p><p><span style=\"font-size:14px;\">关于莘莘网：</span> </p><p><span style=\"font-size:14px;\">莘莘网（</span><a href=\"http://www.shen1shen.com\" target=\"_blank\"><span style=\"font-size:14px;\">http://www.shen1shen.com</span></a><span style=\"font-size:14px;\">）是由上海瑞奇达实业有限公司旗\r\n下创办的国际教育在线资讯互动平台。莘莘网以满足全国有留学需求的学生和家\r\n长为宗旨，网站每日发布各类权威</span><strong><span style=\"font-size:14px;\">国际学校排名</span></strong><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-all.html\" target=\"_blank\"><strong><span style=\"font-size:14px;\">国际学校</span></strong><span style=\"font-size:14px;\">课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">学校新闻</span></a><span style=\"font-size:14px;\">，</span><a href=\"http://www.shen1shen.com/News/searchnews-catagory-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">招生信息</span></a><span style=\"font-size:14px;\">、择校信息。热门课程包含：</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-1.html\" target=\"_blank\"><span style=\"font-size:14px;\">A-LEVEL</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-2.html\" target=\"_blank\"><span style=\"font-size:14px;\">IB课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-3.html\" target=\"_blank\"><span style=\"font-size:14px;\">AP课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-4.html\" target=\"_blank\"><span style=\"font-size:14px;\">BC课程</span></a><span style=\"font-size:14px;\">、</span><a href=\"http://www.shen1shen.com/School/programmlist-hotclass-5.html\" target=\"_blank\"><span style=\"font-size:14px;\">IGCSE课程</span></a><span style=\"font-size:14px;\">等。热门专业包含：商科、艺术及设计类、理\r\n工科、医科等。留学方向为美国、英国、加拿大、澳洲、新西兰及其他欧洲、亚\r\n洲国家。网站已逐渐成为当代学生合家长获取</span><strong><span style=\"font-size:14px;\">国际高中排名</span></strong><span style=\"font-size:14px;\"> 信息、了解校园动态的最佳途径之一。</span><br/></p>',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.005330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003685s ]
+
+[ 2016-10-27T14:16:15+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000827s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.201662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007231s ]
+
+[ 2016-10-27T14:16:16+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002902s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.044580s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.034113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.003603s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001254s ]
+
+[ 2016-10-27T14:16:18+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003833s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.037932s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.043028s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000671s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.601481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.601935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004814s ]
+
+[ 2016-10-27T14:16:37+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003164s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.037528s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001182s ]
+NOTIC: [8] Undefined index: school_coursename2 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 127 行.
+NOTIC: [8] Undefined index: school_coursename4 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 129 行.
+NOTIC: [8] Undefined index: school_coursename6 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 131 行.
+NOTIC: [8] Undefined index: school_coursename8 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 133 行.
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 156 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 163 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039514s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,,IGCSE,,VCE,,SAT,,美高',`school_detail`='',`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.008017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004147s ]
+
+[ 2016-10-27T14:16:38+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000820s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004625s ]
+
+[ 2016-10-27T14:16:39+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002735s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.042158s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.028363s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002502s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001052s ]
+
+[ 2016-10-27T14:16:52+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004071s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.038777s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039148s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001841s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000802s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001263s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.646395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.647013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004761s ]
+
+[ 2016-10-27T14:27:37+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002831s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036876s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036165s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000681s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001130s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.674364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.674939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004962s ]
+
+[ 2016-10-27T14:28:31+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003111s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.043936s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038985s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000684s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.720109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.721151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006504s ]
+
+[ 2016-10-27T14:28:49+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002599s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.041710s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.034608s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000691s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001114s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.757873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.758278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004199s ]
+
+[ 2016-10-27T14:31:17+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003450s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.037208s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.047901s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001810s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.628994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.629517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009927s ]
+
+[ 2016-10-27T14:32:01+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004499s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039770s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.042082s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000691s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001118s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.671563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.672011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005253s ]
+
+[ 2016-10-27T14:35:59+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.049336s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.040155s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000716s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 281 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.621110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.621790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003992s ]
+
+[ 2016-10-27T14:43:12+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002983s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.040386s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038038s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000766s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001297s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 286 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 286 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.679897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.680530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006397s ]
+
+[ 2016-10-27T14:43:23+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003823s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.039812s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001260s ]
+NOTIC: [8] Undefined index: school_coursename2 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 127 行.
+NOTIC: [8] Undefined index: school_coursename3 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 128 行.
+NOTIC: [8] Undefined index: school_coursename4 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 129 行.
+NOTIC: [8] Undefined index: school_coursename5 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 130 行.
+NOTIC: [8] Undefined index: school_coursename6 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 131 行.
+NOTIC: [8] Undefined index: school_coursename7 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 132 行.
+NOTIC: [8] Undefined index: school_coursename8 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 133 行.
+NOTIC: [8] Undefined index: school_coursename9 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 134 行.
+NOTIC: [8] Undefined index: school_detail D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 137 行.
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 157 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 164 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.057686s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,,,,,,,,,预科',`school_detail`=null,`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.006443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003795s ]
+
+[ 2016-10-27T14:43:25+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000886s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.188757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004176s ]
+
+[ 2016-10-27T14:43:26+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003552s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.043515s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.031523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.003390s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001076s ]
+
+[ 2016-10-27T14:43:28+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002945s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.047075s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.044303s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001420s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 286 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 286 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.618068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.618520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004706s ]
+
+[ 2016-10-27T14:46:46+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003807s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036188s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039828s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001645s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001886s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.723659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.724158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004761s ]
+
+[ 2016-10-27T14:48:06+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002931s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.036579s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.036019s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000702s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001158s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.695117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.695588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006007s ]
+
+[ 2016-10-27T14:48:17+08:00 ] ::1 /ssxz/admin.php/School/schoolSave
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.046021s ]
+SQL: SELECT * FROM `xx_area` WHERE `area_id` = '' LIMIT 1   [ RunTime:0.001436s ]
+NOTIC: [8] Undefined index: school_coursename2 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 127 行.
+NOTIC: [8] Undefined index: school_coursename3 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 128 行.
+NOTIC: [8] Undefined index: school_coursename4 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 129 行.
+NOTIC: [8] Undefined index: school_coursename5 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 130 行.
+NOTIC: [8] Undefined index: school_coursename6 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 131 行.
+NOTIC: [8] Undefined index: school_coursename7 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 132 行.
+NOTIC: [8] Undefined index: school_coursename8 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 133 行.
+NOTIC: [8] Undefined index: school_coursename9 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 134 行.
+NOTIC: [8] Undefined index: school_coursename10 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 135 行.
+NOTIC: [8] Undefined index: school_detail D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 138 行.
+NOTIC: [8] Undefined index: master_excerpt D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 158 行.
+NOTIC: [8] Undefined index: school_feature D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\SchoolController.class.php 第 165 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.050716s ]
+SQL: UPDATE `xx_school` SET `school_name`='北京爱迪国际学校',`school_coursename`='IB,,,,,,,,,,PGA',`school_detail`=null,`school_step`='',`school_excerpt`='北京爱迪国际学校( National Institute of Technology )，由爱迪教育集团投资创办，经北京市教委批准、国家教育部备案、 澳大利亚政府认可，是中国唯一一所全英文讲授完全与国际接轨的澳大利亚同步课程，文凭和学位广受国际认可的国际学校。',`school_keyword`='北京爱迪国际学校',`school_address`='北京市朝阳区楼梓庄路7号',`school_phone`='',`school_area`=0,`school_areaname`=null,`school_map`='116.467285,39.910934',`school_traffic`='乘地铁4号线到“西单”站，换乘1号线至“四惠”站，换乘地铁八通线至地铁“双桥”站，公交673路，350路',`school_status`=1,`school_sort`=0,`school_attention`=0,`school_isnew`=0,`school_recommend`=0,`master_name`='',`master_excerpt`=null,`master_record1`='',`master_record2`='',`master_record3`='',`master_record4`='',`school_feature`=null WHERE `school_id` = 3 [ RunTime:0.006010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004619s ]
+
+[ 2016-10-27T14:48:18+08:00 ] ::1 /ssxz/admin.php/School/schoolList/start/0/pagesize/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000478s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000914s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011635s ]
+
+[ 2016-10-27T14:48:19+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004300s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.045137s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.031808s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002554s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001076s ]
+
+[ 2016-10-27T14:48:21+08:00 ] ::1 /ssxz/admin.php/School/schoolDetail/id/3/edit/true/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003720s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.043811s ]
+SQL: SELECT * FROM `xx_area` ORDER BY area_id  [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.038605s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 3 LIMIT 1   [ RunTime:0.001472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001864s ]
+NOTIC: [8] Use of undefined constant school_area - assumed 'school_area' D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\Admin\088cd13d8f30e2e7f2eceea53330c024.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.669741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.670198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004554s ]
+

@@ -1,0 +1,92 @@
+[ 2017-01-21T09:20:21+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002091s ]
+
+[ 2017-01-21T09:20:22+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000740s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002810s ]
+
+[ 2017-01-21T09:20:27+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.010664s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.003427s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.010366s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.001779s ]
+
+[ 2017-01-21T09:20:28+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002962s ]
+
+[ 2017-01-21T09:20:29+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002710s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010546s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011564s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002713s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001129s ]
+
+[ 2017-01-21T09:20:34+08:00 ] ::1 /ssxz/admin.php/Activity/activityList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+ERR: 无法加载控制器:Activity
+

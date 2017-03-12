@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<title>莘莘学子</title>
+	
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<load href="__PUBLIC__/assets/css/fonts/linecons/css/linecons.css" />
+	<load href="__PUBLIC__/assets/css/fonts/fontawesome/css/font-awesome.min.css" />
+	<load href="__PUBLIC__/assets/css/bootstrap.css" />
+	<load href="__PUBLIC__/assets/css/xenon-core.css" />
+	<load href="__PUBLIC__/assets/css/xenon-forms.css" />
+	<load href="__PUBLIC__/assets/css/xenon-components.css" />
+	<load href="__PUBLIC__/assets/css/xenon-skins.css" />
+	<load href="__PUBLIC__/assets/css/custom.css" />
+	
+	<load href="__PUBLIC__/ueditor14/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor14/ueditor.all.min.js" />
+    <load href="__PUBLIC__/ueditor14/lang/zh-cn/zh-cn.js" />
+	<load href="__PUBLIC__/assets/js/jquery-1.11.1.min.js" />
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="page-body">
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+		<div class="sidebar-menu toggle-others fixed expanded">
+			
+			<div class="sidebar-menu-inner">	
+				
+				<header class="logo-env">
+					
+					<!-- logo -->
+					<div class="logo">
+						<a href="index.html" class="logo-expanded">
+							<h1 style="color:#FFF">莘莘学子</h1>
+						</a>
+						<a href="index.html" class="logo-collapsed">
+							<span style="color:#FFF">XXSZ</span>
+						</a>
+					</div>
+				</header>
+				<ul id="main-menu" class="main-menu">
+					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<volist name="menulist" id="vo" key="index">
+						<if condition="($vo.fun_level eq 1) AND ($index eq 1) ">
+							<if condition="($vo.fun_name eq $catalogId)">
+								<li class="opened active">
+							<else/>
+								<li>
+							</if>
+								<a href="__APP__{$vo.fun_url}">
+									<span class="title">{$vo.fun_name}</span>
+								</a>
+								<ul>
+						<elseif condition="($vo.fun_level eq 1)"/>
+								</ul>
+							</li>
+							<if condition="($vo.fun_name eq $catalogId)">
+								<li class="opened active">
+							<else/>
+								<li>
+							</if>
+								<a href="__APP__{$vo.fun_url}">
+									<span class="title">{$vo.fun_name}</span>
+								</a>
+								<ul>
+						<elseif condition="($vo.fun_level eq 2)"/>
+							<if condition="($vo.fun_name eq $funId)">
+								<li class="active">
+							<else/>	
+								<li>
+							</if>
+									<a href="__APP__{$vo.fun_url}">
+										<span class="title">{$vo.fun_name}</span>
+									</a>
+								</li>
+						</if>
+					</volist>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main-content">	
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="__PUBLIC__/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								{$user.user_name}
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+<!-- 				<div class="title-env">
+					<h3 class="title">学校管理</h3>
+				</div> -->
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<li>
+							<a href="index.html"><i class="fa-home"></i>首页</a>
+						</li>
+						<li>
+							<a href="customer/customerList.html">学习小组管理</a>
+						</li>
+						<li class="active">
+							<strong>{$title}</strong>
+						</li>
+					</ol>
+				</div>
+					
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<form role="form" id="formStudyGroup"  action="__APP__/StudyGroup/studyGroupSave"  enctype="multipart/form-data"  method="post" class="form-horizontal validate">
+						<div class="panel-heading">
+							<h3 class="panel-title">{$title}</h3>
+							<div style="float:right">
+								<button type="submit" class="btn btn-success">保存</button>
+								<button type="reset" class="btn btn-white">取消</button>
+								<a href="__APP__/StudyGroup/studyGroupList/start/{$start}/pagesize/{$pagesize}" class="btn btn-info">返回</a>
+								<input type="hidden" name="start" value="{$start}"/>
+										<input type="hidden" name="pagesize" value="{$pagesize}"/>
+							</div>
+						</div>
+						<div class="panel-body">
+							
+							<!-- Content -->
+							<div class="tabs-vertical-env tabs-vertical-bordered">
+								<ul class="nav tabs-vertical">
+									<li class="active"><a href="#v4-home" data-toggle="tab">学习小组简介</a></li>
+									<li><a href="#v4-school7" data-toggle="tab">联系方式</a></li>
+									<li><a href="#v4-status" data-toggle="tab">学习小组状态</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="v4-home">
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组名称</label>
+											<div class="col-sm-10">
+												<input type="hidden" name="action" value="{$action}"/>
+												<input type="hidden" name="start" value="{$start}"/>
+												<input type="hidden" name="pagesize" value="{$pagesize}"/>
+												<input type="hidden" name="school_id" value="{$schoolInfo.school_id}"/>
+												<input type="text" class="form-control" name="school_name" value="{$schoolInfo.school_name}" data-validate="required" data-message-required="学校名称不能为空." placeholder="Required Field" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组简介</label>
+											<div class="col-sm-10">
+												<textarea class="form-control" rows="3" name="school_excerpt">{$schoolInfo.school_excerpt}</textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组检索关键字</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_keyword" value="{$schoolInfo.school_keyword}" data-validate="required" data-message-required="学校名称不能为空." placeholder="Required Field" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">热门课程</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_coursename" value="{$schoolInfo.school_coursename}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">项目阶段</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_step" value="{$schoolInfo.school_step}"/>
+											</div>
+											
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组介绍</label>
+											<div class="col-sm-10">
+												<script id="school_detail" name="school_detail" type="text/plain" style="width:100%;height:500px;" >{$schoolInfo.school_detail|htmlspecialchars_decode}</script>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组LOGO</label>
+											<div class="col-sm-4">
+												<input type="file" name="school_photo"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label"></label>
+											<div class="col-sm-4">
+												<img src="__ROOT__/Uploads/{$schoolInfo.school_photo}" width="100px"/>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="v4-school7">
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组地址</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_address" value="{$schoolInfo.school_address}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">所属区域</label>
+											<div class="col-sm-10">
+												<select id="school_area" name="school_area" class="form-control">
+													<option value=''>--</option>
+													<volist name="areaList" id="vo" key="index">
+														<if condition="($vo.area_id eq $schoolInfo.school_area)">
+															<option value="{$vo.area_id}" selected>{$vo.area_name}</option>
+														<else/>
+															<option value="{$vo.area_id}">{$vo.area_name}</option>
+														</if>
+													</volist>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">联系电话</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_phone" value="{$schoolInfo.school_phone}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">交通信息</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_traffic" value="{$schoolInfo.school_traffic}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">地图坐标</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_map" value="{$schoolInfo.school_map}"/>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="v4-status">
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组状态</label>
+											<div class="col-sm-10">
+												<select id="school_area" name="school_status" class="form-control">
+													<if condition="$schoolInfo.school_status eq 0 ">
+														<option value="">--</option>
+														<option value="0" selected>未发布</option>
+														<option value="1">已发布</option>
+														<option value="9">已删除</option>
+													<elseif condition="$schoolInfo.school_status eq 1"/>
+														<option value="">--</option>
+														<option value="0">未发布</option>
+														<option value="1" selected>已发布</option>
+														<option value="9">已删除</option>
+													<elseif condition="$schoolInfo.school_status eq 9"/>
+														<option value="">--</option>
+														<option value="0">未发布</option>
+														<option value="1">已发布</option>
+														<option value="9" selected>已删除</option>
+													<else />
+														<option value="">--</option>
+														<option value="0">未发布</option>
+														<option value="1">已发布</option>
+														<option value="9">已删除</option>
+													</if>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">学习小组排序</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_sort" value="{$schoolInfo.school_sort}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">受关注度</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="school_attention" value="{$schoolInfo.school_attention}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">是否是新增学习小组</label>
+											<div class="col-sm-10">
+												<select id="school_area" name="school_isnew" class="form-control">
+													<if condition="$schoolInfo.school_isnew eq 0 ">
+														<option value="">--</option>
+														<option value="0" selected>否</option>
+														<option value="1">是</option>
+													<elseif condition="$schoolInfo.school_status eq 1"/>
+														<option value="">--</option>
+														<option value="0">否</option>
+														<option value="1" selected>是</option>
+													<else />
+														<option value="">--</option>
+														<option value="0">否</option>
+														<option value="1">是</option>
+													</if>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">是否是推荐学习小组</label>
+											<div class="col-sm-10">
+												<select id="school_area" name="school_recommend" class="form-control">
+													<if condition="$schoolInfo.school_recommend eq 0 ">
+														<option value="">--</option>
+														<option value="0" selected>否</option>
+														<option value="1">是</option>
+													<elseif condition="$schoolInfo.school_status eq 1"/>
+														<option value="">--</option>
+														<option value="0">否</option>
+														<option value="1" selected>是</option>
+													<else />
+														<option value="">--</option>
+														<option value="0">否</option>
+														<option value="1">是</option>
+													</if>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">点评数</label>
+											<div class="col-sm-10">
+												<a class="form-control" href="">{$schoolInfo.school_comments}</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<footer class="main-footer sticky footer-type-1">
+				<div class="footer-inner">
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.css" />
+	<load href="__PUBLIC__/assets/js/uikit/vendor/codemirror/codemirror.css"/>
+	<load href="__PUBLIC__/assets/js/uikit/uikit.css"/>
+	<load href="__PUBLIC__/assets/js/uikit/css/addons/uikit.almost-flat.addons.min.css"/>
+	<load href="__PUBLIC__/assets/js/select2/select2.css">
+	<load href="__PUBLIC__/assets/js/select2/select2-bootstrap.css">
+
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	
+	<load href="__PUBLIC__/assets/js/jquery-ui/jquery-ui.min.js"/>
+	<load href="__PUBLIC__/assets/js/select2/select2.js"/>
+	
+	<load href="__PUBLIC__/assets/js/jquery-validate/jquery.validate.min.js" />
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+		<script type="text/javascript">
+
+    	//实例化编辑器
+    	//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    	var ue = UE.getEditor('school_detail'); // 学校介绍
+    </script>
+</html>

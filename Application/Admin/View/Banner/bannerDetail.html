@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<include file="./Application/Admin/View/Public/head.html" />
+<body class="page-body">
+	<div class="page-container">
+		<include file="./Application/Admin/View/Public/menu.html" />
+		<div class="main-content">	
+			<include file="./Application/Admin/View/Public/navigation.html" />
+			<div class="page-title">
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<ol class="breadcrumb bc-1">
+						<li><i class="fa-home"></i>首页</li>
+						<li>Banner管理</li>
+						<li class="active"><strong>{$title}</strong></li>
+					</ol>
+					</ol>		
+				</div>
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">{$title}</h3>
+						</div>
+						<div class="panel-body">
+							<!-- Content -->
+							<form role="form" id="formTopic"  action="__APP__/Topic/topicSave" method="post" method="post" class="form-horizontal validate">
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_title">Banner标题</label>
+									<div class="col-sm-8">
+										<input type="hidden" name="action" value="{$action}"/>
+										<input type="hidden" name="banner_id" value="{$bannerInfo.banner_id}"/>
+										<input type="hidden" name="start" value="{$start}"/>
+										<input type="hidden" name="pagesize" value="{$pagesize}"/>
+										<input type="text" class="form-control" name="banner_title" value="{$bannerInfo.banner_title}" data-validate="required" data-message-required="Banner标题不能为空。" />
+									</div>
+								</div>
+								
+								<div  class="form-group">
+									<label class="col-sm-2 control-label">Banner类型</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="banner_type" data-validate="required" data-message-required="Banner类型不能为空。" >
+											<if condition="$bannerInfo.banner_type eq 1 ">
+												<option value="">--</option>
+												<option value="1" selected="selected">首页</option>
+												<option value="2">学校首页</option>
+												<option value="3">学校内部首页</option>
+											<elseif condition="$bannerInfo.banner_type eq 2"/>
+												<option value="">--</option>
+												<option value="1">首页</option>
+												<option value="2" selected="selected">学校首页</option>
+												<option value="3">学校内部首页</option>
+											<elseif condition="$bannerInfo.banner_type eq 3"/>
+												<option value="">--</option>
+												<option value="1">首页</option>
+												<option value="2">学校首页</option>
+												<option value="3" selected="selected">学校内部首页</option>
+											<else />
+												<option value="">--</option>
+												<option value="1">首页</option>
+												<option value="2">学校首页</option>
+												<option value="3">学校内部首页</option>
+											</if>
+											
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">状态</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="banner_status" data-validate="required" data-message-required="Banner状态不能为空。" >
+											<if condition="$bannerInfo.banner_status eq 0 ">
+												<option value="">--</option>
+												<option value="0" selected="selected">无效</option>
+												<option value="1">有效</option>
+											<elseif condition="$bannerInfo.banner_status eq 1"/>
+												<option value="">--</option>
+												<option value="0">无效</option>
+												<option value="1" selected="selected">有效</option>
+											<else />
+												<option value="">--</option>
+												<option value="0">无效</option>
+												<option value="1">有效</option>
+											</if>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="banner_select">是否显示</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="banner_select" data-validate="required" data-message-required="是否显示不能为空。" >
+											<if condition="$bannerInfo.banner_select eq 0 ">
+												<option value="">--</option>
+												<option value="0" selected="selected">不显示</option>
+												<option value="1">显示</option>
+											<elseif condition="$bannerInfo.banner_select eq 1"/>
+												<option value="">--</option>
+												<option value="0">不显示</option>
+												<option value="1" selected="selected">显示</option>
+											<else />
+											<option value="">--</option>
+												<option value="0">不显示</option>
+												<option value="1">显示</option>
+											</if>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">第一页显示</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="banner_first" data-validate="required" data-message-required="话题学校不能为空。" >					
+											<if condition="$bannerInfo.banner_first eq 0 ">
+												<option value="">--</option>
+												<option value="0" selected="selected">否</option>
+												<option value="1">是</option>
+											<elseif condition="$bannerInfo.banner_first eq 1"/>
+												<option value="">--</option>
+												<option value="0">否</option>
+												<option value="1"  selected="selected">是</option>
+											<else />
+												<option value="">--</option>
+												<option value="0">否</option>
+												<option value="1">是</option>
+											</if>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="banner_select">图片</label>
+									<div class="col-sm-8">
+										<div id="uploader">
+							                <div class="queueList">
+							                    <div id="dndArea" class="placeholder">
+							                        <div id="filePicker"></div>
+							                        <p>或将照片拖到这里</p>
+							                    </div>
+							                </div>
+							                <div class="statusBar" style="display:none;">
+							                    <div class="progress">
+							                        <span class="text">0%</span>
+							                        <span class="percentage"></span>
+							                    </div><div class="info"></div>
+							                    <div class="btns">
+							                        <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+							                    </div>
+							                </div>
+							            </div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-9"></div>
+									<div class="col-sm-3">
+										<button type="submit" class="btn btn-success">保存</button>
+										<button type="reset" class="btn btn-white">取消</button>
+										<a href="__APP__/Banner/bannerList/start/{$start}/pagesize/{$pagesize}" class="btn btn-info">返回</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<include file="./Application/Admin/View/Public/footer.html" />
+		</div>
+	</div>
+</body>
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/vendor/codemirror/codemirror.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/uikit.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/css/addons/uikit.almost-flat.addons.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="__PUBLIC__/webuploader/css/webuploader.css">
+	<link rel="stylesheet" href="__PUBLIC__/webuploader/image-upload/imgstyle.css">
+	
+	
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/ueditor14/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor14/ueditor.all.min.js" />
+    <load href="__PUBLIC__/ueditor14/lang/zh-cn/zh-cn.js" />
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/jquery-ui/jquery-ui.min.js"/>
+	<load href="__PUBLIC__/assets/js/jquery-validate/jquery.validate.min.js" />
+	<load href="__PUBLIC__/assets/js/select2/select2.js"/>
+
+	<load href="__PUBLIC__/webuploader/dist/webuploader.js"/>
+	<load href="__PUBLIC__/webuploader/image-upload/upload.js"/>
+	
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+		var ue = UE.getEditor('banner_detail');
+    </script>
+</html>

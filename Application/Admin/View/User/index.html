@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<thead>
+		<tr>
+			<th>用户ID</th>
+			<th>用户姓名</th>
+		</tr>
+		
+	</thead>
+	<tbody>
+		<volist name="user" id="vo">
+			<tr>
+				<td>{$vo.user_id}</td>
+				<td>{$vo.user_name}</td>
+			</tr>
+</volist>
+	</tbody>
+</table>
+
+</body>
+</html>

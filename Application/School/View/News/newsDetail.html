@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<title>莘莘学子</title>
+	
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<load href="__PUBLIC__/assets/css/fonts/linecons/css/linecons.css" />
+	<load href="__PUBLIC__/assets/css/fonts/fontawesome/css/font-awesome.min.css" />
+	<load href="__PUBLIC__/assets/css/bootstrap.css" />
+	<load href="__PUBLIC__/assets/css/xenon-core.css" />
+	<load href="__PUBLIC__/assets/css/xenon-forms.css" />
+	<load href="__PUBLIC__/assets/css/xenon-components.css" />
+	<load href="__PUBLIC__/assets/css/xenon-skins.css" />
+	<load href="__PUBLIC__/assets/css/custom.css" />
+    
+    <load href="__PUBLIC__/ueditor14/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor14/ueditor.all.min.js" />
+    <load href="__PUBLIC__/ueditor14/lang/zh-cn/zh-cn.js" />
+	<load href="__PUBLIC__/assets/js/jquery-1.11.1.min.js" />
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<if condition="APP_DEBUG">
+	<style>
+		#think_page_trace_open{
+			z-index:9999;
+		}
+	</style>
+
+</if>
+</head>
+<body class="page-body">
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+		<div class="sidebar-menu toggle-others fixed expanded">
+			
+			<div class="sidebar-menu-inner">	
+				
+				<header class="logo-env">
+					
+					<!-- logo -->
+					<div class="logo">
+						<a href="index.html" class="logo-expanded">
+							<h1 style="color:#FFF">莘莘学子</h1>
+						</a>
+						<a href="index.html" class="logo-collapsed">
+							<span style="color:#FFF">XXSZ</span>
+						</a>
+					</div>
+				</header>
+				<ul id="main-menu" class="main-menu">
+					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<volist name="menulist" id="vo" key="index">
+						<if condition="($vo.fun_level eq 1) AND ($index eq 1) ">
+							<if condition="($vo.fun_name eq $catalogId)">
+								<li class="opened active">
+							<else/>
+								<li>
+							</if>
+								<a href="__APP__{$vo.fun_url}">
+									<span class="title">{$vo.fun_name}</span>
+								</a>
+								<ul>
+						<elseif condition="($vo.fun_level eq 1)"/>
+								</ul>
+							</li>
+							<if condition="($vo.fun_name eq $catalogId)">
+								<li class="opened active">
+							<else/>
+								<li>
+							</if>
+								<a href="__APP__{$vo.fun_url}">
+									<span class="title">{$vo.fun_name}</span>
+								</a>
+								<ul>
+						<elseif condition="($vo.fun_level eq 2)"/>
+							<if condition="($vo.fun_name eq $funId)">
+								<li class="active">
+							<else/>	
+								<li>
+							</if>
+									<a href="__APP__{$vo.fun_url}">
+										<span class="title">{$vo.fun_name}</span>
+									</a>
+								</li>
+						</if>
+					</volist>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main-content">	
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+				
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+					
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="__PUBLIC__/assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								{$user.user_name}
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+<!-- 				<div class="title-env">
+					<h3 class="title">学校管理</h3>
+				</div> -->
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<li>
+							<a href="index.html"><i class="fa-home"></i>首页</a>
+						</li>
+						<li>
+							<a href="customer/customerList.html">学校动态</a>
+						</li>
+						<li class="active">
+							<strong>校园新闻</strong>
+						</li>
+					</ol>		
+				</div>
+					
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">{$schoolInfo.school_name} - 校园新闻</h3>
+						</div>
+						<div class="panel-body">
+							<form role="form" id="form1" action="__APP__/News/saveNews" method="post" class="form-horizontal validate">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">标题</label>
+									<div class="col-sm-8">
+										<input type="hidden" class="form-control" name="action" value="{$action}"/>
+										<input type="hidden" class="form-control" name="article_id" value="{$articleInfo.article_id}"/>
+										<input type="text" class="form-control" name="article_title" value="{$articleInfo.article_title}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">关键字</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" name="article_keyword" value="{$articleInfo.article_keyword}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">文章来源</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" name="article_source" value="{$articleInfo.article_source}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">摘要</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" name="article_excerpt" value="{$articleInfo.article_excerpt}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">内容</label>
+									<div class="col-sm-8">
+										<script id="article_detail" name="article_detail" type="text/plain" style="width:100%;height:500px;" >{$articleInfo.article_detail|htmlspecialchars_decode}</script>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">状态</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="article_status">
+											<option value="1">有效</option>
+											<option value="0">无效</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">推荐</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="article_elite">
+											<option value="1">推荐</option>
+											<option value="0">未推荐</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">置顶</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="article_top">
+											<option value="1">置顶</option>
+											<option value="0">未置顶</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">是否可以评论</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="comment_status">
+											<option value="1">是</option>
+											<option value="0">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-7"></div>
+									<div class="col-sm-3">
+										<button type="button" class="btn btn-success">预览</button>
+										<button type="submit" class="btn btn-success">保存</button>
+										<button type="reset" class="btn btn-white">取消</button>
+										<a href="__APP__/News/newsList" class="btn btn-info">返回</a>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="main-footer sticky footer-type-1">
+				<div class="footer-inner">
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.css" />
+
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/datatables/js/jquery.dataTables.min.js" />
+	
+	
+
+	<!-- Imported scripts on this page -->
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.js" />
+	<load href="__PUBLIC__/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js" />
+	<load href="__PUBLIC__/assets/js/datatables/tabletools/dataTables.tableTools.min.js" />
+
+	<!-- Imported scripts on this page -->
+	<load href="__PUBLIC__/assets/js/rwd-table/js/rwd-table.min.js"/>
+
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('article_detail');
+    </script>
+</html>

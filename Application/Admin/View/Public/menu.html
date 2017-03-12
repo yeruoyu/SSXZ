@@ -1,0 +1,49 @@
+<div class="sidebar-menu toggle-others fixed expanded">
+
+	<div class="sidebar-menu-inner">
+
+		<header class="logo-env">
+
+			<!-- logo -->
+			<div class="logo">
+				<a href="" class="logo-expanded">
+					<h1 style="color: #FFF">莘莘学子</h1>
+				</a> <a href="" class="logo-collapsed"> <span
+					style="color: #FFF">XXSZ</span>
+				</a>
+			</div>
+		</header>
+		<ul id="main-menu" class="main-menu">
+			<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+			<volist name="menulist" id="vo" key="index"> <if
+				condition="($vo.fun_level eq 1) AND ($index eq 1) "> <if
+				condition="($vo.fun_name eq $catalogId)">
+			<li class="opened active"><else /><li>
+							
+			</if> <a href="__APP__{$vo.fun_url}"> <span class="title">{$vo.fun_name}</span>
+			</a>
+			<ul>
+				<elseif condition="($vo.fun_level eq 1)" />
+			</ul>
+			</li>
+			<if condition="($vo.fun_name eq $catalogId)">
+			<li class="opened active"><else /><li>
+							
+			</if> <a href="__APP__{$vo.fun_url}"> <span class="title">{$vo.fun_name}</span>
+			</a>
+			<ul>
+				<elseif condition="($vo.fun_level eq 2)" />
+				<if condition="($vo.fun_name eq $funId)">
+				<li class="active"><else /><li>
+							
+				</if>
+				<a href="__APP__{$vo.fun_url}"> <span class="title">{$vo.fun_name}</span>
+				</a>
+				</li>
+			</if> </volist>
+		</ul>
+		</li>
+		</ul>
+	</div>
+</div>

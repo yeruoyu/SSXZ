@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<include file="./Application/Home/View/Public/headforArticle.html" />
+</head>
+<body>
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+        <!--topbannerbegin-->
+         <div class="container">
+             <div class="topbanner">
+                 <img src="__PUBLIC__/home/images/topbanner.jpg" alt="" />
+             </div>
+         </div>
+        <!--topbannerend-->
+        <!--容器begin-->
+        <div class="container" style="padding-bottom: 100px;" > 
+            <div class="background-ff">
+                <!--左边begin-->
+                <div class="h-side left">
+                    <!--我的关注begin-->
+                    <div class="h-side-box h-side-g">
+                    	<input type="hidden" id="schoolId" value="{$schoolInfo.school_id}"/>
+                        <div class="h-side-t">
+                            <h2> {$schoolInfo.school_name}的话题区</h2>
+                        </div>
+                        <div class="h-side-box">
+                            <div class="h-img" >
+                                <img src="__ROOT__/Uploads/{$schoolInfo.school_photo}" alt=""  class=" img-circle"/> <!-- __PUBLIC__/home/images/xxxz.jpg -->
+                            </div>
+                        </div>
+                        <!-- <h3 class="h-side-span">简介</h3> -->
+                        <div class="h-side-forums" style="margin-top:10px">
+                           {$schoolInfo.school_excerpt}
+                        </div>
+                        <!-- <h3 class="h-side-span">关键字</h3> -->
+                        <!-- <div class="h-side-forums">
+                           {$schoolInfo.school_keyword}
+                        </div> -->
+                        <div class="clearfix"></div>
+                        
+                    </div>
+                    <!--我的关注end-->
+                    <!--热门话题begin-->
+                    <div class="area-box">
+                        <div class="area-title">
+                            <h2>一周的热门话题</h2>
+                            <div class="area-l"></div>
+                            <div class="area-r"></div>
+                        </div>
+                        <div class="area-main">
+                            <ul class="favorite-list"> 
+                            	<volist name="topTopic" id="vo">
+	                            	<li>      
+	                            	<div><a href="__APP__/home/topic/topicDetail/id/{$vo.article_id}" >{$vo.article_title}</a></div>
+	                            	<div class="liAuthor">作者：{$vo.article_author}</div>
+	                                    <div><span class="count-eye"><i class="icon-eye"></i>204578</span><a rel="external nofollow" class="count-infor" href="#"><i class="icon-infor"></i>3974</a></div>
+	                                </li> 
+                            	</volist>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--热门话题end-->
+                </div>
+                <!--左边end-->
+                <!--右边begin-->
+                <div class="h-main right">
+                    <div class="h-side-tit">
+                        
+                        <div class="r-search">
+                            <input type="text" id="keyword" value="{$keyword}" placeholder="关键字模糊搜索" class="r-search-input form-control" />
+                            <input type="hidden" id="groupType" value="{$groupType}" />
+                            <input type="button" class="r-searcj-btn" onclick="doSearch()" value="搜索" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="r-main-title">
+                        <div class="r-main-tit">
+                            <h3>最新话题</h3>
+                        </div>
+                    </div>
+                    <div class="r-main-box">
+                        <ul class="newft-list">
+                        	<volist name="topicList" id="vo">
+	                        	<li>
+	                                <a href="__APP__/home/topic/topicDetail/id/{$vo.article_id}"><img src="__PUBLIC__/home/images/abm.jpg" alt="" /></a>
+	                                <div class="newft-list-tit">
+	                                	<a href="__APP__/home/topic/topicDetail/id/{$vo.article_id}" ><span class="sxzd lv">{$vo.school_name}</span></a>
+	                                	<a href="__APP__/home/topic/topicDetail/id/{$vo.article_id}" >{$vo.article_title}</a>
+	                                	<!-- <i class="r-d">顶</i><i class="r-t">荐</i> -->
+	                                </div>
+                                	<div>{$vo.article_excerpt}</div>
+                                	<div class="r-tag"><span class="liAuthor lv">{$vo.article_author}</span><!-- <span>2015年11月30日 17:25发表于【<a href="#">资讯点评</a>】 </span> --></div>
+	                                <div class="icon-box">
+	                                    <span class="icon-y">有用</span>
+	                                    <span class="icon-yue">阅读数</span>
+	                                    <span class="icon-g">跟帖数</span>
+	                                </div>
+	                            </li>
+                        	</volist>
+                        </ul>
+                    </div>
+                    <div class="green-black">
+					　　{$page}
+					</div>
+                </div>
+                <!--右边end-->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--容器end-->
+    </div>
+    <include file="./Application/Home/View/Public/footer.html" />
+</body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _ch = $(".container-body").height();
+            var _wh = $(window).height();
+            if (_wh - _ch > 377) {
+                $(".container-body").css("min-height", (_wh - 397) + "px");
+            }
+        })
+        
+		// 查询事件
+        function doSearch(){
+        	var keyword = $("#keyword").val();
+        	var strKeyword='';
+        	if(keyword!=''){
+        		strKeyword = "/keyword/"+keyword;
+        	}
+
+        	var groupType = $("#groupType").val();
+        	var strGroup='';
+        	if(groupType!='2'){
+        		strGroup = "/groupType/"+groupType;
+        	}
+        	
+        	var id=$("#schoolId").val();
+        	var strId='';
+        	if(id!=''){
+        		strId = "/id/"+id;
+        	}
+        	
+        	
+        	window.location.href= "__APP__/home/study/studyDetail"+strId+strGroup+strKeyword;
+        }
+    </script>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<include file="./Application/Home/View/Public/head.html" />
+
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/fullcalendar/fullcalendar.min.css" />
+
+<script type="text/javascript" src="__PUBLIC__/home/js/moment.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/fullcalendar/fullcalendar.js"></script>
+<script type="text/javascript" src="__PUBLIC__/jquery-ui/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+<style>
+#mapbox{width:970px;height:1100px; background-color:#CCC; border:1px solid #CCC; font-size:12px;}
+#mapbox #map{width:970px;height:1100px; float:left;}
+#mapbox .close{ display:block; right:10px; top:0px; line-height:22px; text-decoration:none; color:#0000}
+</style>
+</head>
+<body>
+    <!--容器begin-->
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+        <!--容器begin-->
+        <include file="./Application/Home/View/Public/studyCalendar.html" />
+        <!--容器end-->
+        <!--中间begin-->
+        <div class="container school-box">
+            <include file="./Application/Home/View/Public/schoolNav.html" />
+            <div class="school-main-box">
+                <div class="l-bg-top"></div>
+                <div class="l-bg-bottom"></div>
+                <div class="l-bg-conent"></div>
+                <div class="school-tb"></div>
+                <!--左侧栏开始-->
+                <div class="school-side">
+                    <div class="side-bg">
+	                    <span onclick="ShowTab(1,1,8)" id="Span1">学校简介</span>
+	                    <empty name="featureInfo">
+	                    	<span onclick="ShowTab(2,1,8)" id="Span2" style="display:none">课堂特色</span>
+	                    <else/>
+	                    	<span onclick="ShowTab(2,1,8)" id="Span2">课堂特色</span>
+	                    </empty>
+	                    <empty name="schoolInfo.master_name">
+	                    	<span onclick="ShowTab(3,1,8)" id="Span3" style="display:none">校长录</span>
+	                    <else/>
+	                    	<span onclick="ShowTab(3,1,8)" id="Span3">校长录</span>
+	                    </empty>
+	                    <empty name="teacherList">
+	                     	<span onclick="ShowTab(4,1,8)" id="Span4" style="display:none">师资团体</span>
+	                    <else/>
+	                    	<span onclick="ShowTab(4,1,8)" id="Span4">师资团体</span>
+	                    </empty>
+	                    <empty name="achievementList">
+	                    	<span onclick="ShowTab(5,1,8)" id="Span5" style="display:none">教学成果</span>
+	                    <else/>
+	                    	<span onclick="ShowTab(5,1,8)" id="Span5">教学成果</span>
+	                    </empty>
+	                    <empty name="imageList">
+	                    	<span onclick="ShowTab(6,1,8)" id="Span6" style="display:none">印象校园</span>
+	                    <else/>
+	                    	<span onclick="ShowTab(6,1,8)" id="Span6">印象校园</span>
+	                    </empty>
+	                    <empty name="schoolInfo.school_map">
+	                    	<span onclick="ShowTab(7,1,8)" id="Span7" style="display:none"><i>MAP</i></span>
+	                    <else/>
+	                    	<span onclick="ShowTab(7,1,8)" id="Span7"><i>MAP</i></span>
+	                    </empty>
+                    </div>
+                </div>
+                <!--左侧栏结束-->
+                <!--右侧栏开始-->
+                <div class="school-right">
+                    <div class="school-right-box">
+                        <div class="r-main-box">
+                            <!--教学成果begin-->
+                            <div id="Tab1">
+                                <div class="main-box">  
+                                    <img src="__ROOT__/Uploads/{$schoolInfo.school_photo}"  style="width:239px; height:219px; margin:74px auto 133px; display:block;" />
+                                    <p style="font-size:18px;"><strong>{$schoolInfo.school_name}</strong></p>
+                                    {$schoolInfo.school_detail}
+                                </div>                                
+                                <!-- <div class="bottom-next"></div> -->
+                            </div>                            
+                            <!--校园新闻end-->
+                            <!--课程特色begin-->
+                            <div id="Tab2">
+                                <h2 class="lv"><span>课堂特色</span></h2>   
+                                <div class="main-box">
+                                    <!--编辑begin-->
+                                    <volist name="featureInfo" id="vo">
+                                    	{$vo.article_detail}
+                                    </volist>
+                                    <!--编辑区end-->
+                                </div>                      
+                                <div class="bottom-next"></div>
+
+                            </div>                        
+                            <!--课程特色end-->
+                            <!--校长录begin-->
+                            <div id="Tab3">
+                                <h2 class="lv"><span>校长致辞</span></h2>
+                                <div class="main-box">
+                                    <img src="__ROOT__/Uploads/{$schoolInfo.master_photo}" style="float:left; width:280px; height:189px; margin-left:24px;" />
+                                    <div class="" style="color:#727171; margin-top:25px;">
+                                        <p style="color:#000;font-size:18px;">{$schoolInfo.master_name}</p>
+                                        <p>{$schoolInfo.master_record1}</p>
+                                        <p>{$schoolInfo.master_record2}</p>
+                                        <p>{$schoolInfo.master_record3}</p>
+                                        <p>{$schoolInfo.master_record4}</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <p style="margin-top:25px;">{$schoolInfo.master_excerpt}</p>
+                                </div>
+                                <h2 class="lv"><span>校长录</span></h2>
+                                <div class="main-box">  
+                                    <ul class="xxjs-list">
+                                    	<volist name="masterList" id="vo">
+                                    		<li>
+	                                            <a href="#"><img src="__ROOT__/Uploads/{$vo.article_photo}" alt="" /></a>
+	                                            <div class="xxjs-list-tit"><span class="sxzd lv"><a href="#" >{$vo.article_title}</a></span></div>
+	                                            <div class="xxjs-main">{$vo.article_excerpt}</div>
+	                                            <div class="icon-ai">
+	                                                <span class="icon-z">置顶</span>
+	                                                <span class="icon-j">精品</span>
+	                                            </div>
+	                                            <div class="icon-box">
+	                                                <span class="icon-y">有用</span>
+	                                                <span class="icon-yue">阅读数</span>
+	                                                <span class="icon-g">跟帖数</span>
+	                                            </div>
+	                                        </li>
+                                    	</volist>
+                                    </ul>
+                                </div>                                
+                                <!-- <div class="bottom-next"></div> -->
+                            </div>
+                            <!--校长录end-->
+                            <!--师资团体begin-->
+                            <div id="Tab4">
+                                <h2 class="lv"><span>师资团体</span></h2>
+                                <div class="main-box">
+                                   <ul class="sztt">
+                                       <volist name="teacherList" id="vo">
+											<li>
+											   <div class="li-img"><img src="__ROOT__/Uploads/{$vo.teacher_photo}" width="306" /></div>
+											   <div class="li-name">{$vo.teacher_name}</div>
+											   <div class="li-tag">{$vo.teacher_tag}</div>
+											   <div class="li-school">{$vo.teacher_school}</div>
+											   <div class="li-de">{$vo.teacher_introduction}</div>
+										   </li>
+										</volist>
+										<if condition="($teacherCount%2 eq 1)">
+											<li>
+											   <div class="li-img" style="width:306">&nbsp;</div>
+											   <div class="li-name">&nbsp;</div>
+											   <div class="li-tag">&nbsp;</div>
+											   <div class="li-school">&nbsp;</div>
+											   <div class="li-de">&nbsp;</div>
+										   </li>
+										</if>
+                                   </ul>
+                                </div>
+                               <!--  <div class="bottom-next"></div> -->
+                            </div>
+                            <!--师资团体end-->
+                            <!--教学成果begin-->
+                            <div id="Tab5">
+                                <h2 class="lv"><span>教学成果</span></h2>
+                                <div class="main-box">  
+                                    <ul class="xxjs-list">
+                                    	<volist name="achievementList" id="vo" empty="暂无信息">
+                                    		<li>
+	                                            <a href="#"><img src="__PUBLIC__/home/images/jpg1.jpg" alt="" /></a>
+	                                            <div class="xxjs-list-tit"><span class="sxzd lv"><a href="#" >{$vo.article_title}</a></span></div>
+	                                            <div class="xxjs-main">{$vo.acticle_excerpt}</div>
+	                                            <div class="icon-ai">
+	                                                <span class="icon-z">置顶{$vo.article_top}</span>
+	                                                <span class="icon-j">精品{$vo.article_elite}</span>
+	                                            </div>
+	                                            <div class="icon-box">
+	                                                <span class="icon-y">有用{$vo.article_useful}</span>
+	                                                <span class="icon-yue">阅读数{$vo.article_read}</span>
+	                                                <span class="icon-g">跟帖数{$vo.article_comment}</span>
+	                                            </div>
+	                                        </li>
+                                    	</volist>
+                                    </ul>
+                                </div>
+                                <!-- <div class="bottom-next"></div> -->
+                            </div>
+                            <!--教学成果end-->                            
+                            <!--印象校园end-->
+                            <div id="Tab6">
+                                <div class="main-box">
+                                    <ul class="yxxy">
+                                    	<volist name="imageList" id="vo" empty="暂无信息">
+	                                    	<li><a href="#">
+	                                                <img src="__ROOT__/Uploads/{$vo.images_path}" />
+	                                                <p>{$vo.images_title}</p>
+	                                            </a>
+	                                        </li>
+                                    	</volist>
+                                    </ul>
+                                </div>
+                                <!-- <div class="bottom-next"></div> -->
+                            </div>
+                            <!--印象校园end-->
+                            <!--MAP end-->
+                            <div id="Tab7">
+								<div id="mapbox">
+									<div class="mapheader">
+									</div>
+									<div id="map"></div>
+									</div>
+							</div> 
+                            <!--MAP end-->
+                        </div>       
+                        <SCRIPT type="text/javascript">ShowTab({$showTab}, 1, 8);</SCRIPT>
+                    </div>             
+                    
+                </div>
+                <!--右侧栏结束-->        
+            </div>
+        </div>
+        <!--中间end-->
+        
+        <!--评论begin-->
+        <include file="./Application/Home/View/Public/schoolComment.html"/>
+        <!--评论end-->
+    </div>
+     <!--容器end-->
+    <include file="./Application/Home/View/Public/footer.html" />
+    <script type="text/javascript">
+        $(function () {
+            $('#owl-demo').owlCarousel({
+                scrollPerPage: true,navigation:true,
+                items: 1
+            });
+        });
+    </script>
+<script type="text/javascript">
+
+<script type="text/javascript"> 
+var map = new BMap.Map("map"); // 创建地图实例 ,48
+var map_value_x = {$mapx};
+var map_value_y = {$mapy};
+var map_title = "{$schoolInfo.school_name}";
+var map_address = "{$schoolInfo.school_address}";
+var point = new BMap.Point(map_value_x ,map_value_y); // 创建点坐标 
+map.centerAndZoom(point, 20); // 初始化地图，设置中心点坐标和地图级别
+map.addEventListener("zoomend", function(){   //缩放事件
+ //alert("地图缩放至：" + this.getZoom() + "级");   
+}); 
+/*
+1.
+NavigationControl：地图平移缩放控件，默认位于地图左上方，它包含控制地图的平移和缩放的功能。 
+OverviewMapControl：缩略地图控件，默认位于地图右下方，是一个可折叠的缩略地图。 
+ScaleControl：比例尺控件，默认位于地图左下方，显示地图的比例关系。 
+MapTypeControl：地图类型控件，默认位于地图右上方。 
+CopyrightControl：版权控件，默认位于地图左下方。 
+*/
+//配置控件参数
+//var opts = {type: BMAP_NAVIGATION_CONTROL_SMALL}   
+//map.addControl(new BMap.NavigationControl(opts));
+map.addControl(new BMap.NavigationControl());  
+map.addControl(new BMap.ScaleControl());   
+//map.addControl(new BMap.OverviewMapControl());   
+//map.addControl(new BMap.MapTypeControl());   
+//map.setCurrentCity("台州");
+
+
+var marker = new BMap.Marker(point);        // 创建标注   
+map.addOverlay(marker);  
+
+var opts = {   
+ width : 250,     // 信息窗口宽度   
+ height: 100,     // 信息窗口高度   
+ title : map_title  // 信息窗口标题   
+}   
+var infoWindow = new BMap.InfoWindow(map_address, opts);  // 创建信息窗口对象   
+map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口   
+
+map.enableScrollWheelZoom();//滚轮缩放事件
+//map.enableKeyboard(); //键盘方向键缩放事件
+map.enableContinuousZoom(); // 开启连续缩放效果
+//map.enableInertialDragging();　// 开启惯性拖拽效果 
+
+
+</script>
+</body>
+</html>

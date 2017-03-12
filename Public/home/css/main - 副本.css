@@ -1,0 +1,504 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/**/
+
+html, body {
+	overflow-x: hidden;
+	color: #666666;
+	background-color: #f5f5f5;
+	font-family: "微软雅黑";
+}
+.container-body {
+	margin-bottom: 45px;
+}
+img {
+	width: 100%;
+}
+a:hover {
+	text-decoration: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.lv, .lv a {
+	color: #05b866 !important;
+}
+.bgcolorhui {
+	background-color: #f5f5f5;
+}
+.bgcolorf {
+	background-color: #ffffff;
+	padding-bottom: 100px;
+}
+/*导航头部*/
+.container {
+	width: 1170px !important;
+	position: relative;
+}
+.container-box {
+}
+.header-top {
+	line-height: 31px;
+	height: 36px;
+	color: #000000;
+	/* margin-top: 51px; */
+}
+.header-top a {
+	color: #000000;
+	text-decoration: none;
+	margin-right: 15px;
+}
+.header-top .inner-right ul li:last-child a {
+	margin-right: 0px;
+}
+.header-top .inner {
+	float: left;
+}
+.header-top .inner-right {
+	width: 280px;
+	text-align: right;
+	float: right;
+}
+.header-top .inner-right ul {
+	margin-bottom: 0px;
+}
+.divide-wrap {
+	height: 13px;
+	position: relative;
+	z-index: 1;
+}
+.colorbar-one {
+	content: "";
+	width: 20%;
+	position: absolute;
+	left: 0px;
+	height: 100%;
+	background-color: #0fa484;
+}
+.colorbar-two {
+	width: 25%;
+	position: absolute;
+	height: 100%;
+	left: 20%;
+	background-color: #f5615d;
+}
+.colorbar-three {
+	width: 10%;
+	position: absolute;
+	height: 100%;
+	left: 45%;
+	background-color: #e9b722;
+}
+.colorbar-four {
+	width: 45%;
+	position: absolute;
+	height: 100%;
+	left: 55%;
+	background-color: #05b866;
+}
+.header-wap-box {
+	height: 88px;
+	background-color: #000000;
+	position: relative;
+}
+.header-wap {
+	padding: 14px;
+}
+.header-login {
+	width: 173px;
+	float: left;
+}
+.header-login h2 {
+	font-size: 45px;
+	color: #fff;
+	line-height: 60px;
+	margin: 0px;
+}
+.header-nav {
+	float: left;
+	height: 34px;
+}
+.nav-control li {
+	margin: 0 88px 0 0;/*20px 88px 10px 0;*/
+	line-height: 60px;
+}
+.nav-control li a {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+.nav-control li.cur a, .nav-control li a:hover {
+	color: #aed36c;
+}
+.header-search {
+	float: right;
+	position: relative;
+	top: 15px;
+}
+.header-search .search-ico {
+	position: absolute;
+	color: #fff;
+	top: 8px;
+	left: 10px;
+}
+.header-search .search-btn {
+	position: absolute;
+	color: #fff;
+	top: 5px;
+	color: #aed36c;
+	text-decoration: none;
+	right: 10px;
+}
+.header-search .form-control {
+	background-color: #000;
+	border-color: #fff;
+	border-radius: 7px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #fff;
+}
+.header-bottom {
+	background-color: #aeaeae;
+	height: 31px;
+	line-height: 31px;
+	color: #000;
+}
+/*topbanner*/
+.topbanner {
+	height: 167px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.topbanner img {
+	width: 100%;
+}
+.tel-r {
+	position: absolute;
+	right: 30px;
+}
+/*/注册*/
+.reg {
+	background-image: url(../img/reg1.jpg);
+	height: 66px;
+	background-repeat: no-repeat;
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin-top: 67px;
+	margin-bottom: 33px;
+}
+.reg.regb {
+	background-image: url(../img/reg2.jpg);
+	height: 66px;
+	background-repeat: no-repeat;
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin-top: 67px;
+	margin-bottom: 33px;
+}
+.reg.regc {
+	background-image: url(../img/reg3.jpg);
+	height: 66px;
+	background-repeat: no-repeat;
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin-top: 67px;
+	margin-bottom: 33px;
+}
+.reg .item {
+	display: table-cell;
+	line-height: 66px;
+	font-size: 28px;
+	color: #05b866;
+	padding-left: 162px;
+}
+.reg .item.cur {
+	color: #fff;
+}
+.reg-tag {
+	width: 744px;
+	border-bottom: 1px dotted #e2e6e9;
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px 0;
+}
+.reg-box {
+	width: 960px;
+	margin: 0 auto;
+}
+.reg-tit {
+	margin-top: 62px;
+	border-bottom: 1px dotted #e2e6e9;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.reg-tit h4 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.reg-tit h4 span {
+	margin-left: -8px;
+}
+.control-label i {
+	color: #ff0000;
+	width: 10px;
+	text-align: left;
+	display: inline-block;
+}
+.reg-zh {
+	text-align: left !important;
+	color: #a1a1a1;
+}
+.reg-zh a {
+	color: #a1a1a1;
+}
+.reg .form-group {
+	margin-bottom: 15px;
+	border-radius: 0px;
+}
+.reg-main .form-group label {
+	color: #5a5a5a;
+}
+.reg-main .form-control {
+	border-radius: 0px;
+	height: 43px;
+}
+.reg-main .yzm {
+	padding: 0px;
+}
+.reg-main .yzm img {
+	padding: 0px;
+}
+.reg-main .yzm .col-sm-5 {
+	padding-left: 0px;
+}
+.btn-xh {
+	background: #08B26E url("../img/kbg.jpg") repeat-x scroll 0% 0%;
+	color: #FFF;
+	border-radius: 0px;
+	height: 43px;
+	font-size: 18px;
+	border-color: transparent;
+}
+.btn-xh:hover {
+	color: #ff0000;
+}
+/*第二步*/
+.reg-t1, .reg-t2, .reg-t3, .reg-t4, reg-tc {
+	float: left;
+	margin-right: 15px;
+	display: block;
+}
+.reg-main .reg-er {
+	margin-left: 0px;
+	color: #5a5a5a;
+	margin-right: 0px;
+}
+.reg-main .reg-er .form-control {
+	border-radius: 0px;
+	height: 34px;
+}
+.select-ico-box {
+	border: 1px solid #e2e6e9;
+}
+.reg-select {
+	border-radius: 0px;
+	border: none;
+	font-size: 14px;
+	-moz-use-text-color: #CACCD1;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-radius: 0px;
+	margin: 0px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-khtml-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+.select-ico {
+	position: absolute;
+	width: 18px;
+	height: 100%;
+	top: 0px;
+	z-index: 1;
+	right: 0px;
+	background-color: #efefef;
+	border-left: 1px solid #e2e6e9;
+	background-image: url(../img/select-ico.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.reg-t1 {
+	width: 83px;
+	text-align: left!important;
+}
+.reg-t1.reg-t1x {
+	width: 100px;
+}
+.reg-t2 {
+	width: 115px;
+	position: relative;
+}
+.reg-t2.reg-tx {
+	width: 215px;
+	position: relative;
+}
+.reg-t2.reg-tc {
+	width: 311px;
+}
+.reg-t4 {
+	color: #a1a1a1;
+}
+.reg-b {
+	width: 488px;
+}
+.reg-b1 {
+	width: 345px;
+	margin-left: 130px;
+}
+.reg-b1 input {
+	text-align: center;
+}
+.reg-btnr {
+	margin-left: 98px;
+	width: 245px;
+}
+/*第三步*/
+.reg-sam {
+	margin: 15px 0;
+}
+.reg-sam p {
+	margin-bottom: 15px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.item:hover .shd {
+	background-color: rgba(0, 0, 0, 0);
+}
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+	top: 341px;
+	width: 30px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	font: 60px/60px "宋体";
+	background-color: transparent;
+	overflow: hidden;
+	_display: none;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	left: 14px;
+	color: #dcdcdc;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	right: 14px;
+	color: #dcdcdc;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev:before {
+	content: "<";
+}
+.owl-theme .owl-controls .owl-buttons .owl-next:before {
+	content: ">";
+}
+.owl-theme .owl-controls {
+	background: #fff;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: #9c9c9c none repeat scroll 0% 0%;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	opacity: 0.5;
+	background: #fff;
+}
+.owl-theme .owl-controls {
+	margin-top: -46px;
+	text-align: center;
+}
+.slide-top {
+	height: 410px;
+	overflow: hidden;
+}
+.slide-box {
+	width: 720px;
+}
+.schoolcalendar-box {
+	width: 420px;
+}
+.schoolcalendar-title {
+	height: 55px;
+	line-height: 55px;
+	background-color: #e7b51e;
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+}
+.schoolcalendar-main {
+	height: 355px;
+	overflow: hidden;
+	background-color: #ebebeb;
+}
+/*底部*/
+.footer {
+	/*margin-top:100px;*/
+	background-color: #000000;
+	color: #fff;
+	padding: 60px 0 20px 0;
+}
+.footer a {
+	color: #fff;
+}
+.footer-Scan {
+	width: 71px;
+	text-align: center;
+	float: left;
+	margin-left: 50px;
+}
+.footer-Scan img {
+	width: 100%;
+}
+.footer-inner {
+	padding-top: 0px;
+}
+.footer-inner {
+	float: left;
+	margin-left: 50px;
+}
+.footer-inline-item {
+/*margin-top:15px;*/
+    
+}
+.footer-inline-item p {
+	margin-bottom: 0px;
+}
+.footer-inline-item p a {
+	margin-right: 25px;
+}
+.footer-inline-item.column-1 {
+	margin-bottom: 60px;
+}
+.footer-inline-item.column-1 a {
+	font-size: 18px;
+	margin-right: 30px;
+}
+.footer-inline-item.column-2 {
+}
+.footer-inline-item.column-3 {
+	margin-top: 20px;
+}

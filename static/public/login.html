@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<!-- jquery库 -->
+<script src="../js/jQuery.min.js"></script>
+<!-- bootstrap -->
+<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="../css/login.css" />
+<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="top container">
+            <span class="h2">LOGO</span><span>欢迎登陆</span>
+        </div>
+        <div class="container-main">
+            <img class="loginbg" src="../img/loginbanner.png" />
+            <div class="container-box">
+                <div class="login_box">
+                    <div class="login_title"><span class="h3">用户登录</span><span class="zc"><a href="register_step1.html">立即注册</a></span></div>
+                    <div class="login_page">
+                        <span>学校</span>
+                        <span>老师</span>
+                        <span class="act">学生</span>
+                    </div>
+                    <div class="login_body">
+                        <form action="student_index.html" method="post">
+                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" name="UserName" required value="" placeholder="邮箱/用户名/已验证手机">
+                        </div>
+                        <div class="input-group"> <span class="input-group-addon"> <i class="fa fa-pas"></i> </span>
+                            <input type="text" class="form-control" name="UserName" required value="" placeholder="密码">
+                        </div>
+                        <div class="input-group item"> <input type="checkbox" class="iCheck" id="checkbox" name="IsAlways" value="true">
+                            <label for="checkbox">自动登录</label>
+                            <div class="pull-right"><a href="#forget-panel" data-toggle="modal" aria-hidden="true" data-dismiss="modal">忘记密码?</a></div>
+                       </div>
+                        <div class="form-group item">
+                          <button class="btn btn-xh form-control" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                        </div>
+                        <div class="form-group item text-center third ">
+                          <a href="#"><img src="../img/loginbtn_03.png" alt="微博登录" /></a>
+                          <a href="#"><img src="../img/qq_login.gif" alt="微博登录" /></a>
+                        </div>
+                        <div class="form-group erweima item">
+                          <div class="werwiema">
+                              <img src="../images/wxg.jpg" />
+                              <p>微信关注</p>
+                          </div>
+                          <div class="aerwiema">
+                              <img src="../images/appg.jpg" />
+                              <p>APP下载</p>
+                          </div>
+                        </div>
+                            </form>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+    </div>
+<footer class="footer">
+    <div class="bottom">
+        <span><a href="#" title="关于我们">关于我们</a></span>
+        <span><a href="#" title="免费声明">免费声明</a></span>
+        <span><a href="#" title="国际高中">国际高中</a></span>
+        <span><a href="#" title="国际学校">国际学校</a></span>
+        <span><a href="#" title="专家专栏">专家专栏</a></span>
+        <span> <a href="#" title="留学预科班点评">留学预科班点评</a></span>
+     </div>
+        <p>Copyright@2004-2016 莘莘网版权所有</p>
+</footer>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+           
+        })
+
+        var _ch = $("#container").height();
+        var _wh = $(window).height();
+        if (_wh - _ch > 213) {
+            $("#container").css("min-height", (_wh - 213) + "px");
+        }
+    </script>
+</body>
+</html>

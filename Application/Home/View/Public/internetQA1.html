@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+<div class="index-bottom">
+    <div class="index-04">
+        <div class="tit">
+            <a href="#" class="right more">更多...</a>
+            国际学校Q&A
+        </div>
+        <div class="index-05">
+            <div class="divide-wrap">
+                <div class="colorbar-one"></div>
+                <div class="colorbar-two"></div>
+                <div class="colorbar-three"></div>
+                <div class="colorbar-four"></div>
+            </div>
+        </div>
+        <div class="index-06">                    
+         <span onmouseover="ShowTab(7,7,10)" id="Span7">国际学校</span>
+         <span onmouseover="ShowTab(8,7,10)" id="Span8">国际课程</span>
+         <span onmouseover="ShowTab(9,7,10)" id="Span9">如何选择</span>
+        </div>
+        <div class="index-07">                    
+         <div id="Tab7">
+                <ul class="ul-1">
+                	<volist name="qaischoolList" id="vo"  empty="正在添加..." key="rowI">
+                		<li>
+                			<a href="__APP__/home/news/newsDetail/id/{$vo.article_id}">
+                				<i>{$rowI}</i>{$vo.article_title}
+                			</a>
+                		</li>
+                	</volist>
+                </ul>
+         </div>
+            <div id="Tab8">
+                <ul class="ul-1">
+                	<volist name="qaicourseList" id="vo"  empty="正在添加..." key="rowI">
+                		<li>
+                			<a href="__APP__/home/news/newsDetail/id/{$vo.article_id}">
+                				<i>{$rowI}</i>{$vo.article_title}
+                			</a>
+                		</li>
+                	</volist>
+                </ul>
+            </div>
+            <div id="Tab9">
+                <ul class="ul-1">
+                	<volist name="qaichooseList" id="vo"  empty="正在添加..." key="rowI">
+                		<li>
+                			<a href="__APP__/home/news/newsDetail/id/{$vo.article_id}">
+                				<i>{$rowI}</i>{$vo.article_title}
+                			</a>
+                		</li>
+                	</volist>
+                </ul>
+            </div>
+        <SCRIPT type="text/javascript">ShowTab(7, 7,10);</SCRIPT>
+        </div>
+    </div>
+</div>

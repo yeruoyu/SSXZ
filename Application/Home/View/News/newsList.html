@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<include file="./Application/Home/View/Public/headforArticle.html" />
+</head>
+<body>
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+        <!--topbannerbegin-->
+         <div class="container">
+             <div class="topbanner">
+                 <img src="__PUBLIC__/home/images/topbanner3.jpg" alt="" />
+             </div>
+         </div>
+        <!--topbannerend-->
+        <!--容器begin-->
+        <div class="container hua-main"> 
+            <div class="zixun-li">
+                <div class="item col1">
+                    <p><a href="__APP__/home/news/newsList/type/schoolnews">校园新闻</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/documentary">课堂纪实</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/achievement">教学成果</a></p>
+                </div>
+                <div class="item col2">
+                    <p><a href="__APP__/home/news/newsList/type/story">学生故事</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/student">学生风采</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/camp">探&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;营</a></p>
+                </div>
+                <div class="item col3">
+                    <p><a href="__APP__/home/news/newsList/type/expert">专家专栏</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/master">校&nbsp;&nbsp;长&nbsp;&nbsp;录</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/schoolgrade">升学指导</a></p>
+                </div>
+                <div class="item col4">
+                    <p><a href="__APP__/home/news/newsList/type/enroll">招生简章</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/activity">招生活动</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/visa">签&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证</a></p>
+                </div>
+                <div class="item col5">
+                    <p><a href="__APP__/home/news/newsList/type/qaischool">国际学校</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/qaicourse">国际课程</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/qaichoose">如何选择</a></p>
+                </div>
+            </div>
+            <div class="zixun-l" style="min-height:2075px;max-height:2075px;border-bottom: 1px solid #05B865;">
+                <div class="zixun-sea">                
+                            <div class="r-search" style="padding:0px; margin-top:0px;">
+                            	<input type="hidden" id="type" name="type" value="{$type}"/>
+                                <input type="text" id="keyword" name="keyword" placeholder="关键字模糊搜索" value="{$keyword}" class="r-search-input form-control" style="width:90%;" />
+                                <input type="button" onclick="doSearch()" class="r-searcj-btn" value="搜索" />
+                                <div class="clearfix"></div>
+                            </div>
+                </div>
+                <div class="r-main-title">
+                        <div class="r-main-tit">
+                            <h3>资讯类别</h3>
+                        </div>
+                </div>
+                <div class="zixun-box">                    
+                        <ul class="xxjs-list">
+                        	<volist name="varticleList" id="vo">
+                        		<li>
+                        		
+                        			<empty name="vo.article_id">
+                        				<a href="__APP__/home/news/newsDetail/id/{$vo.article_id}"><img src="__PUBLIC__/home/images/jpg1.jpg" alt="" /></a>
+                        			<else/>
+                        				<a href="__APP__/home/news/newsDetail/id/{$vo.article_id}"><img src="{$vo.imagePath}" width="266" height="143"/></a>
+	                                </empty>
+	                                <div class="con">
+	                                    <div class="xxjs-list-tit"><span class="sxzd lv"><a href="__APP__/home/news/newsDetail/id/{$vo.article_id}" >{$vo.article_title}</a></span></div>
+	                                    <div class="xxjs-main">{$vo.article_excerpt}</div>
+	                                    <div class="icon-ai">
+	                                        <span class="icon-z">置顶{$vo.article_top}</span>
+	                                        <span class="icon-j">精华{$vo.article_elite}</span>
+	                                    </div>
+	                                    <div class="icon-box">
+	                                        <span class="icon-y">有用{$vo.article_useful}</span>
+	                                        <span class="icon-yue">阅读数{$vo.article_read}</span>
+	                                        <span class="icon-g">跟帖数{$vo.article_comment}</span>
+	                                    </div>
+	                                </div>
+	                            </li>
+                        	</volist>
+                        </ul>
+                </div>
+                <div class="green-black">
+					　　{$page}
+				</div>
+            </div>
+            <div class="zixun-r">
+                <!-- 有用的文章15篇 -->
+                <include file="./Application/Home/View/Public/usefulArticle.html" />
+				<!-- 排名前15的学校 -->
+				<include file="./Application/Home/View/Public/topSchool.html" />
+             </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--容器end-->
+    </div>
+
+    <include file="./Application/Home/View/Public/footer.html" />
+</body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _ch = $(".container-body").height();
+            var _wh = $(window).height();
+            if (_wh - _ch > 377) {
+                $(".container-body").css("min-height", (_wh - 397) + "px");
+            }
+        })
+        
+        jQuery(document).ready(function($){
+    		// UsefulArticle
+    		showUserfulArticle('expert','usefulArticle');
+    		// TopSchool
+    		showTopSchool('topSchool');
+        });
+        // 查询事件
+        function doSearch(){
+        	var keyword = $("#keyword").val();
+        	if(keyword!=''){
+        		window.location.href= "__APP__/home/news/newsList/keyword/"+keyword;
+        	}else{
+        		window.location.href= "__APP__/home/news/newsList/";
+        	}
+        	
+        	
+        }
+        
+       	/* 前15有用的文章 */
+    	function showUserfulArticle(cataloge,dispId){
+    		var usefulArticleQueryUrl = "__APP__/home/index/usefulArticleQuery";
+    		$.ajax({
+				type: 'POST',
+				url: usefulArticleQueryUrl ,
+				data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var articleView = $('#'+dispId);
+						articleView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var articleItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'"><div>'+vo.article_title+'</div></a>'
+								+'</li>';	
+							articleView.append(articleItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    	/* 前15的学校 */
+    	function showTopSchool(dispId){
+    		var usefulSchoolUrl = "__APP__/home/index/topSchool";
+    		$.ajax({
+				type: 'POST',
+				url: usefulSchoolUrl ,
+				//data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var schoolView = $('#'+dispId);
+						schoolView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var schoolItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/School/schoolDetail1/id/'+vo.school_id+'">'+vo.school_name+'</a>'
+								+'</li>';	
+								schoolView.append(schoolItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    </script>
+</html>

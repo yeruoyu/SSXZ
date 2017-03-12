@@ -1,0 +1,169 @@
+<meta charset="UTF-8">
+
+
+<div class="comment"  style=" position:relative; border-bottom: 2px solid #0fa484;" id="comments">
+	<div class="comment-box">
+		<if condition="isset($_SESSION['userInfo'])">
+			<input type="hidden" id="loginFlag" value="1"/>
+			<h1><span>我的点评</span></h1>
+				<div class="comment-main">
+					<form class="form-horizontal comment-form" method="post" role="form" id="login">
+				  		<div class="control-group" style="padding-bottom: 2px">
+					  		<div class="comment-postbox-wraper">
+					  			<input type="hidden" value="{$commentSchoolId}" id="commentSchoolId" />
+					  			<input type="hidden" value="0" id="commentLevel" />
+					  			<textarea class="form-control comment-postbox" id="commentDetail" placeholder="请输入你的评论" style="min-height:90px;"  name="content"></textarea>
+					  		</div>
+				  		</div>
+				  		<div class="control-group" style="padding-bottom: 20px">
+				   			<button type="button" onclick="doSave()" class="btn pull-right btn-primary js-ajax-submit"><i class="fa fa-comment-o"></i> 发表评论</button>
+				  		</div>
+					</form>
+				</div>
+			<else/>
+				<input type="hidden" id="loginFlag" value="0"/>
+			</if>
+            <h1><span>最新点评</span></h1>
+            <div class="comment-main">
+            	<ul class="PinL" id="commentRoot"></ul>
+            </div>
+	</div>
+</div>
+<script type="text/javascript">
+	
+	jQuery(document).ready(function($){
+		queryComments();
+	});
+	
+	function dispHf(areaId){
+		
+		
+		
+		if( $('#'+areaId).css('display')=='none' ){
+			$('#'+areaId).css('display',''); 
+		}else{
+			$('#'+areaId).css('display','none'); 
+		}
+	}
+	
+	function queryComments(){
+		var queryUrl="__APP__/home/comment/querySchoolComment";
+		var loginFlag= $('#loginFlag').val();
+		$.ajax({
+			url:queryUrl,
+			method: 'POST',
+			dataType: 'json',
+			data: {
+				schoolId: $('#commentSchoolId').val()
+			},success: function(resp)
+			{
+				var strHtml = "";
+				$(resp).each(function(i,val) {
+
+                    strHtml +="<li>";
+                    strHtml +="<div class='img'>";
+                    strHtml +="<a href='#'><img src='__PUBLIC__/home/images/pl.jpg' /></a>";
+                    strHtml +="</div>";
+                    strHtml +="<div class='box'>";
+                    strHtml +="<div class='box-main'>";
+					strHtml +="<div class='tit'>";
+					strHtml +="<span class='us-time'>"+val.comment_time+"</span>";
+					if(val.comment_user_name==null){
+						strHtml +="<span class='us-name'>游客</span>";
+					}else{
+						strHtml +="<span class='us-name'>"+val.comment_user_name+"</span>";
+					}
+					strHtml +="</div>";
+					strHtml +="<div class='conn'>";
+					strHtml +="<p>"+val.comment_detail+"</p>";
+					strHtml +="</div>";
+					if(loginFlag=="1"){
+					strHtml +="<div class='ico'>";
+					strHtml +="<div class='ico-box' style='cursor:pointer'>";
+					//strHtml +="<i class='gap-gw'></i>";
+					//strHtml +=" <span class='click-ding-gw'><a href='javascript:void(0)' title='顶' class='evt-support'><i class='icon-gw icon-ding-bg'></i><em class='icon-name-bg'></em></a></span>";
+					//strHtml +="<i class='gap-gw'></i>";
+					//strHtml +="<span class='click-cai-gw'><a href='javascript:void(0)' title='踩' class='evt-opposed'><i class='icon-gw icon-cai-bg'></i><em class='icon-name-bg'></em></a></span>";
+					strHtml +="<i class='gap-gw'></i>";
+					strHtml +="<span class='click-reply-gw click-reply-eg' onclick='dispHf(\"area_"+val.comment_id+"\")' >回复</span>";
+					//strHtml +="<i class='gap-gw'></i>";
+					//strHtml +="<span class='click-share-gw click-reply-eg'><a href='javascript:void(0)' class='evt-share'>分享</a></span>";
+					strHtml +="</div>";
+					strHtml +="</div>";
+					strHtml +="<div class='clearfix'></div>";
+					strHtml +="<div class='area' style='display:none' id='area_"+val.comment_id+"'>";
+					strHtml +="<div class='areabox'>";
+					strHtml +="<textarea id='hfArea_"+val.comment_id+"' class='textarea'></textarea>";
+					strHtml +="</div>";
+					strHtml +="<div class='actio'>";
+					strHtml +="<div class='actio-box'>";
+					strHtml +="</div>";
+					strHtml +="<div class='hf'>";
+					strHtml +="<div class='hf-box'>";
+					strHtml +="<span class='hf-btn'  onclick='doHf(\"hfArea_"+val.comment_id+"\",\""+val.comment_id+"\")'>回复</span>";
+					strHtml +="</div>";       
+					strHtml +="</div>"; 
+					}
+					strHtml +="</div>"; 
+					strHtml +="</div>"; 
+					strHtml +="</div>"; 
+					strHtml +="<div class='clearfix'></div>"; 
+					strHtml +="</li>"; 
+				});
+				$('#commentRoot').html(strHtml);
+			}
+		});
+	}
+	
+	function doHf(hfAreaId,parentId){
+		var saveUrl="__APP__/home/comment/commentSchoolSave";
+		$.ajax({
+			url:saveUrl,
+			method: 'POST',
+			dataType: 'json',
+			data: {
+				schoolId: $('#commentSchoolId').val(),
+				commentLevel: $('#commentLevel').val(),
+				commentDetail:$('#'+hfAreaId).val(),
+				comment_parent_id: parentId,
+			},success: function(resp)
+			{
+				if(resp=="success")
+				{
+					alert("回复成功.");
+					queryComments();
+				}
+				else
+				{
+					alert("回复失败");
+				}
+			}
+		});
+	}
+	
+	function doSave(){
+		var saveUrl="__APP__/home/comment/commentSchoolSave";
+		$.ajax({
+			url:saveUrl,
+			method: 'POST',
+			dataType: 'json',
+			data: {
+				schoolId: $('#commentSchoolId').val(),
+				commentLevel: $('#commentLevel').val(),
+				commentDetail:$('#commentDetail').val(),
+			},success: function(resp)
+			{
+				if(resp=="success")
+				{
+					alert("学校评论成功.");
+					$('#commentDetail').val('');
+					queryComments();
+				}
+				else
+				{
+					alert("评论失败.");
+				}
+			}
+		});
+	}
+</script>

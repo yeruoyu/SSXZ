@@ -1,0 +1,93 @@
+<meta charset="UTF-8">
+<!--头部begin-->
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="inner">您好，欢迎来到莘莘网</div>
+            <div class="inner-right">
+                <ul class="list-inline">
+                    <li><a href="__APP__/home/User/login">登录</a>|</li>
+                    <li><a href="__APP__/home/User/registerStep1">注册</a></li>
+     <!--                <li><a href="#">手机客户端</a>|</li>
+                    <li><a href="#">微信</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divide-wrap">
+        <div class="colorbar-one"></div>
+        <div class="colorbar-two"></div>
+        <div class="colorbar-three"></div>
+        <div class="colorbar-four"></div>
+    </div>
+    <div class="header-wap-box">
+        <div class="container">
+            <div class="header-wap">
+                <div class="header-login">
+                    <h2><a href="__APP__/home/index/index"><img src="__PUBLIC__/home/images/logo.png" style="margin-top:-12px"/></a></h2>
+                </div>
+                <div class="header-nav">
+                    <ul class="list-inline nav-control">
+                        <if condition="$navStyple eq 'School' ">
+                        	<li  class="cur">
+                        <else />
+                        	<li>
+                        </if>
+                        <a href="__APP__/home/school/schoolList" title="国际学校">国际学校</a></li>
+                        <if condition="$navStyple eq 'Article' ">
+                        	<li  class="cur">
+                        <else />
+                        	<li>
+                        </if>
+                        <a href="__APP__/home/news/newsList" title="最新资讯">最新资讯</a></li>
+                        <if condition="$navStyple eq 'Study' ">
+                        	<li  class="cur">
+                        <else />
+                        	<li>
+                        </if>
+                        <a href="__APP__/home/study/studyList" title="课程学习">课程学习</a></li>
+                        <if condition="$navStyple eq 'Topic' ">
+                        	<li  class="cur">
+                        <else />
+                        	<li>
+                        </if>
+                        <a href="__APP__/home/topic/topicList" title="话题区">话题区</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <div class="search-box">
+                        <select style="width:60px;height:30px"id="searchType" >
+                       		<option value="1" selected="selected">文章</option>
+                       		<option value="2">学校</option>
+                       	</select>
+                        <input style="height:30px;width:200px" id="searchPara" />
+                        <a href="javascript:navDoSearch()" class="search-btn">搜索</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            专注国际课程与学校，同您和孩子一起分享点评最全面教育信息<span class="tel-r">400-123-123-123</span>
+        </div>
+    </div>    
+</div>
+<!--头部end-->
+<script type="text/javascript">
+		// 全搜索
+        function navDoSearch(){
+        	var searchType=$('#searchType').val();
+        	var searchParam=$('#searchPara').val();
+        	if(searchType==1){
+        		window.location.href='__APP__/home/news/newsList/keyword/'+searchParam;
+        	}
+        	else if(searchType==2){
+        		window.location.href='__APP__/home/school/schoolList/keyword/'+searchParam;
+        	}else{
+        		window.location.href='__APP__/home/news/newsList/keyword/'+searchParam;
+        	}
+        	
+        }
+</script>

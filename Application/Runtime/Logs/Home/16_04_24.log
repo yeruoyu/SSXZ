@@ -1,0 +1,1052 @@
+[ 2016-04-24T10:47:01+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003603s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006402s ]
+
+[ 2016-04-24T10:48:49+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001745s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004836s ]
+
+[ 2016-04-24T10:49:24+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001618s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004237s ]
+
+[ 2016-04-24T10:50:30+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001696s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006589s ]
+
+[ 2016-04-24T10:50:46+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001511s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003756s ]
+
+[ 2016-04-24T10:51:04+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003673s ]
+
+[ 2016-04-24T10:52:01+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002763s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004242s ]
+
+[ 2016-04-24T10:52:03+08:00 ] ::1 /ssxz/index.php/home/news/newsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000634s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005327s ]
+
+[ 2016-04-24T10:54:29+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002653s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.034114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035157s ]
+
+[ 2016-04-24T10:54:31+08:00 ] ::1 /ssxz/index.php/home/study/studyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001522s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001959s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003007s ]
+
+[ 2016-04-24T10:55:54+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001543s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003477s ]
+
+[ 2016-04-24T10:55:56+08:00 ] ::1 /ssxz/index.php/home/study/studyList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001869s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006149s ]
+
+[ 2016-04-24T10:55:59+08:00 ] ::1 /ssxz/index.php/home/topic/topicList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000489s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000928s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004443s ]
+
+[ 2016-04-24T10:57:09+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003762s ]
+
+[ 2016-04-24T10:57:11+08:00 ] ::1 /ssxz/index.php/home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002159s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-04-24T10:57:36+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008491s ]
+
+[ 2016-04-24T10:57:37+08:00 ] ::1 /ssxz/index.php/home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000725s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002259s ]
+
+[ 2016-04-24T10:59:31+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006878s ]
+
+[ 2016-04-24T11:00:31+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001639s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009192s ]
+
+[ 2016-04-24T11:00:33+08:00 ] ::1 /ssxz/index.php/home/Index/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000969s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004304s ]
+
+[ 2016-04-24T11:03:43+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001706s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005299s ]
+
+[ 2016-04-24T11:03:45+08:00 ] ::1 /ssxz/index.php/home/school/register_step1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002454s ]
+ERR: 非法操作:register_step1
+
+[ 2016-04-24T11:03:49+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001959s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002998s ]
+
+[ 2016-04-24T11:03:51+08:00 ] ::1 /ssxz/index.php/home/Index/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000640s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003432s ]
+
+[ 2016-04-24T11:03:53+08:00 ] ::1 /ssxz/index.php/home/Index/registerStep2?name=&password=&password=&name=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000471s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000898s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005119s ]
+
+[ 2016-04-24T11:08:57+08:00 ] ::1 /ssxz/index.php/home/Index/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000986s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2016-04-24T11:08:58+08:00 ] ::1 /ssxz/index.php/home/Index/registerStep2?name=&password=&password=&name=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000547s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002764s ]
+
+[ 2016-04-24T11:09:03+08:00 ] ::1 /ssxz/index.php/home/Index/registerstep3?name=&name=&name=&name=&name=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002212s ]
+
+[ 2016-04-24T11:09:40+08:00 ] ::1 /ssxz/index.php/home/Index/registerstep3?name=&name=&name=&name=&name=&name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000764s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002493s ]
+
+[ 2016-04-24T11:09:44+08:00 ] ::1 /ssxz/index.php/home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002234s ]
+
+[ 2016-04-24T11:31:42+08:00 ] ::1 /ssxz/index.php/home/Index/school_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002596s ]
+ERR: 非法操作:school_list
+
+[ 2016-04-24T11:31:49+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002978s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005184s ]
+
+[ 2016-04-24T11:31:51+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001593s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003739s ]
+
+[ 2016-04-24T11:31:57+08:00 ] ::1 /ssxz/index.php/home/school/school_detail1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002983s ]
+ERR: 非法操作:school_detail1
+
+[ 2016-04-24T11:32:54+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001895s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005081s ]
+
+[ 2016-04-24T11:32:57+08:00 ] ::1 /ssxz/index.php/home/school/school_detail1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002399s ]
+ERR: 非法操作:school_detail1
+
+[ 2016-04-24T11:33:04+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004332s ]
+
+[ 2016-04-24T11:33:33+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001567s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003188s ]
+
+[ 2016-04-24T11:33:34+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004150s ]
+
+[ 2016-04-24T11:34:11+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002706s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003703s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015811s ]
+
+[ 2016-04-24T11:34:48+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001699s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003640s ]
+
+[ 2016-04-24T11:34:51+08:00 ] ::1 /ssxz/index.php/home/Index/schoolDetail11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008694s ]
+ERR: 非法操作:schoolDetail11
+
+[ 2016-04-24T11:35:55+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004708s ]
+
+[ 2016-04-24T11:35:59+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007469s ]
+
+[ 2016-04-24T11:38:34+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003356s ]
+
+[ 2016-04-24T11:43:39+08:00 ] ::1 /ssxz/index.php/home/School/school_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002650s ]
+ERR: 非法操作:school_list
+
+[ 2016-04-24T11:43:44+08:00 ] ::1 /ssxz/index.php/home/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001555s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006040s ]
+
+[ 2016-04-24T11:43:47+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.045034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045811s ]
+ERR: 非法操作:schoolDetail11
+
+[ 2016-04-24T11:45:07+08:00 ] ::1 /ssxz/index.php/home/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001762s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004400s ]
+
+[ 2016-04-24T11:45:10+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000988s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003269s ]
+
+[ 2016-04-24T11:45:13+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001709s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004054s ]
+
+[ 2016-04-24T11:45:19+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000935s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003380s ]
+
+[ 2016-04-24T11:46:25+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007068s ]
+
+[ 2016-04-24T11:46:27+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001685s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011386s ]
+
+[ 2016-04-24T11:46:29+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000720s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003516s ]
+
+[ 2016-04-24T11:46:31+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000865s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002639s ]
+
+[ 2016-04-24T11:46:33+08:00 ] ::1 /ssxz/index.php/home/Topic/topicList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000919s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004214s ]
+

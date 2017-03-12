@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<div class="item col3">       
+    <div class="title1">
+        <div class="in-sea">
+            <input type="text" id="keyword" placeholder="请输入话题区关键字"/>
+            <a style="cursor:pointer" onclick="doTopicSearch()">搜索</a>
+        </div>
+    </div>
+    
+    <div class="area-box" style="width:100%">
+        <div class="area-title">
+            <h2>一周你热门话题</h2>
+            <div class="area-l"></div>
+            <div class="area-r"></div>
+        </div>
+        <div class="area-main">
+            <ul class="favorite-list">
+            	<volist name="topTopicList" id="vo">
+            		<li>                        	        
+                    <div><a href="__APP__/home/news/newsDetail/id/{$vo.article_id}">{$vo.article_title}</a></div>
+                   <!--  <div class="liAuthor">作者：{vo.article_author}</div>
+                    <div><span class="count-eye"><i class="icon-eye"></i>204578</span><a rel="external nofollow" class="count-infor" href="#"><i class="icon-infor"></i>3974</a></div>
+                	 -->
+                </li>
+            	</volist>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	function doTopicSearch(){
+		var keyword = $("#keyword").val();
+		var topicUrl = "__APP__/home/topic/topicList/";
+		if(keyword !=''){
+			topicUrl = "__APP__/home/topic/topicList/keyword/"+keyword;
+			window.location.href=topicUrl;
+		}
+		
+	}
+</script>

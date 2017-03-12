@@ -1,0 +1,43 @@
+[ 2016-05-02T10:08:36+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002916s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001716s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004348s ]
+
+[ 2016-05-02T10:19:27+08:00 ] ::1 /ssxz/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002604s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.039013s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.001146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007528s ]
+

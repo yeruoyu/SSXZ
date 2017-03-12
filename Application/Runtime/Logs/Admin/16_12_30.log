@@ -1,0 +1,1463 @@
+[ 2016-12-30T12:55:36+08:00 ] ::1 /ssxz/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002174s ]
+
+[ 2016-12-30T12:55:37+08:00 ] ::1 /ssxz/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000811s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008784s ]
+
+[ 2016-12-30T13:04:50+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002983s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+
+[ 2016-12-30T13:04:51+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000729s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003784s ]
+
+[ 2016-12-30T13:04:56+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.010464s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.010308s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.001792s ]
+
+[ 2016-12-30T13:04:56+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002939s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000772s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002686s ]
+
+[ 2016-12-30T13:04:57+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002229s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011260s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010475s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.003116s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001095s ]
+
+[ 2016-12-30T13:06:32+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-12-30T13:06:33+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000882s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002517s ]
+
+[ 2016-12-30T13:06:37+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002649s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.011297s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.009687s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.001732s ]
+
+[ 2016-12-30T13:06:38+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000767s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001541s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002568s ]
+
+[ 2016-12-30T13:06:39+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002225s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014185s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.013447s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002377s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001328s ]
+
+[ 2016-12-30T13:06:46+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+ERR: 无法加载控制器:Banner
+
+[ 2016-12-30T13:06:50+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002552s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010235s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009723s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.002266s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.000971s ]
+
+[ 2016-12-30T13:08:45+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-12-30T13:08:46+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003307s ]
+
+[ 2016-12-30T13:08:52+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.006431s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.007438s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.001119s ]
+
+[ 2016-12-30T13:08:53+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003730s ]
+
+[ 2016-12-30T13:08:54+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011566s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.008578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.001857s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.000877s ]
+
+[ 2016-12-30T13:08:55+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+ERR: 无法加载控制器:Banner
+
+[ 2016-12-30T13:12:36+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000416s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000824s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.455074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.455522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002541s ]
+
+[ 2016-12-30T13:12:37+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002264s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015898s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like '%%' or article_title like '%%' or school_name like '%%') and topic_flag=1 ) LIMIT 1   [ RunTime:0.002065s ]
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like '%%' or article_title like '%%' or school_name like '%%') and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.009676s ]
+
+[ 2016-12-30T13:13:27+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000835s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002525s ]
+
+[ 2016-12-30T13:13:27+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.013817s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like '%%' or article_title like '%%' or school_name like '%%') and topic_flag=1 ) LIMIT 1   [ RunTime:0.002044s ]
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like '%%' or article_title like '%%' or school_name like '%%') and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.010624s ]
+
+[ 2016-12-30T13:28:06+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000817s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002625s ]
+
+[ 2016-12-30T13:28:07+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009849s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000880s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000952s ]
+
+[ 2016-12-30T13:28:29+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000819s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002647s ]
+
+[ 2016-12-30T13:28:30+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000869s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000967s ]
+
+[ 2016-12-30T13:28:33+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000842s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000974s ]
+
+[ 2016-12-30T13:28:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009484s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000840s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000976s ]
+
+[ 2016-12-30T13:28:35+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000880s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000956s ]
+
+[ 2016-12-30T13:33:56+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000862s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003766s ]
+
+[ 2016-12-30T13:33:56+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010345s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000855s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000948s ]
+
+[ 2016-12-30T13:34:04+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002608s ]
+ERR: 非法操作:bannerDetail
+
+[ 2016-12-30T13:34:06+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000843s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000944s ]
+
+[ 2016-12-30T13:48:24+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000886s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2016-12-30T13:48:25+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008771s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000886s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000996s ]
+
+[ 2016-12-30T13:48:27+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 111 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 120 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 123 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 142 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 158 行.
+NOTIC: [8] Undefined variable: articleInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 172 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 188 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003254s ]
+
+[ 2016-12-30T13:50:31+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001226s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 119 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 126 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 141 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 157 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 171 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 187 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 187 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002922s ]
+
+[ 2016-12-30T13:50:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000422s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000862s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 119 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 126 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 141 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 157 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 171 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 187 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 187 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002250s ]
+
+[ 2016-12-30T13:51:49+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002643s ]
+
+[ 2016-12-30T13:51:53+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000862s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002230s ]
+
+[ 2016-12-30T13:52:20+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000830s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002487s ]
+
+[ 2016-12-30T13:59:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002800s ]
+
+[ 2016-12-30T13:59:50+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000421s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000836s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002520s ]
+
+[ 2016-12-30T14:00:05+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003547s ]
+
+[ 2016-12-30T14:00:18+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000422s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002429s ]
+
+[ 2016-12-30T14:00:25+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000422s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002794s ]
+
+[ 2016-12-30T14:01:10+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000857s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 201 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002755s ]
+
+[ 2016-12-30T14:13:40+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000846s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003171s ]
+
+[ 2016-12-30T14:14:51+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002914s ]
+
+[ 2016-12-30T14:16:12+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002526s ]
+
+[ 2016-12-30T14:17:09+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002657s ]
+
+[ 2016-12-30T14:18:25+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList/start//pagesize/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000946s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002596s ]
+
+[ 2016-12-30T14:18:28+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000442s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000852s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2016-12-30T14:18:29+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.012019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000846s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000923s ]
+
+[ 2016-12-30T14:18:31+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] Undefined variable: menulist E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 42 行.
+NOTIC: [8] Undefined variable: user E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 78 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 88 行.
+NOTIC: [8] Undefined variable: title E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 98 行.
+NOTIC: [8] Undefined variable: action E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 106 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 107 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 108 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 109 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 110 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 118 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 122 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 127 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 143 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 161 行.
+NOTIC: [8] Undefined variable: bannerInfo E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 177 行.
+NOTIC: [8] Undefined variable: start E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+NOTIC: [8] Undefined variable: pagesize E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Admin\6b43585162bd11c48c53326641f63f0c.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027903s ]
+
+[ 2016-12-30T14:18:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList/start//pagesize/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000433s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002636s ]
+
+[ 2016-12-30T14:20:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002674s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000837s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002732s ]
+
+[ 2016-12-30T14:20:34+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.012013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000902s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000975s ]
+
+[ 2016-12-30T14:20:36+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.014283s ]
+SQL: SELECT * FROM `xx_banner` WHERE `banner_id` = -1 LIMIT 1   [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014538s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1  [ RunTime:0.111031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000583s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002660s ]
+
+[ 2016-12-30T14:20:39+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000831s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002644s ]
+
+[ 2016-12-30T14:20:40+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.011876s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000849s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.000984s ]
+
+[ 2016-12-30T14:20:43+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.012566s ]
+SQL: SELECT * FROM `xx_banner` WHERE `banner_id` = -1 LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012809s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1  [ RunTime:0.085827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000466s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000897s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003028s ]
+
+[ 2016-12-30T14:20:52+08:00 ] ::1 /ssxz/admin.php/Banner/bannerList/start/0/pagesize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000849s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002263s ]
+
+[ 2016-12-30T14:20:53+08:00 ] ::1 /ssxz/admin.php/Banner/bannerListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.012957s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_banner` WHERE ( (banner_title like '%%') ) LIMIT 1   [ RunTime:0.000874s ]
+SQL: SELECT `banner_id`,`banner_type`,`banner_title`,`banner_path`,`banner_select`,`banner_first`,`banner_status` FROM `xx_banner` WHERE ( (banner_title like '%%') ) ORDER BY banner_type,banner_status desc,banner_id desc LIMIT 0,10   [ RunTime:0.001055s ]
+
+[ 2016-12-30T15:04:43+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002859s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.014625s ]
+SQL: SELECT * FROM `xx_banner` WHERE `banner_id` = -1 LIMIT 1   [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.013118s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1  [ RunTime:0.095247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000917s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002590s ]
+
+[ 2016-12-30T15:05:19+08:00 ] ::1 /ssxz/admin.php/Banner/bannerDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002550s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.011488s ]
+SQL: SELECT * FROM `xx_banner` WHERE `banner_id` = -1 LIMIT 1   [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012383s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1  [ RunTime:0.083611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000471s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000897s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002694s ]
+

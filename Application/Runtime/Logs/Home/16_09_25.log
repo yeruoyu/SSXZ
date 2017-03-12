@@ -1,0 +1,47 @@
+[ 2016-09-25T15:16:51+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018682s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.049618s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.150151s ]
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.033563s ]
+SQL: SELECT * FROM `xx_vschool` LIMIT 0,10   [ RunTime:0.009034s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 LIMIT 0,10   [ RunTime:0.003627s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.033875s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 0,4   [ RunTime:1.500409s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_varticle` WHERE `article_cataloge` = 'guide' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.687372s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_varticle` WHERE `article_cataloge` = 'studentStory' LIMIT 0,4   [ RunTime:0.199072s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_varticle` WHERE `article_cataloge` = 'expert' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.042745s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_varticle` WHERE `article_cataloge` = 'schoolgrade' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.046477s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.025060s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.025523s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaicourse' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.025573s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaichoose' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.024708s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.040243s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_status` = 1 ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:15.152682s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_varticle` WHERE `school_status` = 1 ORDER BY article_id desc LIMIT 0,15   [ RunTime:3.076810s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.029382s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.017721s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.021056s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.017499s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000602s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000850s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.544076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.544280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017356s ]
+

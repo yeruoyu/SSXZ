@@ -1,0 +1,579 @@
+[ 2017-03-04T17:36:40+08:00 ] ::1 /ssxz/index.php/home/User/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Undefined variable: navStyple E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\dee67e4030ee4495f03d347d49dff69f.php 第 61 行.
+NOTIC: [8] Undefined variable: navStyple E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\dee67e4030ee4495f03d347d49dff69f.php 第 65 行.
+NOTIC: [8] Undefined variable: navStyple E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\dee67e4030ee4495f03d347d49dff69f.php 第 69 行.
+NOTIC: [8] Undefined variable: navStyple E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\dee67e4030ee4495f03d347d49dff69f.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003626s ]
+
+[ 2017-03-04T17:36:40+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002824s ]
+
+[ 2017-03-04T17:36:48+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002754s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.013465s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.011669s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.005178s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012046s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.008808s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.010859s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.006630s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.010146s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.010307s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.010309s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.011700s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010587s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001918s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003162s ]
+
+[ 2017-03-04T17:46:25+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002873s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012984s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.013643s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001311s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.009463s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.001085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.013961s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.003272s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.010456s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001446s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011137s ]
+SQL: SELECT * FROM `xx_activity` WHERE `school_id` = 1 AND `activity_status` = '2' ORDER BY activity_sort asc,activity_id desc  [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009726s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000961s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001413s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002565s ]
+
+[ 2017-03-04T17:46:26+08:00 ] ::1 /ssxz/index.php/home/comment/querySchoolComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002794s ]
+
+[ 2017-03-04T17:46:26+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011084s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001114s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:28+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.009116s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001035s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:29+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010897s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001139s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:35+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011176s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `xx_project` [ RunTime:0.010859s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=1 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001141s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=2 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001027s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=3 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001118s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=4 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.000948s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=5 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001005s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=6 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.012530s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge='guide' and article_status=1 and topic_flag=0 and article_school_id='1' ) LIMIT 0,10   [ RunTime:0.001220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge='guide' and article_status=1 and topic_flag=0 and article_school_id='1' ) LIMIT 1   [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.009457s ]
+SQL: SELECT * FROM `xx_activity` WHERE `school_id` = 1 AND `activity_status` = '2' ORDER BY activity_sort asc,activity_id desc  [ RunTime:0.001124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001448s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\96f85b540302a1aa1dcf96b4f3cde40a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2017-03-04T17:46:36+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002714s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.012666s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001781s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:36+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.013982s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001632s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:40+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010064s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001319s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:40+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002507s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.009688s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001283s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:43+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002430s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012466s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `xx_project` [ RunTime:0.012042s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=1 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001115s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=2 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001046s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=3 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001130s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=4 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001032s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=5 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.001218s ]
+SQL: SELECT * FROM `xx_project` WHERE ( level_id=6 and status=2 and school_id=1 ) LIMIT 1   [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010562s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge='guide' and article_status=1 and topic_flag=0 and article_school_id='1' ) LIMIT 0,10   [ RunTime:0.001059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge='guide' and article_status=1 and topic_flag=0 and article_school_id='1' ) LIMIT 1   [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011425s ]
+SQL: SELECT * FROM `xx_activity` WHERE `school_id` = 1 AND `activity_status` = '2' ORDER BY activity_sort asc,activity_id desc  [ RunTime:0.001267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000999s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\96f85b540302a1aa1dcf96b4f3cde40a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2017-03-04T17:46:43+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010747s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001388s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:44+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010009s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001019s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:47+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.009418s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001293s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:47+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.012186s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001377s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:46:53+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.012194s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001101s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:46:54+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivitys?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010520s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 44 行.
+SQL: SELECT `activity_id`,`activity_address`,`activity_title`,`activity_detail`,`school_name`,`activity_startdate`,`activity_enddate`,`activity_status` FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001131s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 56 行.
+
+[ 2017-03-04T17:48:28+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail3/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009994s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001566s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015381s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002729s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'documentary' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002623s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'camp' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000836s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001267s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\25b0ac73ca86318221ea295d6bb6bd38.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002926s ]
+
+[ 2017-03-04T17:48:29+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.010487s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001347s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:48:32+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011379s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001261s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:48:32+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002267s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011393s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001303s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:51:01+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002625s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012619s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001408s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010592s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001218s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.009097s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.001147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015599s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.003366s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.008387s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001306s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.012379s ]
+SQL: SELECT * FROM `xx_activity` WHERE `school_id` = 1 AND `activity_status` = '2' ORDER BY activity_sort asc,activity_id desc  [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.012548s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001895s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003327s ]
+
+[ 2017-03-04T17:51:02+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011173s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001397s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:51:02+08:00 ] ::1 /ssxz/index.php/home/comment/querySchoolComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002825s ]
+
+[ 2017-03-04T17:51:03+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002112s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.011566s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001322s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+
+[ 2017-03-04T17:51:04+08:00 ] ::1 /ssxz/index.php/home/Activity/findActivityDays?schoolId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_activity` [ RunTime:0.009273s ]
+NOTIC: [8] Undefined index: iDisplayStart E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+NOTIC: [8] Undefined index: iDisplayLength E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 19 行.
+SQL: SELECT distinct(activity_startdate) activity_startdate FROM `xx_activity` WHERE ( school_id=1 and activity_status=2 ) ORDER BY activity_id  [ RunTime:0.001298s ]
+NOTIC: [8] Undefined index: sEcho E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 22 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: activityCount E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\ActivityController.class.php 第 31 行.
+

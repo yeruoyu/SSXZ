@@ -1,0 +1,86 @@
+[ 2016-05-27T15:05:52+08:00 ] ::1 /ssxz/school.php/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.034963s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.001045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000868s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002153s ]
+
+[ 2016-05-27T15:06:02+08:00 ] ::1 /ssxz/school.php/Index/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.054224s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_school_id` = '1' AND `user_type` = 2 LIMIT 1   [ RunTime:0.002740s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.025421s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.030133s ]
+SQL: SELECT * FROM `xx_function` WHERE ( fun_module='school' and fun_type='menu' and fun_status='1' ) ORDER BY fun_order  [ RunTime:0.001770s ]
+
+[ 2016-05-27T15:06:03+08:00 ] ::1 /ssxz/school.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000556s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001113s ]
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 50 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: catalogId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 60 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+NOTIC: [8] Undefined variable: funId D:\06_Workspace_Php\ssxz\src\Application\Runtime\Cache\School\36ee1693981edaf2295419bdd326ed34.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003237s ]
+

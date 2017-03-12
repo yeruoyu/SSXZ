@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<include file="./Application/Admin/View/Public/head.html" />
+<body class="page-body">
+	<div class="page-container">
+		<include file="./Application/Admin/View/Public/menu.html" />
+		<div class="main-content">	
+			<include file="./Application/Admin/View/Public/navigation.html" />
+			<div class="page-title">
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<li><i class="fa-home"></i>首页</li>
+						<li>学习小组管理</li>
+						<li class="active"><strong>学习小组列表</strong></li>
+					</ol>		
+				</div>
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">学习小组列表</h3>
+						</div>
+						<div class="panel-body">
+							<!-- Content -->
+							<table class="table table-bordered table-striped" id="tb_school">
+								<thead>
+									<tr>
+										<th>学习小组ID</th>
+										<th>学习小组名称</th>
+										<th>关注度</th>
+										<th>点评数</th>
+										<th>新学习小组</th>
+										<th>学习小组状态</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody class="middle-align"></tbody>
+								<tfoot>
+									<tr>
+										<th>学习小组ID</th>
+										<th>学习小组名称</th>
+										<th>关注度</th>
+										<th>点评数</th>
+										<th>新学习小组</th>
+										<th>学习小组状态</th>
+										<th>操作</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<include file="./Application/Admin/View/Public/footer.html" />
+		</div>
+	</div>
+</body>
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.css" />
+
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.css" />
+	<load href="__PUBLIC__/assets/js/datatables/js/jquery.dataTables.js" />
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.js" />
+
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($)
+		{
+			var oTable = $('#tb_school');
+			
+			oTable.dataTable({
+				aLengthMenu: [
+								[10, 25, 50, 100], [10, 25, 50, 100]
+							],
+				iDisplayLength:{$pagesize},
+				displayStart:{$start},
+				bPaginate: true,
+				bProcessing:true, //DataTables载入数据时，是否显示‘进度’提示
+	            bServerSide:true, //是否启动服务器端数据导入
+				sPaginationType:"full_numbers",
+				bLengthChange: true, //改变每页显示数据数量
+				bFilter: true, //过滤功能
+				bSort: true, //排序功能
+				bInfo: true,//页脚信息
+				bFilter:true,
+				sZeroRecords: "抱歉， 没有找到",
+				sInfoEmpty: "没有数据",
+				sAjaxSource: "__APP__/StudyGroup/studyGroupListQuery",
+				fnServerData: function (sSource, data, fnCallback ) {
+					$.ajax( {
+					dataType: 'json',
+					type: "POST",
+					url: sSource,
+					data: data,
+					success: function(resp) {
+			            fnCallback(resp);
+					}  
+					} );
+				},
+				aoColumns: [
+							{"mData" : "school_id","asSorting": [ "desc", "asc", "desc" ] },
+							{"mData" : "school_name"},
+							{"mData" : "school_attention"},
+							{"mData" : "school_comments"},
+							{"mData" : "school_isnew"},
+							{"mData" : "school_status"},
+							{"mData" : "school_id"}
+						],
+				columnDefs: [
+								{
+								    "render": function ( data, type, row ) {
+								 	   if(data==1){
+								 		   return '新增学习小组';
+								 	   }else if(data==0){
+								 		   return '一般学习小组';
+								 	   }else{
+								 		   return  data;
+								 	   }
+								    },
+								    "targets": 4
+								},
+				               {
+				                   "render": function ( data, type, row ) {
+				                	   if(data==1){
+				                		   return '发布';
+				                	   }else if(data==0){
+				                		   return '未发布';
+				                	   }else{
+				                		   return  data;
+				                	   }
+				                      
+				                   },
+				                   "targets": 5
+				               },
+				               {
+				                  "render": function ( data, type, row ) {
+										if(row['school_status']==1){
+											return '<a href="__APP__/StudyGroup/studyGroupDetail/id/'+data+'/edit/true/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">编辑</a> <a href="__APP__/studyGroup/disableStudyGroup/id/'+data+'/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">无效</a>';
+										}else{
+											return '<a href="__APP__/StudyGroup/studyGroupDetail/id/'+data+'/edit/true/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">编辑</a> <a href="__APP__/studyGroup/enableStudyGroup/id/'+data+'/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">有效</a>';
+										}
+				                	   
+				                	   
+				                      
+				                   },
+				                   "targets": 6
+				               },
+				               { "bVisible": false, "aTargets": [ 0 ] }
+				           ],
+				
+				oLanguage: {  //下面是一些汉语翻译
+                             "sSearch": "搜索",
+                             "sLengthMenu": "每页显示 _MENU_ 条记录",
+                             "sZeroRecords": "没有检索到数据",
+                             "sInfo": "显示 _START_ 至 _END_ 条 &nbsp;&nbsp;共 _TOTAL_ 条",
+                             "sInfoFiltered": "(筛选自 _MAX_ 条数据)",
+                             "sInfoEmtpy": "没有数据",
+                             "sProcessing": "正在加载数据...",
+                             "oPaginate":
+                                     {
+                                         "sFirst": "首页",
+                                         "sPrevious": "前一页",
+                                         "sNext": "后一页",
+                                         "sLast": "末页"
+                                     }
+                         },
+			});
+			
+		});
+	</script>
+</html>

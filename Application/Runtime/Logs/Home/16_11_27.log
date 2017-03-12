@@ -1,0 +1,165 @@
+[ 2016-11-27T11:14:13+08:00 ] ::1 /ssxz/index.php/home/User/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002033s ]
+
+[ 2016-11-27T11:14:13+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+
+[ 2016-11-27T11:25:36+08:00 ] ::1 /ssxz/index.php/home/User/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001959s ]
+
+[ 2016-11-27T11:25:37+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003304s ]
+
+[ 2016-11-27T11:25:45+08:00 ] ::1 /ssxz/index.php/home/User/checkUserName
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002523s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.010415s ]
+SQL: SELECT * FROM `xx_user` WHERE ( user_login = 'testStu' )  [ RunTime:0.001169s ]
+
+[ 2016-11-27T11:25:57+08:00 ] ::1 /ssxz/index.php/home/User/checkMobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.011315s ]
+SQL: SELECT * FROM `xx_user` WHERE ( user_mobile = '13212312312' )  [ RunTime:0.001258s ]
+
+[ 2016-11-27T11:26:03+08:00 ] ::1 /ssxz/index.php/home/User/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+
+[ 2016-11-27T11:26:04+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html?0.45352384028956294
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001880s ]
+
+[ 2016-11-27T11:26:05+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html?0.08203033031895757
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+
+[ 2016-11-27T11:26:06+08:00 ] ::1 /ssxz/index.php/home/User/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+
+[ 2016-11-27T11:26:07+08:00 ] ::1 /ssxz/index.php/home/User/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+
+[ 2016-11-27T11:26:08+08:00 ] ::1 /ssxz/index.php/home/User/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002531s ]
+
+[ 2016-11-27T11:26:10+08:00 ] ::1 /ssxz/index.php/home/User/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+
+[ 2016-11-27T11:26:12+08:00 ] ::1 /ssxz/index.php/home/User/doRegisterStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002092s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.009957s ]
+NOTIC: [8] Undefined index: password E:\02_PHPPROJECT\ssxz\src\Application\Home\Controller\UserController.class.php 第 19 行.
+SQL: INSERT INTO `xx_user` (`user_login`,`user_name`,`user_type`,`user_pwd`,`user_mobile`) VALUES ('testStu','学生测试',4,null,'13212312312') [ RunTime:0.005034s ]
+
+[ 2016-11-27T11:26:12+08:00 ] ::1 /ssxz/index.php/home/User/registerStep2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002186s ]
+
+[ 2016-11-27T11:26:12+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002070s ]
+
+[ 2016-11-27T21:00:33+08:00 ] ::1 /ssxz/index.php/home/User/registerStep1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-11-27T21:00:33+08:00 ] ::1 /ssxz/index.php/Home/User/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-27T21:00:35+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-11-27T21:01:03+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+
+[ 2016-11-27T21:01:15+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001847s ]
+
+[ 2016-11-27T21:01:46+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-11-27T21:02:53+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001882s ]
+
+[ 2016-11-27T21:03:02+08:00 ] ::1 /ssxz/index.php/home/User/student_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001938s ]
+ERR: 非法操作:student_index
+
+[ 2016-11-27T21:07:20+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-11-27T21:07:27+08:00 ] ::1 /ssxz/index.php/home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001885s ]
+

@@ -1,0 +1,33 @@
+[ 2016-04-07T21:39:03+08:00 ] ::1 /ssxz/admin.php/school/schoolDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002928s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.032178s ]
+SQL: SELECT * FROM `xx_function` WHERE ( fun_module='admin' and fun_type='menu' ) ORDER BY fun_order  [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `xx_quotation` [ RunTime:0.008073s ]
+ERR: 1356:View 'ssxz.xx_quotation' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_quotation`
+SQL: SELECT * FROM `xx_quotation` WHERE `school_id` = 0  [ RunTime:0.001236s ]
+ERR: 1356:View 'ssxz.xx_quotation' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+ [ SQL语句 ] : SELECT * FROM `xx_quotation` WHERE `school_id` = 0 
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.029042s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = 0  [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `xx_enrollment` [ RunTime:0.017148s ]
+SQL: SELECT * FROM `xx_enrollment` WHERE `enrollment_school_id` = 0  [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004417s ]
+

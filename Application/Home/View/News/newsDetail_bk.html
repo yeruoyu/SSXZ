@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<include file="./Application/Home/View/Public/head.html" />
+</head>
+<body>
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+        <!--topbannerbegin-->
+         <div class="container">
+             <div class="topbanner">
+                 <img src="__PUBLIC__/home/images/topbanner3.jpg" alt="" />
+             </div>
+         </div>
+        <!--topbannerend-->
+        <!--容器begin-->
+        <div class="container hua-main"> 
+            <div class="zixun-li">
+                <div class="item col1">
+                    <p><a href="__APP__/home/news/newsList/type/schoolnews">校园新闻</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/documentary">课堂纪实</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/achievement">教学成果</a></p>
+                </div>
+                <div class="item col2">
+                    <p><a href="__APP__/home/news/newsList/type/story">学生故事</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/student">学生风采</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/camp">探&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;营</a></p>
+                </div>
+                <div class="item col3">
+                    <p><a href="__APP__/home/news/newsList/type/expert">专家专栏</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/master">校长录</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/schoolgrade">升学指导</a></p>
+                </div>
+                <div class="item col4">
+                    <p><a href="__APP__/home/news/newsList/type/enroll">招生简章</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/activity">招生活动</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/visa">签&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证</a></p>
+                </div>
+                <div class="item col5">
+                    <p><a href="__APP__/home/news/newsList/type/enroll">招生简章</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/activity">招生活动</a></p>
+                    <p><a href="__APP__/home/news/newsList/type/visa">签&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证</a></p>
+                </div>
+            </div>
+            <div class="zixun-l zx"  style="padding-right:28px;">
+                <div class="prc">{$articleInfo.article_cataloge}</div>
+                <div class="title">{$articleInfo.article_title}</div>
+                <div class="des">
+                    <span class="r1">作者：{$articleInfo.article_create_user}</span>
+                    <span class="r2">来源：{$articleInfo.article_course}</span>
+                    <span class="r3">{$articleInfo.article_create_time}</span>
+                    <!-- <span class="r4">我要评论（）</span>  -->
+                </div>
+                <div class="zx-main">
+                	<!-- 
+                    <img src="__PUBLIC__/home/images/z_03.jpg" style="display:block;  margin:88px auto; width:501px;" />
+                     -->
+                    <span>
+                    {$articleInfo.article_detail}
+                    </span>
+                    <div class="main-ico">
+                        <div class="icon-ai">
+                            <span class="icon-z">置顶</span>
+                            <span class="icon-j">精品</span>
+                        </div>
+                        <div class="icon-box">
+                            <span class="icon-y">有用</span>
+                            <span class="icon-yue">阅读数</span>
+                            <span class="icon-g">跟帖数</span>
+                        </div>
+                    </div>
+                </div>
+			<!-- <div class="comment"  style=" position:relative; border-bottom: 2px solid #0fa484;">
+	            <div class="comment-box">
+	                <h1><span>我的点评</span></h1>
+	                <div class="comment-main">
+	                    <img src="__PUBLIC__/home/images/p_34.jpg"  style="margin:40px 0;" />
+	                </div>
+	                <h1><span>最新点评</span></h1>
+	                <div class="comment-main">
+	                    <ul class="PinL">
+	                    	<volist name="commentList" id="vo">
+	                    		<li>
+		                            <div class="img">
+		                                <a href="#"><img src="__PUBLIC__/home/images/pl.jpg" /></a>
+		                            </div>
+		                            <div class="box">
+		                                <div class="box-main">
+		                                    <div class="tit">
+		                                        <span class="us-time">{$vo.comment_time}</span>
+		                                        <span class="us-name"><a href="#">{$vo.comment_user_id}</a></span>
+		                                    </div>
+		                                    <div class="conn">
+		                                        <p>{$vo.comment_detail}</p>
+		                                    </div>
+		                                    
+		                                    <div class="ico">
+		                                        <div class="ico-box">
+		                                             <i class="gap-gw"></i>
+		                                            <span class="click-ding-gw"><a href="javascript:void(0)" title="顶" class="evt-support"><i class="icon-gw icon-ding-bg"></i><em class="icon-name-bg"></em></a></span>
+		                                            <i class="gap-gw"></i>
+		                                            <span class="click-cai-gw"><a href="javascript:void(0)" title="踩" class="evt-opposed"><i class="icon-gw icon-cai-bg"></i><em class="icon-name-bg"></em></a></span>
+		                                            <i class="gap-gw"></i>
+		                                            <span class="click-reply-gw click-reply-eg"><a href="javascript:void(0)" class="evt-reply">回复</a></span>
+		                                            <i class="gap-gw"></i>
+		                                            <span class="click-share-gw click-reply-eg"><a href="javascript:void(0)" class="evt-share">分享</a></span>
+		                                        </div>
+		                                    </div>
+		                                    
+		                                </div>
+		                            </div>
+		                            <div class="clearfix"></div>
+		                        </li>
+	                    	</volist>
+	                    </ul>
+	                </div>
+	                <div class="bottom-next" style="left:47%; width:52px; height:26px; background:url(images/b_42.png) no-repeat; bottom:12px;"></div>
+	            </div>
+        	</div> -->
+        <!-- 
+                <div class="gxq">
+                    <div class="title">您可能还对以下内容感兴趣</div>
+                    <ul>
+                        <li><a href="#">什么是国际学校？</a></li>
+                        <li><a href="#">国际班里开设哪些课程？</a></li>
+                        <li><a href="#">选择国际班看重哪些因素？</a></li>
+                        <li><a href="#">北京有哪些学校开设国际班？</a></li>
+                        <li><a href="#">如何为孩子挑选高中国际班？</a></li>
+                        <li><a href="#">选择国际班看重哪些因素？</a></li>
+                        <li><a href="#">北京有哪些学校开设国际班？</a></li>
+                    </ul>
+                </div>
+              -->
+            </div>
+            <div class="zixun-r">
+            	<!-- 有用的文章15篇 -->
+            	<include file="./Application/Home/View/Public/usefulArticle.html" />
+                <!-- 排名前15的学校 -->
+                <include file="./Application/Home/View/Public/topSchool.html" />
+				<!-- 关于我们 -->
+				<include file="./Application/Home/View/Public/aboutUs.html" />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--容器end-->
+    </div>
+    <include file="./Application/Home/View/Public/footer.html" />
+</body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _ch = $(".container-body").height();
+            var _wh = $(window).height();
+            if (_wh - _ch > 377) {
+                $(".container-body").css("min-height", (_wh - 397) + "px");
+            }
+        })
+        
+         jQuery(document).ready(function($){
+    		// UsefulArticle
+    		showUserfulArticle('expert','usefulArticle');
+    		// TopSchool
+    		showTopSchool('topSchool');
+        });
+        
+        /* 前15有用的文章 */
+    	function showUserfulArticle(cataloge,dispId){
+    		var usefulArticleQueryUrl = "__APP__/home/index/usefulArticleQuery";
+    		$.ajax({
+				type: 'POST',
+				url: usefulArticleQueryUrl ,
+				data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var articleView = $('#'+dispId);
+						articleView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var articleItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'"><div>'+vo.article_title+'</div></a>'
+								+'</li>';	
+							articleView.append(articleItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    	/* 前15的学校 */
+    	function showTopSchool(dispId){
+    		var usefulSchoolUrl = "__APP__/home/index/topSchool";
+    		$.ajax({
+				type: 'POST',
+				url: usefulSchoolUrl ,
+				//data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var schoolView = $('#'+dispId);
+						schoolView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var schoolItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/School/schoolDetail1/id/'+vo.school_id+'">'+vo.school_name+'</a>'
+								+'</li>';	
+								schoolView.append(schoolItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    </script>
+</html>

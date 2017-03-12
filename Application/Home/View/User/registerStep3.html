@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<!-- bootstrap -->
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" />
+
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/main.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/owl.carousel.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/owl.theme.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/Admission.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
+<!-- jquery -->
+<script type="text/javascript" src="__PUBLIC__/home/js/jQuery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/sliding.js"></script>
+</head>
+<body>
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+
+        <!--容器begin-->
+        <div class="container bgcolorf">
+            <div class="reg regc">
+                <div class="item cur">注册账号</div>
+                <div class="item cur">填写基本信息</div>
+                <div class="item cur">完成注册</div>
+            </div>
+            <div class="reg-tag">
+                <h3 class="lv"><img src="__PUBLIC__/home/img/gou.jpg" style="width:40px;" /> 恭喜您完成注册</h3>
+            </div>
+            <div class="reg-box">
+                <div class="reg-main text-center reg-sam">                    
+                    <p>尊敬的用户，您已成功注册，请<a href="__APP__/home/User/login" class="lv">点击登录</a>！</p>
+                    <p><a href="__APP__/home/User/login" class="btn  btn-lg btn-xh">立即登录</a></p>
+                </div>
+            </div>
+        </div>
+        <!--容器end-->
+    </div>
+
+    <include file="./Application/Home/View/Public/footer.html" />
+</body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var _ch = $(".container-body").height();
+            var _wh = $(window).height();
+            if (_wh - _ch > 377) {
+                $(".container-body").css("min-height", (_wh - 397) + "px");
+            }
+        })
+    </script>
+</html>

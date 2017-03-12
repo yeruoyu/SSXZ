@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/**/
+html, body {
+	overflow-x: hidden;
+	font-family: "微软雅黑";
+}
+/*录取评估*/
+.Admission .group-title {
+	height: 50px;
+	min-height: 50px;
+	position: relative;
+	margin-top: 15px;
+}
+.Admission .group-title .group-item {
+	padding: 10px 0;
+	background-color: #05b866;
+	color: #fff;
+	font-size: 22px;
+	width: 49%;
+	text-align: center;
+	display: inline-block;
+}
+.Admission .group-title .group-item.on {
+	background-color: #d2ecdf;
+}
+.Admission .group-title .group-item:last-child {
+	position: absolute;
+	right: 0px;
+}
+.Admission .group-box {
+	padding: 25px;
+	line-height: 45px;
+	background-color: #ebebeb;
+	position: relative;
+	font-size: 14px;
+}
+.Admission .group {
+/*margin-bottom:5px;*/
+}
+.Admission .group .item {
+	height: 45px;
+	overflow: hidden;
+	float: left;
+}
+.Admission .group .item1 {
+	width: 40%;
+	margin-right: 2%;
+	line-height: 34px;
+}
+.Admission .group .item2 {
+	width: 40%;
+	line-height: 34px;
+	overflow: hidden;
+}
+.Admission .group .item .item_label {
+	background: #05b866;
+	width: 25%;
+	padding: 0 2%;
+	float: left;
+	color: #fff;
+	height: 34px;
+	display: inline-block;
+	text-align: center;
+}
+.Admission .group .item .diqux {
+	width: 40%;
+	float: left;
+}
+.Admission .group .item .age {
+	width: 33.3333333%;
+	padding-right: 1%;
+	float: left;
+}
+.Admission .group .item .age:last-child {
+	width: 33.3333333%;
+	padding-right: 0%;
+	float: left;
+}
+.Admission .group .item .schoolname {
+	width: 58%;
+	margin-left: 2%;
+	float: left;
+}
+.Admission .group .item .right_box {
+	width: 73%;
+	float: left;
+	margin-left: 2%;
+}
+.Admission .group .item .right_box2 {
+	width: 78%;
+	float: left;
+}
+.Admission .group .right_in {
+	width: 17%;
+	line-height: 34px;
+	float: right;
+}
+.Admission .group .item2 .form-control {
+}
+.Admission .group select.form-control {
+	border-radius: 0px;
+	border: none;
+	font-size: 14px;
+	-moz-use-text-color: #CACCD1;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-radius: 0px;
+	margin: 0px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-khtml-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: #fff url(../img/jt.png) no-repeat 98%;
+}
+.Admission .group .item .input-con, .Admission .group .right_in .input-con {
+	background: none;
+	background-color: #fff;
+	border-radius: 0px;
+}
+.Admission .group .btn-star {
+	width: 170px;
+	background-color: #f5615d;
+	margin-left: 15px;
+	float: left;
+}
+.Admission .group.item_center {
+	width: 40%;
+	margin: 0 auto;
+}
+.Admission .group .group-page {
+	width: 38%;
+	margin: 0 auto;
+	float: left;
+}

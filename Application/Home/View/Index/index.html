@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>莘莘网</title>
+<!-- bootstrap -->
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/bootstrap.min.css" />
+
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/main.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/owl.carousel.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/owl.theme.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/Admission.css" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
+<!-- jquery -->
+<script type="text/javascript" src="__PUBLIC__/home/js/jQuery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/sliding.js"></script>
+</head>
+<body>
+    <div class="container-body">
+        <!--头部begin-->
+        <include file="./Application/Home/View/Public/navigation.html" />
+        <!--头部end-->
+        <!--容器begin-->
+        <div class="container-fluid index-main  sx-bg" style="margin:0 -15px;">
+            <!--轮播-->
+            <div id="owl-demo" class="owl-carousel">
+            	<volist name="bannerList" id="vo">
+            		 <a class="item"><img src="{$vo.banner_path}" alt="{$vo.banner_title}"></a>
+            	</volist>
+                <a class="item"><img src="__PUBLIC__/home/images/banner1.jpg" alt=""></a>
+                <a class="item"><img src="__PUBLIC__/home/images/banner1.jpg" alt=""></a>
+                <a class="item"><img src="__PUBLIC__/home/images/banner1.jpg" alt=""></a>
+            </div>
+            <!--轮播end-->
+            <!--筛选-->
+            <div class="container sx-box">
+                <div class="title">
+                    <span class="t1">国际学校查询</span><span class="t2"><a href="#">更多...</a></span><span class="t3">全国最全的国际学校分析、最客观的国际学校评价信息</span>
+                </div>
+                <div class="row">
+                <div class="col-sm-6">
+                    <div class="sm-tit">
+                        <div class="sm-tit1">课程阶段</div>
+                        <div class="sm-tit2">
+                            <span><a href="javascript:doSearch('','')">全部</a></span>
+                            <volist name="stepList" id="vo">
+                            	<span><a href="javascript:doSearch('school_step','{$vo.step_name}')">{$vo.step_name}</a></span>
+                            </volist>
+                        </div>
+                    </div>
+                    <div class="sm-tit">
+                        <div class="sm-tit1">留学方向</div>
+                        <div class="sm-tit2">
+                            <span><a href="javascript:doSearch('','')">全部</a></span>
+                            <volist name="abroadList" id="vo">
+                            	<span><a href="javascript:doSearch('school_abroad','{$vo.abroad_name}')">{$vo.abroad_name}</a></span>
+                            </volist>
+                        </div>
+                    </div>
+                    <div class="sm-tit">
+                        <div class="sm-tit1">最热课程</div>
+                        <div class="sm-tit2">
+                            <span><a href="javascript:doSearch('','')">全部</a></span>
+                            <volist name="courseList" id="vo">
+                            	<span><a href="javascript:doSearch('school_coursename','{$vo.course_name}')">{$vo.course_name}</a></span>
+                            </volist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    
+                    <div class="sm-tit">
+                        <div class="sm-tit1">地区</div>
+                        <div class="sm-tit2">
+                            <span><a href="javascript:doSearch('','')">全部</a></span>
+                            <volist name="areaList" id="vo">
+                            	<span><a href="javascript:doSearch('school_areaname','{$vo.area_name}')">{$vo.area_name}</a></span>
+                            </volist>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <!--筛选end-->
+        </div>
+        <!--容器end-->
+        <div class="container">
+            <div class="tj-box">
+				<div class="tj-span">
+                    <a href="__APP__/home/index/index/showflag/1">推荐学校</a>
+                    <a href="__APP__/home/index/index/showflag/0">新加入学校</a>
+                </div>
+                <div class="lunbo">
+                    <div class="scroll-outer">
+	                    <div id="scroll" class="owl-carousel">
+	                    	<volist name="vslidechoolList" id="vo">
+	                    		<div class="item">
+				                    <empty name="vo.school_photo">
+	                        			<img src="__PUBLIC__/home/images/lb1.jpg" width="239" height="219"/>
+	                        		<else />
+	                        		 	<img src="{$vo.school_photo}" width="239" height="219" />
+	                        		 </empty>
+				                    
+				                    <div class="shd"><a href="__APP__/home/School/schoolDetail1/id/{$vo.school_id}"></a></div>
+				                    <div class="txt">
+					                    <h3><a href="__APP__/home/School/schoolDetail1/id/{$vo.school_id}">{$vo.school_name}</a></h3>
+					                    <p>课程类型：{$vo.school_coursename|str_replace=',',' ',###}</p>
+					                    <p>项目阶段：{$vo.school_step}</p>
+					                    <p>所属地区：{$vo.school_areaname}</p>
+	                                   <!-- <div class="lb-ht">话题区</div>
+	                                    <div class="lb-ht2">+加关注</div> --> 
+				                    </div>
+			                    </div>
+	                    	</volist>
+
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--以下-->
+        <div class="container" style="margin-bottom:75px;">
+            <div class="xueli-l left" style=" border-bottom:1px solid #05b865; min-height:778px;max-height:778px;">
+                <div class="bg title index-t">
+                    <div class="title-main">                        
+	                    <span onmouseover="ShowTab(1,1,6);showArticle('schoolnews','tab1Ul')" id="Span1">学校动态</span>
+	                    <span onmouseover="ShowTab(2,1,6);showArticle('guide','tab2Ul')" id="Span2">招生简章</span>
+	                    <span onmouseover="ShowTab(3,1,6);showArticle('story','tab3Ul')" id="Span3">学生故事</span>
+	                    <span onmouseover="ShowTab(4,1,6);showArticle('expert','tab4Ul')" id="Span4">专家专栏</span>
+	                    <span onmouseover="ShowTab(5,1,6);showArticle('schoolgrade','tab5Ul')" id="Span5">升学指导</span>
+	                    <span><a href="__APP__/home/news/newsList">更多</a></span>
+                    </div>
+                </div>
+
+                <div class="index-li">                    
+	                <div id="Tab1">   
+                        <ul id="tab1Ul" class="xxjs-list"></ul>
+                        <!-- page -->
+	                </div>
+                    <div id="Tab2">
+                        <ul id="tab2Ul" class="xxjs-list"></ul>
+                        <!-- page -->
+                    </div>
+                    <div id="Tab3">
+                        <ul id="tab3Ul" class="xxjs-list"></ul>
+                        <!-- page -->
+                    </div>
+                    <div id="Tab4">
+                        <ul id="tab4Ul" class="xxjs-list"></ul>
+                        <!-- page -->
+                    </div>      
+                    <div id="Tab5">
+                    	 <ul id="tab5Ul" class="xxjs-list"></ul>
+                        <div class="bottom-next"></div>
+                    </div>                  
+                <SCRIPT type="text/javascript">ShowTab(1, 1, 6);</SCRIPT>
+                </div>
+                
+            </div>
+            <!-- Top School -->
+            <include file="./Application/Home/View/Public/topSchool.html" />
+            <div class="clearfix"></div>
+        </div>
+        <div class="container">
+            <!--精彩推荐-->
+            <include file="./Application/Home/View/Public/recommend.html" />
+            <div class="index-03">
+            	<!-- 最有用的文章 -->
+                <include file="./Application/Home/View/Public/usefulArticle.html" />
+                <!-- 最新学校点评信息 -->
+                <include file="./Application/Home/View/Public/topComment.html" />
+                <!-- 最新話題 -->
+                <include file="./Application/Home/View/Public/topTopic.html" />
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--国际学校--->
+        <include file="./Application/Home/View/Public/internetQA.html" />
+    </div>
+	<include file="./Application/Home/View/Public/footer.html" />
+</body>
+    <script type="text/javascript">
+    	jQuery(document).ready(function($){
+
+    		showArticle('schoolnews','tab1Ul');
+    		// UsefulArticle
+    		showUserfulArticle('expert','usefulArticle');
+    		// TopSchool
+    		showTopSchool('topSchool');
+    		// QAList
+    		showQAList('qaischool','tab7Ul');
+		
+        });
+    	/**/
+    	function showArticle(cataloge,dispId){
+    		var articleQueryUrl = "__APP__/home/index/articleQuery";
+    		$.ajax({
+				type: 'POST',
+				url: articleQueryUrl ,
+				data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var articleView = $('#'+dispId);
+						articleView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var imagePath=vo.imagePath;
+							if(imagePath==null|| imagePath==""){
+								imagePath="__PUBLIC__/home/images/jpg1.jpg";
+							}
+
+							var articleItem='<li>'
+								+'<a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'"><img src="'+imagePath+'" width="266" height="143"/></a>'
+								+'<div class="con">'
+								+'<div class="xxjs-list-tit"><span class="sxzd lv"><a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'" >'+vo.article_title+'</a></span></div>'
+								+' <div class="xxjs-main">'+vo.article_excerpt+'</div>'
+								+' <div class="icon-ai">'
+								+'	<span class="icon-z">置顶'+vo.article_top+'</span>'
+								+'	<span class="icon-j">精品'+ vo.article_elite +'</span>'
+								+' </div>'
+								+' <div class="icon-box">'
+								+' <span class="icon-y">有用'+vo.article_useful+'</span>'
+								+' <span class="icon-yue">阅读数'+vo.article_read+'</span>'
+								+' <span class="icon-g">跟帖数'+vo.article_comment+'</span>'
+								+' </div>'
+								+' </div>'
+								+'</li>';	
+							articleView.append(articleItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    	
+    	/* 前15有用的文章 */
+    	function showUserfulArticle(cataloge,dispId){
+    		var usefulArticleQueryUrl = "__APP__/home/index/usefulArticleQuery";
+    		$.ajax({
+				type: 'POST',
+				url: usefulArticleQueryUrl ,
+				data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var articleView = $('#'+dispId);
+						articleView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var articleItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'"><div>'+vo.article_title+'</div></a>'
+								+'</li>';	
+							articleView.append(articleItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    	/* 前15的学校 */
+    	function showTopSchool(dispId){
+    		var usefulSchoolUrl = "__APP__/home/index/topSchool";
+    		$.ajax({
+				type: 'POST',
+				url: usefulSchoolUrl ,
+				//data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var schoolView = $('#'+dispId);
+						schoolView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							var schoolItem='<li>'
+								+'<i>'+rowIndex+'</i>'
+								+'<a href="__APP__/home/School/schoolDetail1/id/'+vo.school_id+'">'+vo.school_name+'</a>'
+								+'</li>';	
+								schoolView.append(schoolItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    	
+    	function showQAList(cataloge,tabUl){
+    		var qaQueryUrl = "__APP__/home/index/qaQuery";
+			$.ajax({
+				type: 'POST',
+				url: qaQueryUrl ,
+				data:{'cataloge':cataloge},
+				dataType:'json',
+				success: function(msg){
+					if(msg.data!=null){
+						var qaView = $('#'+tabUl);
+						qaView.text("");
+						var rowIndex=1;
+						msg.data.forEach(function(vo){
+							
+							var qaItem='<li>'
+								+'<a href="__APP__/home/news/newsDetail/id/'+vo.article_id+'">'
+								+'<i>'+rowIndex+'</i>'+vo.article_title
+								+'</a>'
+								+'</li>';
+							
+							qaView.append(qaItem);
+							rowIndex++;
+						});
+					}
+				}
+			});
+    	}
+    </script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#owl-demo').owlCarousel({
+                items: 1,navigation:true
+            });
+
+            //或者
+            /*
+            $('#owl-demo').owlCarousel({
+                singleItem: true
+            });
+            */
+        });
+
+        $(function () {
+            $('#scroll').owlCarousel({
+                items: 5,
+                autoPlay: true,
+                navigation: true,
+                navigationText: ["", ""],
+                scrollPerPage: true,pagination:false
+            });
+        });
+        
+        // 查询事件
+        function doSearch(type,typeValue){
+        	var keyword = $("#keyword").val();
+        	var strPara = '';
+        	// 如果存在类型
+        	if(type!=null && type!=''){
+        		strPara = strPara+"/type/"+type+"/typeValue/"+typeValue;
+        	}
+        	// 如果存在关键字
+        	if(keyword!=null && keyword!=''){
+        		strPara = strPara +"/keyword/"+keyword;
+        	}
+        	window.location.href= "__APP__/home/school/schoolList"+strPara;
+        }
+    </script>
+</html>

@@ -1,0 +1,2526 @@
+[ 2017-01-07T14:07:06+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003746s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.013544s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.122629s ]
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.012940s ]
+SQL: SELECT * FROM `xx_vschool` LIMIT 0,10   [ RunTime:0.005281s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 LIMIT 0,10   [ RunTime:0.005633s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010172s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_status` = 1 AND `topic_flag` = 1 ORDER BY article_id desc LIMIT 0,15   [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `xx_comment` [ RunTime:0.008847s ]
+SQL: SELECT `comment_parent_id`,`comment_article_id`,`comment_type`,`comment_school_id`,`comment_detail`,`comment_user_id`,`comment_hardware`,`comment_teachers`,`comment_disciplines`,`comment_status`,`comment_time`,`comment_ip`,`comment_level`,`comment_user_name` FROM `xx_comment` WHERE `comment_type` = 1 AND `comment_status` = 1 ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008433s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008340s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009117s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008009s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008644s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=1 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001955s ]
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.270333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003236s ]
+
+[ 2017-01-07T14:07:07+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002756s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.012401s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001079s ]
+
+[ 2017-01-07T14:07:07+08:00 ] ::1 /ssxz/index.php/home/index/articleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003388s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.014026s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.002108s ]
+
+[ 2017-01-07T14:07:07+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002293s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009580s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002752s ]
+
+[ 2017-01-07T14:07:07+08:00 ] ::1 /ssxz/index.php/home/index/qaQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009262s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.000942s ]
+
+[ 2017-01-07T14:07:12+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009399s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.008978s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.003642s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.008761s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.006310s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.007128s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.003694s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.007174s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.005881s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.005257s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.005372s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.006208s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000753s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001964s ]
+
+[ 2017-01-07T14:07:25+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.003547s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.002992s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.002984s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.002405s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.002283s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.002475s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.002274s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.002581s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.002371s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-01-07T14:08:10+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002197s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009596s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009973s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004251s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010027s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007215s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008016s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000879s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004800s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008712s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008969s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.010523s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008185s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009020s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001147s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002431s ]
+
+[ 2017-01-07T14:08:11+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002378s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010080s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009678s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004704s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009688s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007119s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008415s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000871s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004601s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.007859s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008870s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008368s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008018s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008936s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000704s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2017-01-07T14:08:33+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009902s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.010023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004630s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009925s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007365s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008126s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000813s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004535s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008411s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008361s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008433s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008194s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009101s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000978s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000701s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002205s ]
+
+[ 2017-01-07T14:08:35+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009700s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009764s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004358s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009359s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007563s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008924s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000821s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004983s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009132s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008342s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008761s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008780s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008151s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000774s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001227s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002693s ]
+
+[ 2017-01-07T14:08:37+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009347s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.010196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004627s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009101s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007811s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008733s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000998s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004595s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008699s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008147s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008410s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008463s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009372s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000708s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001151s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002541s ]
+
+[ 2017-01-07T14:08:40+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009169s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009895s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004736s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009527s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007098s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008644s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000918s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004522s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008378s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009014s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008699s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008131s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009480s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000716s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001190s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002558s ]
+
+[ 2017-01-07T14:08:43+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009246s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.010085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004603s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010028s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007379s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008557s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000843s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004469s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008347s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.007951s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008456s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008280s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009273s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000709s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001194s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002359s ]
+
+[ 2017-01-07T14:09:25+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002932s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009358s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.022018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004492s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010054s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007558s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008683s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000949s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004862s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009237s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008885s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009727s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.011655s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010174s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000710s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001136s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002519s ]
+
+[ 2017-01-07T14:10:47+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009755s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.012635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004730s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009467s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007597s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008441s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000955s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004893s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009015s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009809s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008390s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.009430s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010463s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000964s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000706s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002760s ]
+
+[ 2017-01-07T14:11:47+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002543s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010246s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.019563s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004750s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009359s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007560s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.009457s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000822s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004643s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009136s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009384s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008211s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008641s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008992s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000928s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000775s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001315s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2017-01-07T14:12:47+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002512s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010284s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009983s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004373s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009847s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007239s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008482s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000795s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004711s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009412s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008755s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009157s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.017689s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009265s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000743s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001199s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002488s ]
+
+[ 2017-01-07T14:12:49+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010610s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.011201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004484s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010159s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007302s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008860s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000822s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004757s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009012s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008974s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009075s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.009101s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009113s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000965s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002830s ]
+
+[ 2017-01-07T14:12:53+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002605s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010179s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.010505s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004485s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009831s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007285s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008691s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000821s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004479s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009065s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009742s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008050s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.007961s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009597s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000978s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000727s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001168s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002556s ]
+
+[ 2017-01-07T14:12:59+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.010392s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.010016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004549s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.007769s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.008610s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000862s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004759s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009584s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008329s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008957s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008559s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009503s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000715s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002498s ]
+
+[ 2017-01-07T14:13:01+08:00 ] ::1 /ssxz/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002249s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009967s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.081219s ]
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.011058s ]
+SQL: SELECT * FROM `xx_vschool` LIMIT 0,10   [ RunTime:0.005076s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 LIMIT 0,10   [ RunTime:0.005795s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010922s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_status` = 1 AND `topic_flag` = 1 ORDER BY article_id desc LIMIT 0,15   [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `xx_comment` [ RunTime:0.008753s ]
+SQL: SELECT `comment_parent_id`,`comment_article_id`,`comment_type`,`comment_school_id`,`comment_detail`,`comment_user_id`,`comment_hardware`,`comment_teachers`,`comment_disciplines`,`comment_status`,`comment_time`,`comment_ip`,`comment_level`,`comment_user_name` FROM `xx_comment` WHERE `comment_type` = 1 AND `comment_status` = 1 ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009836s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009595s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.008649s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008801s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009000s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=1 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000813s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001238s ]
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 244 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 334 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002256s ]
+
+[ 2017-01-07T14:13:01+08:00 ] ::1 /ssxz/index.php/home/index/articleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.014935s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.003452s ]
+
+[ 2017-01-07T14:13:01+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010571s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002790s ]
+
+[ 2017-01-07T14:13:01+08:00 ] ::1 /ssxz/index.php/home/index/qaQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002535s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010029s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.000996s ]
+
+[ 2017-01-07T14:13:01+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002426s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010174s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001040s ]
+
+[ 2017-01-07T14:13:04+08:00 ] ::1 /ssxz/index.php/home/news/newsList/keyword/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009890s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002615s ]
+
+[ 2017-01-07T14:13:04+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002331s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009943s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001077s ]
+
+[ 2017-01-07T14:13:04+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002410s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009968s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002803s ]
+
+[ 2017-01-07T14:13:13+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002180s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010296s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000993s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 145 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 189 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002303s ]
+
+[ 2017-01-07T14:13:13+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002152s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009489s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.000993s ]
+
+[ 2017-01-07T14:13:13+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010043s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002788s ]
+
+[ 2017-01-07T14:13:18+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009802s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 145 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 189 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2017-01-07T14:13:18+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009520s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.000997s ]
+
+[ 2017-01-07T14:13:18+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009852s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002765s ]
+
+[ 2017-01-07T14:13:25+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009925s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000451s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000858s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002327s ]
+
+[ 2017-01-07T14:13:25+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002541s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010314s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001010s ]
+
+[ 2017-01-07T14:13:25+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.009635s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002733s ]
+
+[ 2017-01-07T14:13:27+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002167s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009728s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000892s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002229s ]
+
+[ 2017-01-07T14:13:28+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.013129s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001043s ]
+
+[ 2017-01-07T14:13:28+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011081s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002891s ]
+
+[ 2017-01-07T14:14:19+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010130s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000861s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002175s ]
+
+[ 2017-01-07T14:14:22+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010306s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002839s ]
+
+[ 2017-01-07T14:14:22+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.013247s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001174s ]
+
+[ 2017-01-07T14:14:27+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011964s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000915s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000922s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002806s ]
+
+[ 2017-01-07T14:14:28+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002337s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011236s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002801s ]
+
+[ 2017-01-07T14:14:28+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009543s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.000968s ]
+
+[ 2017-01-07T14:15:09+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011452s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002473s ]
+
+[ 2017-01-07T14:15:10+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002613s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.017451s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.005414s ]
+
+[ 2017-01-07T14:15:10+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003400s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.015867s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001130s ]
+
+[ 2017-01-07T14:15:12+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002586s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.008269s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.000877s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002455s ]
+
+[ 2017-01-07T14:15:12+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014231s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.004441s ]
+
+[ 2017-01-07T14:15:13+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002462s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.013634s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001305s ]
+
+[ 2017-01-07T14:15:18+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010395s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000917s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002482s ]
+
+[ 2017-01-07T14:15:18+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002685s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.017642s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.004938s ]
+
+[ 2017-01-07T14:15:18+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002835s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011988s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001051s ]
+
+[ 2017-01-07T14:17:51+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002704s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009874s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000887s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.255768s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.256201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002613s ]
+
+[ 2017-01-07T14:17:51+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.012177s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001081s ]
+
+[ 2017-01-07T14:17:51+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.013010s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003040s ]
+
+[ 2017-01-07T14:17:53+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009957s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002601s ]
+
+[ 2017-01-07T14:17:53+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011219s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001234s ]
+
+[ 2017-01-07T14:17:53+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002185s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010981s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002858s ]
+
+[ 2017-01-07T14:17:55+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010603s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002163s ]
+
+[ 2017-01-07T14:17:56+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003094s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010615s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002962s ]
+
+[ 2017-01-07T14:17:56+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002945s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011192s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001509s ]
+
+[ 2017-01-07T14:17:58+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010312s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000841s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002318s ]
+
+[ 2017-01-07T14:17:59+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002665s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011271s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001254s ]
+
+[ 2017-01-07T14:17:59+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011024s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003378s ]
+
+[ 2017-01-07T14:18:05+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010992s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002937s ]
+
+[ 2017-01-07T14:18:06+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010839s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001003s ]
+
+[ 2017-01-07T14:18:06+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014792s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003354s ]
+
+[ 2017-01-07T14:18:07+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002265s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009689s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000482s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003152s ]
+
+[ 2017-01-07T14:18:07+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002442s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011582s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001157s ]
+
+[ 2017-01-07T14:18:07+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002838s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010530s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002747s ]
+
+[ 2017-01-07T14:18:08+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.012262s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000455s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002953s ]
+
+[ 2017-01-07T14:18:08+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009887s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001431s ]
+
+[ 2017-01-07T14:18:08+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014109s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003019s ]
+
+[ 2017-01-07T14:18:48+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002977s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.012399s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.001064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000454s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000885s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2017-01-07T14:18:49+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010281s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.000977s ]
+
+[ 2017-01-07T14:18:49+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002530s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010800s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002769s ]
+
+[ 2017-01-07T14:18:50+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010900s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000495s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000913s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002685s ]
+
+[ 2017-01-07T14:18:51+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011458s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001022s ]
+
+[ 2017-01-07T14:18:51+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011183s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002740s ]
+
+[ 2017-01-07T14:18:53+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002456s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011078s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.700151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.700554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002697s ]
+
+[ 2017-01-07T14:18:53+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002154s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010802s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001070s ]
+
+[ 2017-01-07T14:18:53+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002813s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011625s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002919s ]
+
+[ 2017-01-07T14:18:54+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009977s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.001079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000873s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 147 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 190 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002592s ]
+
+[ 2017-01-07T14:18:54+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009123s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.000859s ]
+
+[ 2017-01-07T14:18:55+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.008451s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002262s ]
+
+[ 2017-01-07T14:20:05+08:00 ] ::1 /ssxz/index.php/home/news/newsList/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010708s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000959s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000899s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 145 行.
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 146 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 189 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.020283s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.020732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002515s ]
+
+[ 2017-01-07T14:20:06+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003522s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011526s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001268s ]
+
+[ 2017-01-07T14:20:06+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002819s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011807s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002890s ]
+
+[ 2017-01-07T14:20:14+08:00 ] ::1 /ssxz/index.php/home/news/newsList/keyword/tst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003650s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010789s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment` FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%tst%'  and article_title like '%tst%')  and article_status=1 and topic_flag=0  ) LIMIT 0,10   [ RunTime:0.001154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_article` WHERE ( article_cataloge like '%'  and (article_detail like '%tst%'  and article_title like '%tst%')  and article_status=1 and topic_flag=0  ) LIMIT 1   [ RunTime:0.000984s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000868s ]
+NOTIC: [8] Undefined variable: type E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 145 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 189 行.
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\968fecb5a62b8f71c6c706431ec12ecc.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003035s ]
+
+[ 2017-01-07T14:20:15+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010881s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001082s ]
+
+[ 2017-01-07T14:20:15+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002476s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.013043s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003014s ]
+
+[ 2017-01-07T14:20:24+08:00 ] ::1 /ssxz/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002224s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010415s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.081326s ]
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.009766s ]
+SQL: SELECT * FROM `xx_vschool` LIMIT 0,10   [ RunTime:0.005225s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 LIMIT 0,10   [ RunTime:0.005662s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010569s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_status` = 1 AND `topic_flag` = 1 ORDER BY article_id desc LIMIT 0,15   [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `xx_comment` [ RunTime:0.009238s ]
+SQL: SELECT `comment_parent_id`,`comment_article_id`,`comment_type`,`comment_school_id`,`comment_detail`,`comment_user_id`,`comment_hardware`,`comment_teachers`,`comment_disciplines`,`comment_status`,`comment_time`,`comment_ip`,`comment_level`,`comment_user_name` FROM `xx_comment` WHERE `comment_type` = 1 AND `comment_status` = 1 ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009631s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009200s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009201s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008692s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.008996s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=1 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000936s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000835s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002506s ]
+
+[ 2017-01-07T14:20:24+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014509s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.003386s ]
+
+[ 2017-01-07T14:20:25+08:00 ] ::1 /ssxz/index.php/home/index/articleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003952s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015390s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.002075s ]
+
+[ 2017-01-07T14:20:25+08:00 ] ::1 /ssxz/index.php/home/index/qaQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003024s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010569s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.000977s ]
+
+[ 2017-01-07T14:20:25+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003402s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010750s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001016s ]
+
+[ 2017-01-07T14:21:04+08:00 ] ::1 /ssxz/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011857s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.089296s ]
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.012493s ]
+SQL: SELECT * FROM `xx_vschool` LIMIT 0,10   [ RunTime:0.006633s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 LIMIT 0,10   [ RunTime:0.006537s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010956s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_status` = 1 AND `topic_flag` = 1 ORDER BY article_id desc LIMIT 0,15   [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `xx_comment` [ RunTime:0.010088s ]
+SQL: SELECT `comment_parent_id`,`comment_article_id`,`comment_type`,`comment_school_id`,`comment_detail`,`comment_user_id`,`comment_hardware`,`comment_teachers`,`comment_disciplines`,`comment_status`,`comment_time`,`comment_ip`,`comment_level`,`comment_user_name` FROM `xx_comment` WHERE `comment_type` = 1 AND `comment_status` = 1 ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.009119s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.009619s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009696s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.008359s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.009535s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=1 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001732s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002348s ]
+NOTIC: [8] Undefined variable: topSchoolList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: usefulList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 333 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003915s ]
+
+[ 2017-01-07T14:21:04+08:00 ] ::1 /ssxz/index.php/home/index/articleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003462s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.018380s ]
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 0,4   [ RunTime:0.002559s ]
+
+[ 2017-01-07T14:21:04+08:00 ] ::1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003651s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.013523s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.001289s ]
+
+[ 2017-01-07T14:21:04+08:00 ] ::1 /ssxz/index.php/home/index/qaQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002831s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.008811s ]
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = 1 ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.000802s ]
+
+[ 2017-01-07T14:21:04+08:00 ] ::1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003243s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.008452s ]
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.002165s ]
+
+[ 2017-01-07T14:24:42+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002697s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011017s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009762s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001307s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.010143s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.014708s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.003099s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.009555s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001448s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010771s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000989s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002536s ]
+
+[ 2017-01-07T14:26:00+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002931s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010895s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.011110s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001330s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.008803s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.000969s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.013238s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.003036s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.009913s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001296s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010170s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000875s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001324s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.016455s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.016962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002944s ]
+
+[ 2017-01-07T14:26:16+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002532s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010862s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.009669s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001175s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.008726s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.000943s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.013690s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.002919s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.008998s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001397s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010292s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.000981s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000902s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001393s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002567s ]
+
+[ 2017-01-07T14:26:46+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002380s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010775s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001588s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\96f85b540302a1aa1dcf96b4f3cde40a.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002138s ]
+
+[ 2017-01-07T14:27:11+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail3/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.013381s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'schoolnews' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002674s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'documentary' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002468s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'camp' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000758s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001197s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\25b0ac73ca86318221ea295d6bb6bd38.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002209s ]
+
+[ 2017-01-07T14:27:16+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail4/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011179s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015365s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'story' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002981s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'student' AND `article_status` = 1 LIMIT 10   [ RunTime:0.002884s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000632s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\fc9e0bdc6db28a0b66516b7b53992742.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002996s ]
+
+[ 2017-01-07T14:27:20+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail5/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002181s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011248s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.008959s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '2' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001457s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '2' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '3' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001400s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '3' ORDER BY sort asc,id desc LIMIT 15  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000618s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\282954e228e09f8351d47da6bfc855f6.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2017-01-07T14:27:24+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail4/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.011648s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001636s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.014969s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'story' AND `article_status` = 1 LIMIT 10   [ RunTime:0.003266s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'student' AND `article_status` = 1 LIMIT 10   [ RunTime:0.004294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002013s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\fc9e0bdc6db28a0b66516b7b53992742.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002468s ]
+
+[ 2017-01-07T14:27:26+08:00 ] ::1 /ssxz/index.php/home/Topic/topicList/groupType/0/schoolId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.018639s ]
+SQL: SELECT `article_id`,`article_cataloge`,`school_name`,`article_title`,`article_excerpt`,`article_author` FROM `xx_varticle` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=1  and group_flag=0 and school_id=1 ) ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.013908s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( article_cataloge like '%'  and (article_detail like '%%%'  and article_title like '%%%')  and article_status=1 and topic_flag=1  and group_flag=0 and school_id=1 ) LIMIT 1   [ RunTime:0.002295s ]
+SQL: SELECT `article_id`,`article_cataloge`,`school_name`,`article_title`,`article_excerpt`,`article_author` FROM `xx_varticle` WHERE ( article_status=1 and topic_flag=1  ) ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.014543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000828s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001564s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\dc5cc5fb5ae85a0e0edb7c1de6eb0d9f.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003157s ]
+
+[ 2017-01-07T14:27:30+08:00 ] ::1 /ssxz/index.php/home/school/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002599s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_vschool` [ RunTime:0.011296s ]
+SQL: SELECT * FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) ORDER BY school_id desc LIMIT 0,10   [ RunTime:0.009751s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_vschool` WHERE ( 1=1 and school_status=1  and (school_name like '%%%' or school_keyword like '%%%') ) LIMIT 1   [ RunTime:0.004362s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.012476s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_recommend` = 1 ORDER BY school_id desc LIMIT 10   [ RunTime:0.009289s ]
+SQL: SHOW COLUMNS FROM `xx_user_school_attention` [ RunTime:0.013219s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `xx_user_school_attention` WHERE `school_id` = 1 AND `user_id` = 1 LIMIT 1   [ RunTime:0.000952s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 15   [ RunTime:0.004701s ]
+SQL: SHOW COLUMNS FROM `xx_step` [ RunTime:0.008837s ]
+SQL: SELECT * FROM `xx_step`  [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `xx_abroad` [ RunTime:0.008560s ]
+SQL: SELECT * FROM `xx_abroad`  [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `xx_course` [ RunTime:0.009618s ]
+SQL: SELECT * FROM `xx_course`  [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `xx_area` [ RunTime:0.009694s ]
+SQL: SELECT * FROM `xx_area`  [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010414s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=2 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000705s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001145s ]
+NOTIC: [8] Undefined variable: keyword E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\d6ad341fce7d3178c5fb05c145cb438f.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002995s ]
+
+[ 2017-01-07T14:27:33+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail1/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.010161s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.010359s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'feature' LIMIT 1   [ RunTime:0.001411s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_school_id` = 1 AND `article_cataloge` = 'master' AND `article_status` = 1  [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `xx_teacher` [ RunTime:0.010024s ]
+SQL: SELECT * FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1  [ RunTime:0.000995s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_teacher` WHERE `teacher_school_id` = '1' AND `teacher_status` = 1 LIMIT 1   [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.014430s ]
+SQL: SELECT * FROM `xx_varticle` WHERE `article_school_id` = 1 AND `article_cataloge` = 'achievement' LIMIT 10   [ RunTime:0.003024s ]
+SQL: SHOW COLUMNS FROM `xx_school_images` [ RunTime:0.010249s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school_images`
+SQL: SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15   [ RunTime:0.001315s ]
+ERR: 1146:Table 'ssxz.xx_school_images' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `xx_school_images` WHERE `images_school_id` = '1' AND `images_status` = '1' AND `images_type` = '1' ORDER BY sort asc,id desc LIMIT 15  
+SQL: SHOW COLUMNS FROM `xx_banner` [ RunTime:0.010868s ]
+SQL: SELECT `banner_title`,`banner_path` FROM `xx_banner` WHERE ( banner_type=3 and banner_status=1 and banner_select=1 ) ORDER BY banner_first desc  [ RunTime:0.001249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000907s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001354s ]
+NOTIC: [8] Undefined index: acticle_excerpt E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\70548559b187a51f3d2041ee6ee7f815.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002526s ]
+
+[ 2017-01-07T14:27:36+08:00 ] ::1 /ssxz/index.php/home/School/schoolDetail2/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002027s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.008533s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_id` = 1 LIMIT 1   [ RunTime:0.001074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000941s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001294s ]
+NOTIC: [8] Undefined variable: bannerList E:\02_PHPPROJECT\ssxz\src\Application\Runtime\Cache\Home\96f85b540302a1aa1dcf96b4f3cde40a.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002648s ]
+

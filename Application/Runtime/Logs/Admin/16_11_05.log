@@ -1,0 +1,494 @@
+[ 2016-11-05T15:40:01+08:00 ] ::1 /ssxz/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003140s ]
+
+[ 2016-11-05T15:40:03+08:00 ] ::1 /ssxz/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000536s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.212972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.213635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003302s ]
+
+[ 2016-11-05T15:41:09+08:00 ] ::1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003879s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002855s ]
+
+[ 2016-11-05T15:41:10+08:00 ] ::1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000771s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2016-11-05T15:41:15+08:00 ] ::1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003428s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_user` [ RunTime:0.122625s ]
+SQL: SELECT * FROM `xx_user` WHERE `user_login` = 'admin' AND `user_pwd` = '123456' AND `user_type` = 1 LIMIT 1   [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `xx_function` [ RunTime:0.050422s ]
+SQL: SELECT * FROM `xx_function` WHERE `fun_module` = 'admin' AND `fun_type` = 'menu' AND `fun_status` = 1 ORDER BY fun_order  [ RunTime:0.001670s ]
+
+[ 2016-11-05T15:41:16+08:00 ] ::1 /ssxz/admin.php/School/schoolList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.283084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.283860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003979s ]
+
+[ 2016-11-05T15:41:17+08:00 ] ::1 /ssxz/admin.php/School/schoolListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004511s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.053967s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.034671s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 LIMIT 1   [ RunTime:0.004011s ]
+SQL: SELECT `school_id`,`school_name`,`school_attention`,`school_comments`,`school_isnew`,`school_status` FROM `xx_school` WHERE `school_name` LIKE '%%' AND `group_flag` = 0 ORDER BY school_id asc LIMIT 0,10   [ RunTime:0.001719s ]
+
+[ 2016-11-05T15:41:20+08:00 ] ::1 /ssxz/admin.php/Topic/topiclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.365301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.366649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008048s ]
+
+[ 2016-11-05T15:41:25+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.078071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE (  `cataloge_name` LIKE '%%' OR `article_title` LIKE '%%' OR `school_name` LIKE '%%' ) LIMIT 1   [ RunTime:1.978741s ]
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE (  `cataloge_name` LIKE '%%' OR `article_title` LIKE '%%' OR `school_name` LIKE '%%' ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:1.827527s ]
+
+[ 2016-11-05T15:45:12+08:00 ] ::1 /ssxz/admin.php/Topic/topiclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000528s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.236875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.237525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003392s ]
+
+[ 2016-11-05T15:45:12+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002735s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.061065s ]
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Model.class.php 第 594 行.
+ERR: 错误的查询条件:[topic_flag=>Array]
+
+[ 2016-11-05T15:45:28+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003257s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.064420s ]
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 27 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 28 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 29 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 36 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 39 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 42 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 45 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 48 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Model.class.php 第 594 行.
+ERR: 错误的查询条件:[topic_flag=>Array]
+
+[ 2016-11-05T15:45:55+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003900s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.062749s ]
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 27 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 28 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 29 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 36 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 39 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 42 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 45 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 48 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Model.class.php 第 594 行.
+ERR: 错误的查询条件:[topic_flag=>Array]
+
+[ 2016-11-05T15:45:57+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003579s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.069348s ]
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 27 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 28 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 29 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 36 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 39 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 42 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 45 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 48 行.
+NOTIC: [8] Array to string conversion D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Model.class.php 第 594 行.
+ERR: 错误的查询条件:[topic_flag=>Array]
+
+[ 2016-11-05T15:48:23+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002874s ]
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 27 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 28 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 29 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.059061s ]
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 34 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 35 行.
+NOTIC: [8] Undefined index: sSearch D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 36 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 44 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 47 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 50 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 53 行.
+NOTIC: [8] Undefined index: iSortCol_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 56 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1   [ RunTime:0.002155s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1  
+NOTIC: [8] Undefined index: sSortDir_0 D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 63 行.
+NOTIC: [8] Undefined index: iDisplayStart D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 64 行.
+NOTIC: [8] Undefined index: iDisplayLength D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 64 行.
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_title desc   [ RunTime:0.000610s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_title desc  
+NOTIC: [8] Undefined index: sEcho D:\06_Workspace_Php\ssxz\src\Application\Admin\Controller\TopicController.class.php 第 65 行.
+
+[ 2016-11-05T15:48:31+08:00 ] ::1 /ssxz/admin.php/Topic/topiclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001489s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.367802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.368697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005750s ]
+
+[ 2016-11-05T15:48:33+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004155s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.080326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1   [ RunTime:0.000825s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.000792s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10  
+
+[ 2016-11-05T15:50:05+08:00 ] ::1 /ssxz/admin.php/Article/articleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000790s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.306683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.307142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004514s ]
+
+[ 2016-11-05T15:50:06+08:00 ] ::1 /ssxz/admin.php/Article/articleListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.058029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1   [ RunTime:0.000671s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.000595s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 0,10  
+
+[ 2016-11-05T15:50:09+08:00 ] ::1 /ssxz/admin.php/Article/articleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003957s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000860s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.296132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.296749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007363s ]
+
+[ 2016-11-05T15:50:10+08:00 ] ::1 /ssxz/admin.php/Article/articleListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019479s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.127306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1   [ RunTime:0.001127s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.000822s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 0,10  
+
+[ 2016-11-05T15:50:35+08:00 ] ::1 /ssxz/admin.php/Article/articleListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.060469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1   [ RunTime:0.000632s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 10,10   [ RunTime:0.000585s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 10,10  
+
+[ 2016-11-05T15:50:39+08:00 ] ::1 /ssxz/admin.php/Article/articleListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.056186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1   [ RunTime:0.000644s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 30,10   [ RunTime:0.000575s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 30,10  
+
+[ 2016-11-05T15:50:41+08:00 ] ::1 /ssxz/admin.php/Article/articleListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000179s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.074591s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1   [ RunTime:0.000779s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 40,10   [ RunTime:0.000649s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=0 ) ORDER BY article_id asc LIMIT 40,10  
+
+[ 2016-11-05T15:50:45+08:00 ] ::1 /ssxz/admin.php/Topic/topiclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000830s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.184368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003775s ]
+
+[ 2016-11-05T15:50:45+08:00 ] ::1 /ssxz/admin.php/Topic/topicListQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000330s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003676s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.058777s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1   [ RunTime:0.000660s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) LIMIT 1  
+SQL: SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10   [ RunTime:0.000613s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY ' at line 1
+ [ SQL语句 ] : SELECT `article_id`,`cataloge_name`,`article_title`,`school_name`,`article_status` FROM `xx_varticle` WHERE ( (cataloge_name like %% or article_title like %% or school_name like %%) and topic_flag=1 ) ORDER BY article_id asc LIMIT 0,10  
+
+[ 2016-11-05T15:50:50+08:00 ] ::1 /ssxz/admin.php/Topic/topicDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002267s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.082013s ]
+SQL: SELECT * FROM `xx_article` WHERE `article_id` = 0 LIMIT 1   [ RunTime:0.002006s ]
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.037864s ]
+SQL: SELECT * FROM `xx_school` WHERE `school_status` = 1  [ RunTime:0.294648s ]
+SQL: SHOW COLUMNS FROM `xx_cataloge` [ RunTime:0.064388s ]
+SQL: SELECT * FROM `xx_cataloge` ORDER BY cataloge_id  [ RunTime:0.001294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000577s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.731799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.732300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003306s ]
+

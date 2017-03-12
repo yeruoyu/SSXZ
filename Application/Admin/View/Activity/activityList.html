@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<include file="./Application/Admin/View/Public/head.html" />
+<body class="page-body">
+	<div class="page-container">
+		<include file="./Application/Admin/View/Public/menu.html" />
+		<div class="main-content">	
+			<include file="./Application/Admin/View/Public/navigation.html" />
+			<div class="page-title">
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<li><i class="fa-home"></i>首页</li>
+						<li>活动管理</li>
+						<li class="active"><strong>活动列表</strong></li>
+					</ol>		
+				</div>
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">活动列表</h3>
+							<div style="float:right">
+								<a href="__APP__/Activity/activityDetail"  class="btn btn-success">添加活动</a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<table class="table table-bordered table-striped" id="tb_activity">
+								<thead>
+									<tr>
+										<th>活动ID</th>
+										<th>活动类型</th>
+										<th>活动标题</th>
+										<th>所属学校</th>
+										<th>开始时间</th>
+										<th>结束时间</th>
+										<th>活动状态</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody class="middle-align">
+									
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>活动ID</th>
+										<th>活动类型</th>
+										<th>活动标题</th>
+										<th>所属学校</th>
+										<th>开始时间</th>
+										<th>结束时间</th>
+										<th>活动状态</th>
+										<th>操作</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<include file="./Application/Admin/View/Public/footer.html" />
+		</div>
+	</div>
+</body>
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.css" />
+	<load href="__PUBLIC__/assets/js/datatables/js/jquery.dataTables.js" />
+
+	<!-- Imported scripts on this page -->
+	<load href="__PUBLIC__/assets/js/datatables/dataTables.bootstrap.js" />
+	<!-- <load href="__PUBLIC__/assets/js/datatables/yadcf/jquery.dataTables.yadcf.js" /> -->
+	<!-- <load href="__PUBLIC__/assets/js/datatables/tabletools/dataTables.tableTools.min.js" /> -->
+
+	<!-- Imported scripts on this page -->
+	<!-- <load href="__PUBLIC__/assets/js/rwd-table/js/rwd-table.min.js"/> -->
+
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($)
+		{
+			var oTable = $("#tb_activity").dataTable({
+					aLengthMenu: [
+								[10, 25, 50, 100], [10, 25, 50, 100]
+							],
+				iDisplayLength:{$pagesize},
+				displayStart:{$start},
+				bPaginate: true,
+				bProcessing:true, //DataTables载入数据时，是否显示‘进度’提示
+	            bServerSide:true, //是否启动服务器端数据导入
+				sPaginationType:"full_numbers",
+				bLengthChange: true, //改变每页显示数据数量
+				bFilter: true, //过滤功能
+				bSort: true, //排序功能
+				bInfo: true,//页脚信息
+				bFilter:true,
+				sZeroRecords: "抱歉， 没有找到",
+				sInfoEmpty: "没有数据",
+				sAjaxSource: "__APP__/Activity/activityListQuery",
+				fnServerData: function (sSource, data, fnCallback) {
+					$.ajax( {
+					dataType: 'json',
+					type: "POST",
+					url: sSource,
+					data: data,
+					success: function(resp) {
+			            fnCallback(resp);
+					}  
+					} );
+				},
+				aoColumns: [
+					{"mData" : "activity_id","asSorting": [ "desc", "asc", "desc" ] },
+					{"mData" : "activity_type"},
+					{"mData" : "activity_title"},
+					{"mData" : "school_name"},
+					{"mData" : "activity_startdate"},
+					{"mData" : "activity_enddate"},
+					{"mData" : "activity_status"},
+					{"mData" : "activity_id"}
+				],
+				columnDefs: [
+				               {
+				                   "render": function ( data, type, row ) {
+				                	   if(data==0){
+				                		   return '未发布';
+				                	   }else if(data==1){
+				                		   return '已发布';
+				                	   }else if(data==2){
+				                		   return '已审核';
+				                	   }else if(data==3){
+				                		   return '已结束';
+				                	   }else if(data==9){
+				                		   return '已删除';
+				                	   }else{
+				                		   return  data;
+				                	   }
+				                      
+				                   },
+				                   "targets": 6
+				               },
+				               {
+				                   "render": function ( data, type, row) {
+				
+										if(row['activity_status']==1){
+											return '<a href="__APP__/Activity/activityDetail/id/'+data+'/edit/true/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">编辑</a>';
+										}else{
+											return '<a href="__APP__/Activity/activityDetail/id/'+data+'/edit/true/start/'+oTable.fnSettings()._iDisplayStart+'/pagesize/'+oTable.fnSettings()._iDisplayLength+'" class="btn btn-secondary btn-sm btn-icon icon-left">编辑</a>';
+										}
+				                   },
+				                   "targets": 7
+				               },
+				               { "bVisible": false, "aTargets": [ 0 ] }
+				           ],
+				
+				oLanguage: {  //下面是一些汉语翻译
+	                            "sSearch": "搜索",
+	                            "sLengthMenu": "每页显示 _MENU_ 条记录",
+	                            "sZeroRecords": "没有检索到数据",
+	                            "sInfo": "显示 _START_ 至 _END_ 条 &nbsp;&nbsp;共 _TOTAL_ 条",
+	                            "sInfoFiltered": "(筛选自 _MAX_ 条数据)",
+	                            "sInfoEmtpy": "没有数据",
+	                            "sProcessing": "正在加载数据...",
+	                            "oPaginate":
+	                                    {
+	                                        "sFirst": "首页",
+	                                        "sPrevious": "前一页",
+	                                        "sNext": "后一页",
+	                                        "sLast": "末页"
+	                                    }
+	                        },
+			});
+		});
+	</script>
+</html>

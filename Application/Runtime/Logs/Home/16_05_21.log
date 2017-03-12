@@ -1,0 +1,14 @@
+[ 2016-05-21T22:22:51+08:00 ] ::1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021619s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\06_Workspace_Php\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.054727s ]
+SQL: SELECT * FROM `xx_school`  [ RunTime:0.008154s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\06_Workspace_Php\ssxz\src\Application\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Object of class Home\Controller\IndexController to string conversion D:\06_Workspace_Php\ssxz\src\Application\Home\Controller\IndexController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: Object D:\06_Workspace_Php\ssxz\src\Application\Home\Controller\IndexController.class.php 第 14 行.
+

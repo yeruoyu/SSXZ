@@ -1,0 +1,133 @@
+[ 2016-11-21T22:08:43+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002369s ]
+
+[ 2016-11-21T22:09:43+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+
+[ 2016-11-21T22:10:15+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002645s ]
+
+[ 2016-11-21T22:10:19+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002667s ]
+
+[ 2016-11-21T22:12:44+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+
+[ 2016-11-21T22:15:34+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+
+[ 2016-11-21T22:15:37+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+
+[ 2016-11-21T22:15:38+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+
+[ 2016-11-21T22:15:38+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+
+[ 2016-11-21T22:16:35+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001755s ]
+
+[ 2016-11-21T22:16:37+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001711s ]
+
+[ 2016-11-21T22:17:03+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+
+[ 2016-11-21T22:44:09+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001804s ]
+ERR: Acc�s refus� pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2016-11-21T22:46:50+08:00 ] 127.0.0.1 /ssxz/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004413s ]
+
+[ 2016-11-21T22:46:50+08:00 ] 127.0.0.1 /ssxz/index.php/home/index/qaQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004898s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.016691s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_article`
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = '1' ORDER BY article_sort asc,article_id desc LIMIT 0,8   [ RunTime:0.005909s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SELECT `article_id`,`article_title` FROM `xx_article` WHERE `article_cataloge` = 'qaischool' AND `article_status` = '1' ORDER BY article_sort asc,article_id desc LIMIT 0,8  
+
+[ 2016-11-21T22:46:51+08:00 ] 127.0.0.1 /ssxz/index.php/home/index/articleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002900s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_varticle` [ RunTime:0.015961s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_varticle`
+SQL: SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = '1' LIMIT 0,4   [ RunTime:0.005414s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SELECT `article_id`,`article_title`,`article_excerpt`,`article_top`,`article_elite`,`article_useful`,`article_read`,`article_comment`,SUBSTRING(
+    		SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10),1,LOCATE('" alt',SUBSTRING(article_detail,LOCATE('<img src="',article_detail)+10))-1) as imagePath FROM `xx_varticle` WHERE `article_cataloge` = 'schoolnews' AND `article_status` = '1' LIMIT 0,4  
+
+[ 2016-11-21T22:46:51+08:00 ] 127.0.0.1 /ssxz/index.php/home/index/topSchool
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004151s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_school` [ RunTime:0.014350s ]
+ERR: 1146:La table 'ssxz.xx_school' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_school`
+SQL: SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15   [ RunTime:0.005436s ]
+ERR: 1146:La table 'ssxz.xx_school' n'existe pas
+ [ SQL语句 ] : SELECT `school_id`,`school_name` FROM `xx_school` WHERE `school_status` = 1 ORDER BY school_sort asc,school_id desc LIMIT 0,15  
+
+[ 2016-11-21T22:46:53+08:00 ] 127.0.0.1 /ssxz/index.php/home/index/usefulArticleQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007014s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\02_PHPPROJECT\ssxz\src\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `xx_article` [ RunTime:0.015210s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `xx_article`
+SQL: SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15   [ RunTime:0.005875s ]
+ERR: 1146:La table 'ssxz.xx_article' n'existe pas
+ [ SQL语句 ] : SELECT `article_id`,`article_title` FROM `xx_article` WHERE ( article_status=1 and topic_flag=0 ) ORDER BY article_useful asc,article_id desc LIMIT 0,15  
+

@@ -1,0 +1,184 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/**/
+html, body {
+	overflow-x: hidden;
+	font-family: "微软雅黑";
+}
+.container-fluid {
+	padding: 0px;
+}
+.container-main {
+	position: relative;
+	height: 680px;
+}
+.container-box {
+	width: 1173px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+.loginbg {
+	position: absolute;
+	width: 1920px;
+	height: 680px;
+}
+.login_box {
+	position: absolute;
+	width: 360px;
+	top: 51px;
+	right: 0px;
+	background-color: #fff;
+	padding: 15px;
+}
+.input-group {
+}
+.login_title {
+	padding: 0 20px;
+	position: relative;
+	margin: 15px 0;
+}
+.login_title span.h3 {
+	padding: 15px 0;
+}
+.login_title .zc {
+	background: url(../img/yil.png) no-repeat left;
+	padding-left: 20px;
+	position: absolute;
+	right: 21px;
+}
+.login_title .zc a {
+	color: #05b866;
+}
+.login_page {
+	text-align: center;
+}
+.login_page span {
+	height: 45px;
+	line-height: 45px;
+	padding: 0px 7px 0px 20px;
+	display: inline-block;
+	cursor: pointer;
+	color: #a7a7a7;
+	margin: 0 5px;
+	border: 1px solid #ccc;
+	word-spacing: 8px;
+	letter-spacing: 15px;
+}
+.login_page span.act {
+	background: #08b26e url(../img/kbg.jpg) repeat-x;
+	color: #fff;
+}
+.login_body .btn-xh {
+	background: #08b26e url(../img/kbg.jpg) repeat-x;
+	color: #fff;
+	border-radius: 0px;
+}
+.login_body {
+	padding: 0 20px;
+	margin: 15px 0;
+}
+.input-group {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.input-group-addon {
+	height: 40px;
+	padding: 0px;
+	width: 48px;
+}
+.login_body .item {
+	margin-bottom: 20px;
+	position: relative;
+	color: #a7a7a7;
+}
+.login_body .item a {
+	color: #a7a7a7;
+}
+.login_body .item label {
+	display: inline-block;
+	max-width: 100%;
+	/* margin-bottom: 5px; */
+	font-weight: normal;
+	position: relative;
+	top: -2px;
+	left: 5px;
+}
+.input-group .form-control {
+	height: 40px;
+}
+.werwiema {
+	position: absolute;
+	left: 0px;
+	text-align: center;
+}
+.aerwiema img, .werwiema img {
+	height: 103px;
+	width: 103px;
+}
+.erweima {
+	height: 133px;
+}
+.aerwiema {
+	position: absolute;
+	right: 0px;
+	text-align: center;
+}
+.fa-user, .fa-pas {
+	top: 9px;
+	left: 11px;
+}
+.third {
+	margin: 20px 0;
+	height: 23px;
+}
+.third img {
+	height: 23px;
+	margin: 0 10px;
+}
+.fa-user {
+	background: url(../img/logini.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+.fa-pas {
+	background: url(../img/logini.png) no-repeat 0 106%;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+}
+.top {
+	padding-top: 78px;
+	padding-bottom: 36px;
+	font-size: 30px;
+}
+.top span.h2 {
+	color: #05b866;
+	font-size: 40px;
+	font-weight: bold;
+	font-style: normal;
+	margin-right: 47px;
+	padding-top: 3px;
+}
+.top span {
+	color: #3b3b3b;
+}
+/**/
+.footer {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.bottom a {
+	color: #3b3b3b;
+}
+.bottom span:after {
+	content: "丨";
+	padding: 0 5px;
+}
+.footer p {
+	margin-top: 10px;
+}
+.bottom span:last-child:after {
+	content: "";
+}

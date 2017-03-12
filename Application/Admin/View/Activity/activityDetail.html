@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<include file="./Application/Admin/View/Public/head.html" />
+<body class="page-body">
+	<div class="page-container">
+		<include file="./Application/Admin/View/Public/menu.html" />
+		<div class="main-content">	
+			<include file="./Application/Admin/View/Public/navigation.html" />
+			<div class="page-title">
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<ol class="breadcrumb bc-1">
+						<li><i class="fa-home"></i>首页</li>
+						<li>活动管理</li>
+						<li class="active"><strong>{$title}</strong></li>
+					</ol>
+					</ol>		
+				</div>
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">{$title}</h3>
+						</div>
+						<div class="panel-body">
+							<!-- Content -->
+							<form role="form" id="formActivity"  action="__APP__/Activity/activitySave" method="post" method="post" class="form-horizontal validate">
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="activity_title">活动标题</label>
+									<div class="col-sm-10">
+										<input type="hidden" name="action" value="{$action}"/>
+										<input type="hidden" name="activity_id" value="{$activityInfo.activity_id}"/>
+										<input type="hidden" name="start" value="{$start}"/>
+										<input type="hidden" name="pagesize" value="{$pagesize}"/>
+										<input type="text" class="form-control" name="activity_title" value="{$activityInfo.activity_title}" data-validate="required" data-message-required="活动标题不能为空。" />
+									</div>
+								</div>
+								<div class="form-group">
+									<!-- <label class="col-sm-2 control-label" for="activity_type">活动类型</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="activity_type" data-validate="required" data-message-required="活动类型不能为空。" >
+											<if condition="$activityInfo.activity_type eq '招生活动' ">
+												<option value="">--</option>
+												<option value="招生活动" selected>招生活动</option>
+												<option value="其他活动">其他活动</option>
+											<elseif condition="$activityInfo.activity_type eq '其他活动'"/>
+												<option value="">--</option>
+												<option value="招生活动">招生活动</option>
+												<option value="其他活动" selected>其他活动</option>
+											<else />
+												<option value="">--</option>
+												<option value="招生活动">招生活动</option>
+												<option value="其他活动">其他活动</option>
+											</if>
+										</select>
+									</div> -->
+									<label class="col-sm-2 control-label">活动开始时间</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="activity_startdate" name="activity_startdate" value="{$activityInfo.activity_startdate}"/>
+									</div>
+									<label class="col-sm-2 control-label">所属学校</label>
+
+									<div class="col-sm-4">
+										<script type="text/javascript">
+										jQuery(document).ready(function($)
+											{
+												$("#school_id").select2({
+													placeholder: '请选择学校',
+													allowClear: true
+												}).on('select2-open', function()
+												{
+													// Adding Custom Scrollbar
+													$(this).data('select2').results.addClass('overflow-hidden').perfectScrollbar();
+												});
+												
+											});
+										</script>
+										<select class="form-control" id="school_id" name="school_id">
+											<option value="null">--</option>
+											<volist name="schoolList" id="vo" key="index">
+												<if condition="$activityInfo['school_id'] eq $vo['school_id']">
+													<option value="{$vo.school_id}" selected>{$vo.school_name}</option>
+												<else/>
+													<option value="{$vo.school_id}">{$vo.school_name}</option>
+												</if>
+											</volist>
+										</select>
+									</div>
+								</div>
+								
+								<!-- <div class="form-group">
+									
+									<label class="col-sm-2 control-label">活动结束时间</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="activity_enddate" value="{$activityInfo.activity_enddate}"/>
+									</div>
+								</div> -->
+								<!-- <div class="form-group">
+									<label class="col-sm-2 control-label">活动人数</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="activity_users" value="{$activityInfo.activity_users}"/>
+									</div>
+									<label class="col-sm-2 control-label">活动实际人数</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly="readonly" name="activity_ausers" value="{$activityInfo.activity_ausers}"/>
+									</div>
+								</div> -->
+								<!-- <div class="form-group">
+									<label class="col-sm-2 control-label">活动地址</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="activity_address" value="{$activityInfo.activity_address}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">活动地图</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="activity_map" value="{$activityInfo.activity_map}"/>
+									</div>
+								</div> -->
+
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="activity_detail">活动详情</label>
+									<div class="col-sm-10">
+										<script id="activity_detail" name="activity_detail" type="text/plain" style="width:100%;height:500px;" >{$activityInfo.activity_detail|htmlspecialchars_decode}</script>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="activity_status">活动状态</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="activity_status" data-validate="required" data-message-required="文章学校不能为空。" >
+											<if condition="$activityInfo.activity_status eq 0 ">
+												<option value="">--</option>
+												<option value="0" selected>未发布</option>
+												<option value="1">未审核</option>
+												<option value="2">已审核</option>
+												<option value="3">已结束</option>
+												<option value="9">已删除</option>
+											<elseif condition="$activityInfo.activity_status eq 1"/>
+												<option value="">--</option>
+												<option value="0">未发布</option>
+												<option value="1" selected>未审核</option>
+												<option value="2">已审核</option>
+												<option value="3">已结束</option>
+												<option value="9">已删除</option>
+											<elseif condition="$activityInfo.activity_status eq 2"/>
+												<option value="">--</option>
+												<option value="0">未发布</option>
+												<option value="1">未审核</option>
+												<option value="2" selected>已审核</option>
+												<option value="3">已结束</option>
+												<option value="9">已删除</option>
+											<elseif condition="$activityInfo.activity_status eq 3"/>
+												<option value="">--</option>
+												<option value="0">未发布</option>
+												<option value="1">未审核</option>
+												<option value="2">已审核</option>
+												<option value="3" selected>已结束</option>
+												<option value="9">已删除</option>
+											<elseif condition="$activityInfo.activity_status eq 9"/>
+												<option value="">--</option>
+												<option value="0">未发布</option>
+												<option value="1">未审核</option>
+												<option value="2">已审核</option>
+												<option value="3">已结束</option>
+												<option value="9" selected>已删除</option>
+											<else />
+												<option value="">--</option>
+												<option value="0">未发布</option>
+												<option value="1">未审核</option>
+												<option value="2">已审核</option>
+												<option value="3">已结束</option>
+												<option value="9">已删除</option>
+											</if>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">排序</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="activity_sort" value="{$activityInfo.activity_sort}" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-9"></div>
+									<div class="col-sm-3">
+										<button type="submit" class="btn btn-success">保存</button>
+										<button type="reset" class="btn btn-white">取消</button>
+										<a href="__APP__/Activity/activityList/start/{$start}/pagesize/{$pagesize}" class="btn btn-info">返回</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<include file="./Application/Admin/View/Public/footer.html" />
+		</div>
+	</div>
+</body>
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/vendor/codemirror/codemirror.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/uikit.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/css/addons/uikit.almost-flat.addons.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2-bootstrap.css">
+	
+	
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/ueditor14/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor14/ueditor.all.min.js" />
+    <load href="__PUBLIC__/ueditor14/lang/zh-cn/zh-cn.js" />
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/jquery-ui/jquery-ui.min.js"/>
+	<load href="__PUBLIC__/assets/js/jquery-validate/jquery.validate.min.js" />
+	<load href="__PUBLIC__/assets/js/select2/select2.js"/>
+	<load href="__PUBLIC__/assets/js/datepicker/bootstrap-datepicker.js"/>
+	
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+		var ue = UE.getEditor('activity_detail' , {
+		    toolbars: [
+		               ['undo', 'redo', 'bold']
+		           ],
+		           autoHeightEnabled: true,
+		           autoFloatEnabled: true,
+		           maximumWords:500,
+		           wordOverFlowMsg:"最多只能输入500个字。"
+		       });
+		
+		
+		$('#activity_startdate').datepicker({
+            language: 'zh-CN',
+            autoclose: true,
+            todayHighlight: true,
+            format: 'yyyy-mm-dd'
+        })
+    </script>
+</html>

@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<!--容器begin-->
+<div class="container slide-top">
+    <!--学校日历begin-->
+    <div class="schoolcalendar-box right">
+        <div class="schoolcalendar-title">国际学校日历</div>
+        <div class="schoolcalendar-main">
+           <div id="calendar"></div>
+        </div>
+    </div>
+    
+    <!--学校日历end-->
+    <!--焦点图begin-->
+    <div class="slide-box left">
+        <div id="owl-demo" class="owl-carousel">
+        	<volist name="bannerList" id="vo">
+           		 <a class="item"><img src="{$vo.banner_path}" alt="{$vo.banner_title}"></a>
+           	</volist>
+            <a class="item"><img src="__PUBLIC__/home/images/banner.jpg" alt=""></a>
+            <a class="item"><img src="__PUBLIC__/home/images/banner.jpg" alt=""></a>
+            <a class="item"><img src="__PUBLIC__/home/images/banner.jpg" alt=""></a>
+        </div>
+    </div>
+    <!--焦点图end-->
+    <div class="clearfix"></div>           
+    <script type="text/javascript">
+	// Calendar Initialization
+	jQuery(document).ready(function($)
+	{
+
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev',
+				center: 'title',
+				right: 'next'
+			},
+			monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
+			,monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
+			,dayNames: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+			,dayNamesShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+			,titleFormat:{
+				month: 'YYYY年M月'
+				}
+			,today: ["今天"]
+			,firstDay: 1
+			,buttonText: {today: '今天',prev: '<',next: '>'}
+			,buttonIcons: {
+				prev: 'prev fa-angle-left',
+				next: 'next fa-angle-right',
+			},
+			// defaultDate: '2014-09-12',
+			editable: true,
+			eventLimit: true,
+			droppable: false,
+			events:function(start, end, timezone, callback) {
+		        $.ajax({
+		        	url:'__APP__/home/Activity/findActivityDays?schoolId={$schoolId}',
+		        	type:"POST",
+		        	async:false,
+		    		success:function(response, postdata) {
+		    			$("#calendar").fullCalendar('removeEvents');    
+		    			for(var i=0;i<response.data.length;i++) {    
+		            		var obj = new Object();    
+		                   	//obj.title = response.data[i].activity_title;
+		                   	obj.title = '*';  // response.data[i].activity_title
+		                   	obj.url="__APP__/home/School/schoolDetail2/id/{$schoolId}";
+		                   	obj.start = response.data[i].activity_startdate;                   
+		                   	obj.end = response.data[i].activity_enddate;   
+		                   $("#calendar").fullCalendar('renderEvent',obj,true);                     
+		               } 
+		    		}
+		        }); //把从后台取出的数据进行封装以后在页面上以fullCalendar的方式进行显示  
+		    }
+			
+		});
+	});
+</script>
+</div>
+<!--容器end-->

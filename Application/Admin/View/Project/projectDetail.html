@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<include file="./Application/Admin/View/Public/head.html" />
+<body class="page-body">
+	<div class="page-container">
+		<include file="./Application/Admin/View/Public/menu.html" />
+		<div class="main-content">	
+			<include file="./Application/Admin/View/Public/navigation.html" />
+			<div class="page-title">
+				<div class="breadcrumb-env">
+					<ol class="breadcrumb bc-1">
+						<ol class="breadcrumb bc-1">
+						<li><i class="fa-home"></i>首页</li>
+						<li>项目管理</li>
+						<li class="active"><strong>{$title}</strong></li>
+					</ol>
+					</ol>		
+				</div>
+			</div>
+			<!-- Content Panel -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">{$title}</h3>
+						</div>
+						<div class="panel-body">
+							<!-- Content -->
+							<form role="form" id="formProject"  action="__APP__/Project/projectSave" method="post" class="form-horizontal validate">
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="project_level">项目级别</label>
+									<div class="col-sm-3">
+										<input type="hidden" name="action" value="{$action}"/>
+										<input type="hidden" name="project_id" value="{$projectInfo.project_id}"/>
+										<input type="hidden" name="start" value="{$start}"/>
+										<input type="hidden" name="pagesize" value="{$pagesize}"/>
+										<select class="form-control" id="level_id" name="level_id" data-validate="required" data-message-required="请选择级别。">
+											<volist name="levelList" id="vo" key="index">
+												<if condition="$projectInfo['level_id'] eq $vo['level_id']">
+													<option value="{$vo.level_id}" selected >{$vo.level_name}</option>
+												<else/>
+													<option value="{$vo.level_id}">{$vo.level_name}</option>
+												</if>
+												</if>
+											</volist>
+										</select>
+									</div>
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											$("#school_id").select2({
+												placeholder: '查询学校...',
+												allowClear: true
+											}).on('select2-open', function()
+											{
+												// Adding Custom Scrollbar
+												$(this).data('select2').results.addClass('overflow-hidden').perfectScrollbar();
+											});
+											
+										});
+									</script>
+									<label class="col-sm-2 control-label">项目对应学校</label>
+									<div class="col-sm-3">
+										<select class="form-control" id="school_id" name="school_id" data-validate="required" data-message-required="请选择项目对应学校。">
+											<option value="null">--</option>
+											<volist name="schoolList" id="vo" key="index">
+												<if condition="$projectInfo['school_id'] eq $vo['school_id']">
+													<option value="{$vo.school_id}" selected>{$vo.school_name}</option>
+												<else/>
+													<option value="{$vo.school_id}">{$vo.school_name}</option>
+												</if>
+											</volist>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">课程体系</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" id="kctx" name="kctx" data-validate="required" data-message-required="课程体系不能为空。">{$projectInfo.kctx}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">课程设置</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" name="kcsz" data-validate="required" data-message-required="课程设置不能为空。">{$projectInfo.kcsz}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">招生对象</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" name="kcsz" data-validate="required" data-message-required="招生对象不能为空。"  value="{$projectInfo.zsdx}"/>
+									</div>
+									<label class="col-sm-2 control-label" for="article_detail">招生规模</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" name="zsgm" data-validate="required" data-message-required="招生规模不能为空。"  value="{$projectInfo.zsgm}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">学费</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" name="xf" data-validate="required" data-message-required="学费不能为空。"  value="{$projectInfo.xf}"/>
+									</div>
+									<label class="col-sm-2 control-label" for="article_detail">住宿条件</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" name="zs" data-validate="required" data-message-required="住宿条件不能为空。"  value="{$projectInfo.zs}"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">是否招收中国学生</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="zszgxs">
+											<if condition="$projectInfo.zszgxs eq 否">
+												<option value="否" selected="selected">否</option>
+												<option value="是">是</option>
+											<elseif condition="$projectInfo.zszgxs eq 是"/>
+												<option value="否">否</option>
+												<option value="是"  selected="selected">是</option>
+											<else />
+												<option value="否">否</option>
+												<option value="是">是</option>
+											</if>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label" for="article_detail">是否接受插班生</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="cbs">
+											<if condition="$projectInfo.cbs eq 否">
+												<option value="否" selected="selected">否</option>
+												<option value="是">是</option>
+											<elseif condition="$projectInfo.cbs eq 是"/>
+												<option value="否">否</option>
+												<option value="是"  selected="selected">是</option>
+											<else />
+												<option value="否">否</option>
+												<option value="是">是</option>
+											</if>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">入学标准</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" name="rxbz" data-validate="required" data-message-required="入学标准不能为空。">{$projectInfo.rxbz}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">入学考试科目</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" name="kskm" data-validate="required" data-message-required="入学考试科目不能为空。">{$projectInfo.kskm}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">入学考试安排</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" name="ksap" data-validate="required" data-message-required="入学考试安排不能为空。">{$projectInfo.ksap}</textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="article_detail">状态</label>
+									<div class="col-sm-3">
+										<select class="form-control" name="status">
+											<if condition="$projectInfo.status eq 0">
+												<option value="0" selected="selected">未发布</option>
+												<option value="1">已发布</option>
+												<option value="2">审核通过</option>
+												<option value="3">审核未通过</option>
+												<option value="9">删除</option>
+											<elseif condition="$projectInfo.status eq 1"/>
+												<option value="0">未发布</option>
+												<option value="1" selected="selected">已发布</option>
+												<option value="2">审核通过</option>
+												<option value="3">审核未通过</option>
+												<option value="9">删除</option>
+											<elseif condition="$projectInfo.status eq 2"/>
+												<option value="0">未发布</option>
+												<option value="1">已发布</option>
+												<option value="2" selected="selected">审核通过</option>
+												<option value="3">审核未通过</option>
+												<option value="9">删除</option>
+											<elseif condition="$projectInfo.status eq 3"/>
+												<option value="0">未发布</option>
+												<option value="1">已发布</option>
+												<option value="2">审核通过</option>
+												<option value="3" selected="selected">审核未通过</option>
+												<option value="9">删除</option>
+											<elseif condition="$projectInfo.status eq 9"/>
+												<option value="0">未发布</option>
+												<option value="1">已发布</option>
+												<option value="2">审核通过</option>
+												<option value="3">审核未通过</option>
+												<option value="9" selected="selected">删除</option>
+											<else />
+												<option value="0">未发布</option>
+												<option value="1">已发布</option>
+												<option value="2">审核通过</option>
+												<option value="3">审核未通过</option>
+												<option value="9">删除</option>
+											</if>
+										</select>
+									</div>
+									
+								</div>
+								<div class="form-group">
+									<div class="col-sm-9"></div>
+									<div class="col-sm-3">
+										<button type="submit" class="btn btn-success">保存</button>
+										<button type="reset" class="btn btn-white">取消</button>
+										<a href="__APP__/Project/projectList/start/{$start}/pagesize/{$pagesize}" class="btn btn-info">返回</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<include file="./Application/Admin/View/Public/footer.html" />
+		</div>
+	</div>
+</body>
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/vendor/codemirror/codemirror.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/uikit.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/uikit/css/addons/uikit.almost-flat.addons.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/js/select2/select2-bootstrap.css">
+	
+	
+	<!-- Bottom Scripts -->
+	<load href="__PUBLIC__/ueditor14/ueditor.config.js" />
+    <load href="__PUBLIC__/ueditor14/ueditor.all.min.js" />
+    <load href="__PUBLIC__/ueditor14/lang/zh-cn/zh-cn.js" />
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	
+	<load href="__PUBLIC__/assets/js/TweenMax.min.js" />
+	<load href="__PUBLIC__/assets/js/resizeable.js" />
+	<load href="__PUBLIC__/assets/js/joinable.js" />
+	<load href="__PUBLIC__/assets/js/xenon-api.js" />
+	<load href="__PUBLIC__/assets/js/xenon-toggles.js" />
+	
+	<load href="__PUBLIC__/assets/js/jquery-ui/jquery-ui.min.js"/>
+	<load href="__PUBLIC__/assets/js/jquery-validate/jquery.validate.min.js" />
+	
+	<load href="__PUBLIC__/assets/js/select2/select2.js"/>
+	
+	<!-- JavaScripts initializations and stuff -->
+	<load href="__PUBLIC__/assets/js/xenon-custom.js" />
+	
+	<script type="text/javascript">
+		var ue = UE.getEditor('banner_detail');
+    </script>
+</html>

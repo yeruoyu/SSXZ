@@ -1,0 +1,26 @@
+[ 2016-11-21T22:13:52+08:00 ] 127.0.0.1 /ssxz/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002072s ]
+
+[ 2016-11-21T22:13:53+08:00 ] 127.0.0.1 /ssxz/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+
+[ 2016-11-21T22:13:59+08:00 ] 127.0.0.1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002314s ]
+
+[ 2016-11-21T22:14:47+08:00 ] 127.0.0.1 /ssxz/admin.php/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002802s ]
+
